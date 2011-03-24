@@ -1,0 +1,9 @@
+syntax: glob
+parts
+bin
+docs/build
+.installed.cfg
+.mr.developer.cfg
+var
+*.pyc
+develop-eggs
