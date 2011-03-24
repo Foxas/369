@@ -1,0 +1,6 @@
+{{ object.title }}
+{{ object.nickas }}
+{{ object.content }}
+
+
+

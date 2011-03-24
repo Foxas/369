@@ -7,3 +7,4 @@ docs/build
 var
 *.pyc
 develop-eggs
+*.egg-info

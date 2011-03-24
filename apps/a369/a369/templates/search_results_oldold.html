@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %} 369.lt - paieškos rezultatai {% endblock %}
+
+{% block content%}
+{% load highlight %}
+
+<div id="results_splash">
+ <h2> Užsiregistruok </h2>
+</div>
+
+
+
+
+
+<div id = "nx">
+{% if paginator.count %}
+ <div class="pagination1">
+    <span class="step-links">
+
+
+<p class="atradimai"> Radom {{ paginator.count }} komentarų, kuriuose paminėta frazė 
+                  <strong><em>{{ query }}</em> </strong></p> 
+                 
+
+{% if page.has_previous %}
+            <a href="?q={{ query }}&page={{ page.previous_page_number }}">Ankstenis</a>
+{% endif %}
+                  
+                  
+<span class="current">
+
+            Puslapis {{ page.number }} iš {{ paginator.num_pages }}.
+            
+</span>            
+
+
+{% if page.has_next %}
+            <a href="?q={{ query }}&page={{ page.next_page_number }}"> Kitas </a>
+{% endif %}
+
+
+ </span>
+</div>
+{% endif %}
+         
+
+
+
+
+
+
+{% if paginator.count %}
+
+{% for result in page.object_list %}
+
+<br>
+
+<b> {{result.object.nickas|safe }} </b> apie 
+<a href = {{ result.object.linkas }} >  {% highlight result.object.title with query html_tag "em" %}</a>:
+
+<br> {{ result.object.date_birth }}
+<br> {% highlight result.object.content with query html_tag "em" %}
+                        
+<br>
+<br>
+ 
+{% endfor %}
+
+{% else %}
+
+<h3> Rezultatų nerasta</h3>
+
+{% endif %}
+
+
+
+
+{% if paginator.count %}
+ <div class="pagination2">
+    <span class="step-links">
+
+
+<p class="atradimai"> Radom {{ paginator.count }} komentarų, kuriuose paminėta frazė 
+                  <strong><em>{{ query }}</em> </strong></p> 
+                 
+
+{% if page.has_previous %}
+            <a href="?q={{ query }}&page={{ page.previous_page_number }}">Ankstenis</a>
+{% endif %}
+                  
+                  
+<span class="current">
+
+            Puslapis {{ page.number }} iš {{ paginator.num_pages }}.
+            
+</span>            
+
+
+{% if page.has_next %}
+            <a href="?q={{ query }}&page={{ page.next_page_number }}"> Kitas </a>
+{% endif %}
+
+
+ </span>
+</div>
+{% endif %}
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+<br>
+Čia yra paieškos rezų footeris
+
+
+
+
+

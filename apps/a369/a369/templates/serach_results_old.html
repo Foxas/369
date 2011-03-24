@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %} 369.lt - paieškos rezultatai {% endblock %}
+
+{% block content%}
+
+
+<div id="results_splash">
+ <h2> Užsiregistruok </h2>
+</div>
+
+
+
+
+
+<div id = "nx">
+
+<p class="atradimai"> Radom {{ matches }} komentarų, kuriuose paminėta frazė 
+                  <strong><em>{{ query }}</em> </strong></p> 
+ 
+                  
+{% if comments %}                  
+ <div class="pagination1">
+    <span class="step-links">
+        {% if comments.has_previous %}
+            <a href="?q={{ query }}&page={{ comments.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ comments.number }} of {{ comments.paginator.num_pages }}.
+        </span>
+
+        {% if comments.has_next %}
+            <a href="?q={{ query }}&page={{ comments.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+{% endif %}
+
+
+ {% for comment in comments.object_list %}
+  <br>
+  <b>{{ comment.sphinx.passages.nickas|safe }}</b> apie <a href = {{ comment.linkas }} >{{ comment.sphinx.passages.title|safe }}</a>:
+  <br> {{ comment.date_birth}}
+  <br> {{ comment.sphinx.passages.content|safe }}
+  <br>
+  <br>
+  {% empty %}
+    <br>Jūsų užklausą negrąžino jokių rezultatų!
+
+  {% endfor %}
+ </ul>
+ 
+ 
+ 
+
+{% if comments %}  
+  <div class="pagination2">
+    <span class="step-links">
+        {% if comments.has_previous %}
+            <a href="?q={{ query }}&page={{ comments.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ comments.number }} of {{ comments.paginator.num_pages }}.
+        </span>
+
+        {% if comments.has_next %}
+            <a href="?q={{ query }}&page={{ comments.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+    </div>
+{% endif %}  
+</div>
+
+<div id="extra">
+<a class="registrationbox" href="/newalert"> 
+<h3>Sukurkite alert'ą </h3>
+Ir nauji komentarai Jus dominančiomis temomis
+pasieks jus el. paštu ar sms žinutėmis. 
+</a>
+</div>
+ 
+
+ 
+{% endblock content %}
+
+
+
+<br>
+Čia yra paieškos rezų footeris
+
+
+
+
+

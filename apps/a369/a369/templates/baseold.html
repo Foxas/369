@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <meta name="description" content="Backtype - interneto monitoringas. Geriausia kokybė - nemokamai">
+  <title> {% block title %} {% endblock %} </title>
+ <link rel="stylesheet" type="text/css" href="/media/css/core3.css" media="all">
+ </head>
+<body>
+
+<div id="header">
+		<div id="logo">
+	<!--	<img src="/static/369new.png" alt="logo"/> -->
+			</div>
+		
+		<div id="slogan">
+		<h1><a href="/" class="geltona">Ir jie turi ką pasakyti</a> </h1>
+		</div>
+		
+		<div id="navlinks">
+		<ul>
+			<li><a href="/"> Pradžia </a></li>
+			<li><a href="/admin/"> admin </a></li>
+			<li><a href="/detailed_search"> Detali paieška </a></li>
+		</ul>
+		</div>
+
+		<div id="form">
+		<form id="search" method="GET" action="/search/">
+				<fieldset>
+						<legend></legend>
+						<input type="text" name="q" value="">
+						<input type="submit" value="submit">
+				</fieldset>
+		</form>
+		
+		</div>
+</div>
+
+
+<div id="content">
+{% block content %} {% endblock %} 
+</div>
+
+
+
+<div id="footer">
+<div id="copyright">
+<p>&copy;2009  369.lt visos teisės saugomos</p>
+</div>
+
+		<div id="foot_navlinks">
+		<ul>
+
+			<li><a href="/Apie">Apie</a></li>
+			<li><a href="http://blog.btype.lt/">Blogas</a></li>
+			<li><a href="/press">Press</a></li>
+			<li><a href="/developers">Programuotojams</a></li>
+			<li><a href="/iskiepiai">Įskiepiai</a></li>
+			<li><a href="/widgets">Widgetai</a></li>
+
+			<li><a href="/help">Pagalba</a></li>
+			<li><a href="/terms" rel="nofollow">Terms</a></li>
+			<li><a href="/privacy" rel="nofollow">Privacy</a></li>
+			<li><a href="/contact">Susisiekite</a></li>
+		</ul>
+		</div>
+		
+</div>
+
+
+{% if debug %}
+<div id="debug">
+  <h2>Queries</h2>
+  <p>
+    {{ sql_queries|length }} Quer{{ sql_queries|pluralize:"y,ies" }}
+    {% ifnotequal sql_queries|length 0 %}
+    (<span style="cursor: pointer;" onclick="var s=document.getElementById('debugQueryTable').style;s.display=s.display=='none'?'':'none';this.innerHTML=this.innerHTML=='Show'?'Hide':'Show';">Show</span>)
+    {% endifnotequal %}
+  </p>
+  <table id="debugQueryTable" style="display: none;">
+    <col width="1"></col>
+    <col></col>
+    <col width="1"></col>
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">SQL</th>
+      <th scope="col">Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for query in sql_queries %}<tr class="{% cycle odd,even %}">
+      <td>{{ forloop.counter }}</td>
+      <td>{{ query.sql|escape }}</td>
+      <td>{{ query.time }}</td>
+    </tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+{% block footer %} 
+{% endblock %}
+
+<!--GAnalytics-->
+<!--
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10152131-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+-->
+<!--GAnalytics finish-->
+
+</body>
+</html>
+
