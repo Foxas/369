@@ -8,3 +8,4 @@ var
 *.pyc
 develop-eggs
 *.egg-info
+etc/supervisord.conf
