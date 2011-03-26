@@ -1,6 +1,11 @@
 from scrapy.contrib_exp.djangoitem import DjangoItem
-from a369.models import OpinionItem
+from a369 import models
 
 
-class CrawlerItem(DjangoItem):
-    django_model = OpinionItem
+class ArticleItem(DjangoItem):
+    django_model = models.ArticleItem
+
+
+class CommentItem(DjangoItem):
+    django_model = models.CommentItem
+

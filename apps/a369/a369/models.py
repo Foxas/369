@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
+SUBJECT_TYPE_ARTICLE = 'article'
 
 SUBJECT_CHOICES = (
-    ('article', 'Article'),
+    (SUBJECT_TYPE_ARTICLE, 'Article'),
 )
 
 
