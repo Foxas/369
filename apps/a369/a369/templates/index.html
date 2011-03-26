@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block title %} 369.lt {% endblock %}
 
 {% block content%}
-<div id="topic"><h2>POPULIARIAUSIOS TEMOS</h2></div>
+<div id="topic"><h2>{% trans "POPULAR TOPICS" %}</h2></div>
 <div id="trends-block">
     <ul id="recent-trends">
         <li><a href="/search/?q=adamkus">adamkus</a></li>
