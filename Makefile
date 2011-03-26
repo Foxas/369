@@ -52,6 +52,9 @@ syncdb:
 	bin/django migrate --fake
 	bin/django loaddata initial_data.json
 
+createdb:
+	mysql -uroot -e 'CREATE DATABASE 369lt CHARACTER SET utf8;'
+
 # circo dot fdp neato nop nop1 nop2 twopi
 graph:
 	bin/django graph_models \
