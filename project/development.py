@@ -13,9 +13,15 @@ EMAIL_FILE_PATH = os.path.join(BUILDOUT_DIR, 'var', 'mail')
 CACHE_BACKEND = "dummy://"
 
 DATABASES = {
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': os.path.join(BUILDOUT_DIR, 'var', 'development.db'),
+    #}
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BUILDOUT_DIR, 'var', 'development.db'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '369lt',
+        'USER': 'root',
+        'PASSWORD': '',
     }
 }
 
