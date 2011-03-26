@@ -3,10 +3,6 @@ import datetime
 from django.shortcuts import render_to_response
 from djangosphinx.apis.current import SPHINX_API_VERSION
 
-from haystack.views import SearchView
-from haystack.query import SearchQuerySet
-from haystack.forms import SearchForm
-
 
 def index(self):
     kintamasis = SPHINX_API_VERSION
