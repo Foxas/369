@@ -1,6 +1,5 @@
 from django.contrib import admin
-from models import Documents, Source, RssComment
+from models import ArticleItem, CommentItem
 
-admin.site.register(Documents)
-admin.site.register(Source)
-admin.site.register(RssComment)
+admin.site.register(ArticleItem)
+admin.site.register(CommentItem)
