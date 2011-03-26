@@ -9,3 +9,4 @@ var
 develop-eggs
 *.egg-info
 etc/supervisord.conf
+tags
