@@ -4,7 +4,7 @@ from django.db import models
 SUBJECT_TYPE_ARTICLE = 'article'
 
 SUBJECT_CHOICES = (
-    (SUBJECT_TYPE_ARTICLE, 'Article'),
+    ('article', 'Article'),
 )
 
 
@@ -35,7 +35,8 @@ class CommentItem(BaseItem):
     subject_id = models.CharField(max_length=255)
 
     def __unicode__(self):
-        return u'%s %s' % (self.id, self.title)
+        return u'%s (#%s), %s by %s' % (self.id, self.crawl_id, self.date, 
+                                        self.author)
 
     class Admin:
         pass
