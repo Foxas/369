@@ -10,3 +10,5 @@ develop-eggs
 *.egg-info
 etc/supervisord.conf
 tags
+eggs
+downloads
