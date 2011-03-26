@@ -78,20 +78,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'south',
     'a369',
-    'haystack',
 )
 
 
 #Sphinx
 SPHNIX_SERVER = '127.0.0.1'
 SPHINX_PORT = 8006
-
-#Haystack
-HAYSTACK_SITECONF = 'project.search_sites'
-
-#Haystack-solr
-HAYSTACK_SEARCH_ENGINE = 'solr'
-HAYSTACK_SOLR_URL = 'http://localhost:8983/solr'
-HAYSTACK_SOLR_TIMEOUT = 60 * 5
-
-HAYSTACK_INCLUDE_SPELLING = True
