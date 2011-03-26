@@ -4,8 +4,6 @@
 
 {% block content%}
 
-{% load highlight %}
-
     
     <div id="topic"><h2 id="results-h2">Rasta {{ paginator.count }}  rezultatų, kuriuose pavartotas žodis {{ query }} </h2></div>
 	
@@ -28,10 +26,9 @@
 
 {% for result in page.object_list %}
 <div class="comment-line">
-    	<a href="#" class="comment-author"> {% highlight result.object.nickas with query html_tag "span" css_class "comment-term"%}
-	</a> apie <a href="{{ result.object.linkas }}" class="comment-article"> {% highlight result.object.title with query html_tag "span" css_class "comment-term"%} </a>
+    	<a href="#" class="comment-author"> </a> apie <a href="{{ result.object.linkas }}" class="comment-article"> </a>
     	<div class="comment-date"> {{ result.object.date_birth }} </div>
-        <p> {% highlight result.object.content with query html_tag "span" css_class "comment-term"%} </p>
+        <p>  </p>
 
     </div>
 {% endfor %}
@@ -63,10 +60,6 @@
 </span>
 </div>
 
-  <!-- end #footer --></div>
-<!-- end #container --></div>
 {{ request.META.QUERY_STRING }}
-</body>
-</html>
 
 {% endblock %}
