@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
+
+SUBJECT_CHOICES = (
+    ('article', 'Article'),
+)
+
+
 class BaseItem(models.Model):
     crawl_timestamp = models.DateTimeField()
     crawl_id = models.CharField(max_length=255, blank=True)
@@ -10,13 +16,22 @@ class BaseItem(models.Model):
     class Meta:
         abstract = True
 
-class OpinionItem(BaseItem):
+
+class ArticleItem(BaseItem):
+    date = models.DateTimeField()
+    author = models.CharField(max_length=255, blank=True)
+    content = models.TextField()
+
+
+class CommentItem(BaseItem):
     """
     Main class
     """
     date = models.DateTimeField()
     author = models.CharField(max_length=255, blank=True)
     content = models.TextField()
+    subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
+    subject_id = models.CharField(max_length=255)
 
     def __unicode__(self):
         return u'%s %s' % (self.id, self.title)
