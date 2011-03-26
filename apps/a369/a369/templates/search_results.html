@@ -5,7 +5,7 @@
 {% block content%}
 
     
-    <div id="topic"><h2 id="results-h2">Rasta {{ paginator.count }}  rezultatų, kuriuose pavartotas žodis {{ query }} </h2></div>
+    <div id="topic"><h2 id="results-h2">Rasta {{ results.count }}  rezultatų, kuriuose pavartotas žodis {{ query }} </h2></div>
 	
 <!-- end #header --></div>
 
@@ -49,7 +49,7 @@
                   
 <span class="current">
 
-            Puslapis {{ page.number }} iš {{ paginator.num_pages }}.
+            Puslapis {{ page.number }} iš {{ results.count }}.
             
 </span>            
 

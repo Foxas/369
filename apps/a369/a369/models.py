@@ -36,10 +36,10 @@ class CommentItem(BaseItem):
     subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
     subject_id = models.CharField(max_length=255)
 
+    search = SphinxSearch(index='main')
+
     def __unicode__(self):
         return u'%s %s' % (self.id, self.title)
 
     class Admin:
         pass
-
-    search = SphinxSearch(index='main')
