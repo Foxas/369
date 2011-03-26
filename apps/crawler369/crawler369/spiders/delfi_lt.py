@@ -1,5 +1,6 @@
 from scrapy.spider import BaseSpider
 
+
 class DelfiLtComments(BaseSpider):
     name = "delfi_lt_comments"
     allowed_domains = ["delfi.lt"]
