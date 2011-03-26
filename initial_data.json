@@ -26,31 +26,2927 @@
         }
     },
     {
-        "pk": 1, 
-        "model": "a369.articleitem", 
-        "fields": {
-            "author": "Simona Krupeckait\u0117", 
-            "crawl_timestamp": "2011-03-26 18:39:29", 
-            "content": "Olandijos mieste Apeldorne vykstan\u010diame pasaulio treko dvira\u010di\u0173 \u010dempionate \u0161e\u0161tadien\u012f 28-eri\u0173 met\u0173 Simona Krupeckait\u0117 kovojo asmenin\u0117se sprinto var\u017eyb\u0173 finale. \u0160ios rungties pasaulio rekordinink\u0117 S. Krupeckait\u0117 susitiko su Anna Meares i\u0161 Australijos ir pralaim\u0117jo var\u017eovei rezultatu 0:2. Lietuvos dviratinink\u0117 i\u0161kovojo planetos pirmenybi\u0173 sidabro medal\u012f.", 
-            "date": "2011-03-26 19:15:06", 
-            "crawl_id": "1", 
-            "source_id": "delfi.lt", 
-            "item_link": "http://sportas.delfi.lt/national/skrupeckaite-pasaulio-dviraciu-treko-cempionate-iskovojo-sidabro-medali.d?id=43641191"
-        }
-    },
-    {
-        "pk": 1, 
+        "pk": 4534, 
         "model": "a369.commentitem", 
         "fields": {
-            "subject_type": "article", 
-            "author": "saunuole", 
-            "subject_id": "1", 
-            "crawl_timestamp": "2011-03-26 19:21:30", 
-            "content": "tikra saunuole, sekanti karta bus pirma !", 
-            "date": "2011-03-26 19:24:36", 
-            "crawl_id": "2", 
+            "subject_type": "1", 
+            "date": "2011-03-26 13:12:00", 
+            "author": "och", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Na Aplinkos ministerijos klerkai ir \"kieti\". \nDel kietuju daleliu straipsnyje uzduoda beviltiskus klausimus savivaldybems (Kauno ir Vilniaus).Ir vidutinio issilavinimo zmogekiui aisku, kad kietuju daleliu koncentracja padidejo del pabrangusiu silumos komponentu.Klerkai, gal savo gyvenamuosiuose rajonuose nepastebejo, kad is beveik kiekvieno kotedzo, privataus namo, daugiabuciu kaminu ruksta dumai ir daug kur ne balti, kaip renkant popieziu, bet juodi, arba rudi. Gatves po ziemos paveluotai valomos kasmet, todel kietuju daleliu koncentracijos didejimo priezastis- kieto kuro panaudojimo zenkliame padidejime.Ta proga siulau klerkams (premjerui ir LT fin. ministrei labai patiks)- ivesti Lietuvoje :1. \"kamino mokesti\".Ruksta baltas dumas- 100 Lt , juodas dumas -200 Lt; 2.masinu keliamu dulkiu gatvese mokesti,- kiekvienai masinai metams po 100 Lt.Skaitykite Cipolino nuotykius,- istatymu kurejai.Kreks, feks ,peks :-)", 
             "source_id": "delfi.lt", 
-            "item_link": "http://sportas.delfi.lt/national/skrupeckaite-pasaulio-dviraciu-treko-cempionate-iskovojo-sidabro-medali.d?id=43641191&com=1"
+            "crawl_id": "1", 
+            "item_id": "c43637331", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4533, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 18:28:00", 
+            "author": "betvark\u0117\u0117\u0117\u0117\u0117\u0117\u0117", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "tokio ap\u0161nerk\u0161to Vilniaus neatsimenu - visi\u0161kas murzius... Kiemsargiai ap\u0161luoja tik aplink pon\u0173 b\u016bstus - kitur \"brendam gil\u0173 purvin\u0117l\u012f\" - o ka\u017ekas pinig\u0117l\u012f \u012f ki\u0161en\u0119...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43647527", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4532, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 18:31:00", 
+            "author": "pritariu och", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "beveik visi nauji \"apartamentai\" dygsta su kaminais, kurie \u017einoma d\u016b\u016b\u016b\u016b\u016bmija...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43647655", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4531, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:08:00", 
+            "author": "marius", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "tai koks rezultatas galutinis 12+7+24+16 =59 ?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655889", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4530, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:09:00", 
+            "author": "kaunie\u010diams", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "tai kaip ten su tais Vilniaus lenkais? Gal visd\u0117lto nusileiskite ir pasykite kad portugalus nugal\u0117jote. Nes vakar visam KAUNUI \u0160IKNAS I\u0160SPARD\u0116 LENKAI.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655901", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4529, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 18:33:00", 
+            "author": "Neter\u0161kim aplinkos!!!!!!", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Sparti klimato kaita - nuolatin\u0117s tar\u0161os rezultatas. Tad, neter\u0161kim bent, kai tai neb\u016btina. \nPrakti\u0161kai patikrinta: tvarkingas 1,6 ltr. automobilio variklis, dirbdamas tu\u0161\u010dia eiga (stovint sp\u016bstyse, prie \u0161viesofor\u0173), sunaudoja ~ 1 ltr/val. benzino. \u012ejungus \u0161viesas ~ 1,2 ltr/val. Va\u017eiuojant 100 km/val. \u2013 atitinkamai: ~ 6,5 ir 6,7 ltr/val. Taigi, \u0161viesos dien\u0105 kas val. pareikalauja 0,2 ltr., per 5 val. \u2013 1 ltr. degal\u0173. Per metus kai kam tai atsieina ne vien\u0105 \u0161imt\u0105 lit\u0173, nors tiesiogiai to nejau\u010diame.  \nLietuvoje dien\u0105 nuolatos \u017eibina ma\u017edaug 300.000 automobili\u0173; \nJie per valand\u0105 \u0161viesoms sudegina apie 60.000 ltr, per 10 val. \u2013 apie 600.000 ltr degal\u0173. Visi\u0161kai beprasmi\u0161kai. Jokios teigiamos \u012ftakos avarij\u0173 ma\u017e\u0117jimui \u0161viesos neturi - tai \u012frodyta tyrimais ir statistika u\u017esienio valstyb\u0117se. \nElektros lemput\u0117se tik 4-7 % energijos panaudojama \u0161viesai. 93-96 % virsta \u0161iluma; \nPrimesdami va\u017ein\u0117jim\u0105 dien\u0105 su \u0161viesom, valdininkai tvirtino, neva, to reikalauja ES. Tokios ES direktyvos n\u0117ra; \nTarptautin\u0117 organizacija \u201eVairuotojai prie\u0161 \u0161viesas\u201c (DaDRL), veikianti Lenkijoje, DB, Bulgarijoje, \u010cekijoje, JAV, Kanadoje ir kt., tyrimais ir statistikos analize nustat\u0117, jog dienin\u0117s \u0161viesos DIDINA avaringum\u0105 8%. \nOftalmolog\u0173 (aki\u0173 gydytoj\u0173) tvirtai nustatyta, jog \u0161viesos dien\u0105 ypa\u010d neigiamai veikia vyresnio am\u017eiaus \u017emoni\u0173 reg\u0117jim\u0105. \nAustrijos gydytoj\u0173 oftalmolog\u0173 komisijjos, tyrusios dienini\u0173 \u0161vies\u0173 (DRL) poveik\u012f eismui, \ni\u0161vadose ra\u0161oma: \n\u201eDRL pablogina bet koki\u0173 tamsesni\u0173 objekt\u0173-p\u0117s\u010di\u0173j\u0173, dviratinink\u0173, kli\u016b\u010di\u0173 matomum\u0105 - bet kuriuo metu - bet kokioje geografin\u0117je vietoje. \nN\u0116RA JOKI\u0172 MOKSLINI\u0172 ARGUMENT\u0172 IR JOKIOS STATISTIN\u0116S ANALIZ\u0116S, PATEISINAN\u010cIOS \u0160VIES\u0172 NAUDOJIM\u0104 DIEN\u0104, ESANT GERAM MATOMUMUI\u201c. \nNa, o \u017eibinti dien\u0105 elektromobilio \u0161viesomis \u2013 VISI\u0160KAS ABSURDAS. \nLaikas suvokti, kad avarij\u0173 prie\u017eastys \u2013 ne blogas matomumas, saulei \u0161vie\u010diant, o NEMOK\u0160I\u0160KAS, NEATSARGUS, NUSIKALSTAMAI NEATSAKINGAS, CHAMI\u0160KAS VAIRAVIMAS. \nAutomobili\u0173 \u0161viesos dien\u0105, kai geras matomumas - PAMINKLAS \u017dMONI\u0172 KVAILUMUI.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43647693", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4528, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:10:00", 
+            "author": "ALN", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "HA", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655925", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4527, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:12:00", 
+            "author": "to Vilnietis", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "My, Polacy, z wami!!!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655959", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4526, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:14:00", 
+            "author": "atsigaukit", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Sergu uz ryta, bet norejau kad sendien pralostu. Gal susitvarkys pagaliau iki lkl finalu ir surengs ispudinga sou.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43656001", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4525, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:19:00", 
+            "author": "to vilnietis", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Gaila, kad ten tokiu silpnu priesininku kaip lietrytis nepasitaike.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43656119", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4523, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:25:00", 
+            "author": "yep", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:08", 
+            "content": "yra taikinys tai ir yra prie\u0161 k\u0105 kovoti. Statyba/LR neturi tradicij\u0173 kokios iaugusios visiems Lietuvoje palaikyti \u017dalgiri. Labai tikuosi kad su laiku Vainauskai nustos remti Statyba, LKL intriga dings ir susidom\u0117jimas krep\u0161iniu nusmuks. Tada ateis futbolo era...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43656235", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4524, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:24:00", 
+            "author": "\u017e\u017e\u017e\u017e\u017e", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "\u017dalgir\u012f su pergale.\u0160iaip tai \u0161iaip sezone tai jau ketvirta pergal\u0117.Tik ka\u017ekod\u0117l tai tos,vadinamos prie\u0161 sezonin\u0117s pergal\u0117s \u017dalgiriui neskai\u010diuoja,nors LR praeitam sezone vis\u0105 laik\u0105 buvo pabr\u0117\u017eiama ir tai pergal\u0117.Ir nereikt\u0173 \u010dia pykti LR sirgaliams,nes \u017dalgiris \u0161iandien buvo geresnis,geriau nusiteik\u0119s kovai ir tuo pa\u010diu pergalei.Taip,prie\u0161 ma\u010d\u0105 buvo kalbama,kad tai nieko nerei\u0161kiantis ma\u010das,bet ma\u010dai tarp \u0161i\u0173 komand\u0173 visada b\u016bna principiniai. \nIr \u017ei\u016brint \u012f LR statistik\u0105,darosi ai\u0161ku,kad jeigu legionieriai nenusiteikia kovai,tada \u0161ans\u0173 laim\u0117ti n\u0117ra. \nSu visa pagarba \u017dalgirio sirgaliams,fanams,jie \u0161iam ma\u010de apsi\u0161iko iki aus\u0173.Ne ne visi,o tie kurie i\u0161k\u0117l\u0117 t\u0105 \u0161lyk\u0161t\u0173 plakat\u0105 apie mam\u0105....Tai ma\u017e\u0173 ma\u017eiausiai nepadoru ir \u012f\u017eeid\u017eiama pats brangiausias \u017emogus pasauly.Manau b\u016btent jie,jeigu dar turi nors \u0161iek tiek garb\u0117s,tiesiog PRIVALO ATSIPRA\u0160YTI U\u017d T\u0104 AKIBROK\u0160T\u0104 U\u017d T\u0104 \u012e\u017dEIDIM\u0104.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43656221", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4606, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 16:33:00", 
+            "author": "Pastaba", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Siaip paroda buvo kovo 15-19 dienomis...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43562117", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4607, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:51:00", 
+            "author": "o kod\u0117l?", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "O kod\u0117l lietuviai Lenkijoje tyli ir neklykia ant visos Europos S\u0105jungos, kaip jie diskriminuojami? Kame reikalas, kad m\u016bs\u0173 lenkai i\u0161tisai skriaud\u017eiami, o teises turi didesnes nei lietuviai Lenkijoje?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43593295", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4608, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:41:00", 
+            "author": "Radiacija nediskriminuos", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Regis verda aistros ten kur i\u0161 vis j\u0173 netur\u0117t\u0173 b\u016bti. Ne valstybin\u0117 kalba i\u0161naikins lenki\u0161k\u0105 ma\u017eum\u0105, bet rus\u0173 pastatyta nesaugi baltarusi\u0173 atomin\u0117 elektrin\u0117. D\u0117l to tur\u0117t\u0173 susir\u016bpinti Vilnijos lenkai. Radiacija be diskriminacijos, ji i\u0161degins visokius tautinius genus.Liks tik humanoidiniai mutantai. Nepad\u0117s nei gatvi\u0173 lentel\u0117s lenki\u0161kais pavadinimais. \nGal savo problemas matykime pla\u010diau-ateities perspektyvoje.\u017di\u016br\u0117kime \u012f Lietuv\u0105 kaip \u012f savo namus.Ginkime juos nuo i\u0161or\u0117s gr\u0117smi\u0173.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43592893", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4604, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 01:09:00", 
+            "author": "mrj", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "kas cia per armagedonas", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43580139", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4605, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 16:53:00", 
+            "author": "baldas", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "www.karmelavosbaldai.lt", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43609485", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4602, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:33:00", 
+            "author": "as", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "ziauriai grazu", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43631875", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4603, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 10:10:00", 
+            "author": "A\u0161 irgi", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "sau galvoju,kad taip.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43587927", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4601, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 12:03:00", 
+            "author": "gal\u0173 gale", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "a\u010di\u016b tam , kas i\u0161spausdino kaip balsavo seimo nariai, da\u017eniau reikt\u0173 taip daryti kiekvienu Lietuvai ir jos pilie\u010diams svarbiu klausimu. Man asmeni\u0161kai atv\u0117r\u0117 akis, daugiau nebalsuosiu nei u\u017e LSDP nei u\u017e TT, dabar pad\u0117tis ai\u0161k\u0117ja kas t\u0117vyn\u0119 pardavin\u0117ja toma\u0161evskio pakalikams, o kartu ir kremlinams, nes tik pastarieji i\u0161 situacijos i\u0161eis nugal\u0117tojais, kai prisijungs Lietuv\u0105 prie rusijos. Apskai\u010diuota buvo gerai, patys pasipra\u0161ysim pagalbos, kai lenkai prad\u0117s dalinti Lietuv\u0105, atpl\u0117\u0161iant Vilnij\u0105. O m\u016bs\u0173 URM \u0161aunuoliai,r\u0117kit dar garsiau ant visos ES, kaip engiami lietuviai polskoj, nes tai gryna tiesa, o vietoje 10 u\u017edarom\u0173 lietuvi\u0161k\u0173 mokykl\u0173 lenkijoje, Vilnijoje reikt\u0173 u\u017edaryti 30 lenki\u0161k\u0173 mokykl\u0173, ypa\u010d pradini\u0173.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43593875", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4600, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 12:08:00", 
+            "author": "K\u0119stas", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Pseudofa\u0161istin\u0117 propaganda yra m\u016bs\u0173 politini\u0173 technologij\u0173 dalis.Pats vogdamas, A.Kubilius visus kaltina vagyst\u0117mis. Ky\u0161iai i\u0161 bank\u0173 realizuojami per kito vagies D.Kreivio bendrov\u0119 su keistu pavadinimu. Moki - ve\u017ei yra simbolinis pavadinimas. Moki - rei\u0161kia moki skleisti antirusi\u0161k\u0105 propagand\u0105 rusi\u0161k\u0173 politruk\u0173 primityviame lygyje, kad kaimo davatkos tave i\u0161rinkt\u0173. Ve\u017ei - tai rei\u0161kia ve\u017ei tavo s\u016bnui ir kitiems tavo mafijos nariams presti\u017einius sklypus Vilniuje, did\u017eiules banko paskolas ir milijonines Europos S\u0105jungos paramos sumas. \nG\u0117da.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43594119", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4599, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 13:50:00", 
+            "author": "Asta", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Atrodyt\u0173, kad apie Lenkijos lietuvi\u0173 problemas reikia ra\u0161yti \u012f ES bei Lenkijos \u012fvairias institcijas, bet ka\u017ein ar tai pad\u0117s.Lenkams tokiais atvejais u\u017ekrinta ausys.Apie tai turi prad\u0117ti kalb\u0117ti Lenkijos tikrieji inteligentai. Toki\u0173 yra ir su jais reikia prad\u0117ti kalb\u0117ti. Toma\u0161evskiai ir narkevi\u010diai - tai provincijos politikieriai, menko intelekto, siauro m\u0105stymo.J\u0173 veidai visk\u0105 pasako apie j\u0173 intelektualines galimybes.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43599589", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4598, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 10:19:00", 
+            "author": "cinikas", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Tuomet juodaod\u017eiai tur\u0117t\u0173 b\u016bti visi genijais, nes j\u0173 testosterono lygis nuo pat gimimo yra pats auk\u0161\u010diausias ir jie grei\u010diausiai subr\u0119sta... deja pa\u017ei\u016br\u0117jus \u012f \"genijus\" atrodo kad yra kiek kitaip, pavyzd\u017eiui Daniel Tammet - nuo vaikyst\u0117s moka skai\u010diuoti sud\u0117tingas operacijas galvoje, moka skland\u017eiai i\u0161mokti u\u017esienio kalb\u0105 per 10 dien\u0173 (tai \u012frod\u0117 i\u0161mokdamas island\u0173, jis i\u0161viso moka 10 kalb\u0173 tame tarpe ir lietuvi\u0173), bet jo testosterono lygiai yra ma\u017eesni negu vidutiniai - yra perd\u0117tai jautrus ir nevyri\u0161ko sud\u0117jimo. \nPer daug visk\u0105 jie bando supaprastinti...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43588331", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4596, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 13:19:00", 
+            "author": "na", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "ir kas??", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43597941", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4597, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 13:04:00", 
+            "author": "mi", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "na cinike skaityk straipsni is naujo, kalba eina apie motinos testosterono lygio pakitimus nestumo metu, o ne apie \"geniju\" testorsterono lygi.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43597195", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4595, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:06:00", 
+            "author": "runkeliam!!!!", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "bl kaip jus nesuprantate, kad senuka paleido po splavu kaip rusai sako, kazkam ne taip padare ar gal nebuvo pedofilas ir vsio!!! Ipyle klafo i brendziuka ir lakste paskui su kamera:) 0.58 promiles galetu zmogus cirke ant lyno vaikscioti, o cia griuvinejo kaip su 7.0 promilem. Atsakykite????????????????????? ?????????   ???????????????????????????????   ?????????????????", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43630861", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4594, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 13:52:00", 
+            "author": "Richardas", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "kam butu lenkai...nuo pat Jogailos laiku-patys musa, patys rekia...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43599669", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4593, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 14:54:00", 
+            "author": "atatai", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "musu piliciku \"veiklos per 20 metu rezultatas: \"rusai eina, rusai po stalu, neprileisim ivano prie vamzdzio rusai, po paklode vajeee sosss gelbekit ....\" Tuo tarpu kaimynai is pietuose esancios slavu-poliaku valstybes uz keliu kilometru nuo Sostines seimininkauja kaip prie Vistulos upes!!!? Ir niekam nerupejo ir niekam nemotais!!! Kol galu gale tie poliakai atvirai visam pasauly pradejo is musu tyciotis ir dar uz musu simtus milijonu simtuose poliakisku mokyklu augina ir isaugino sau skaitlinga 5 kolona, paverte mazai rastingus vietinius zmogelius - nutautejusius lietuvius, gudus, rusus poliakais, ikise jiems Karteckas poliaka, poliakiskas maldaknyges, vadovelius, devetu drabuzeliu, makaronu ir pan. Prispygave apylinkes ksiondzais ir savanoriais agitatoriais is Varsuvos... \nGal gi atsibus musu PILICIKai galu gale?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43603113", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4592, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 15:10:00", 
+            "author": "Vyd\u016bnas", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Kodel vilnieciai nerengia piketo prie Lenkijos ambasados, pats laikas protestuoti prie\u0161 j\u0173 \u0161mei\u017eiki\u0161k\u0105 propagand\u0105. Protestai ir skundai lenk\u0173 ginklas, tad gal i\u0161mu\u0161t laikas j\u012f?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43603927", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4591, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 13:47:00", 
+            "author": "Realiai", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "Realiai gaunas, kad prakti\u0161kai tai atsitiktinumop reikalas.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43599385", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4590, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 16:24:00", 
+            "author": "as", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "nesamone, pas mane didelis testosteronas bet tikrai ne proto bokstas esu", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43608015", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4589, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:08:00", 
+            "author": "Revoliucija!!!!", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "http://www.ve.lt/naujienos/nuom ones/nuomones/girti-teisejai-ir- tendencingi-prokurorai-566347/", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43630931", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4588, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:09:00", 
+            "author": "vytska", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "O kiek dar toki\u0173 yra,kurie nagli,pasik\u0117l\u0119,prasig\u0117r\u0119...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43630975", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4586, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 16:21:00", 
+            "author": "\u012edomu", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "kur Lietuvos URM buvo anks\u010diau?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43607881", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4587, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 16:15:00", 
+            "author": "Skeptikas", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Tikiuosi m\u016bs\u0173 URM ir kitos vald\u017eios institucijos ir toliau i\u0161laikys tvirt\u0105 ir ori\u0105 pozicij\u0105 santykiuose su Lenkija. Ne tik \u0161vietimo klausimais, bet reikia tvirtai laikytis ir kitose srityse, nepasiduodant j\u0173 spaudimui, o reikalaujant nedviprasmi\u0161k\u0173 \u012frodym\u0173, jog \u0161i valstyb\u0117 atsisak\u0117 savo imperini\u0173 ambicij\u0173, yra demokrati\u0161ka ir draugi\u0161ka. Lenkija tur\u0117t\u0173 Lietuvai ir visam demokratiniam pasauliui parodyti, kad nem\u0117gina uzurpuoti ma\u017eesn\u0117s kaimyn\u0117s ne tik karin\u0117mis bet ir kitomis - propogandos, \u017evalgybos bei agent\u016brinio darbo, ekonomin\u0117mis ir t.t. priemon\u0117mis. Prie\u0161ingu atveju reikia parodyti pasauliui, kokia i\u0161 ties\u0173 veidmaini\u0161ka ir agresyvi \u0161ios valstyb\u0117s politika kaimyn\u0173 at\u017evilgiu. Taip pat manau greitai ir m\u016bs\u0173 vietiniai veik\u0117jai bus pavadinti tikraisiais vardais: kolaboruojantys - kolaborantais, norintys ardyti savo valstyb\u0119 - penkt\u0105ja kolona ir t.t.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43607539", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4585, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 20:34:00", 
+            "author": "oras", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "dar nema\u010diau \u017emogaus , kuris jaust\u0173si blogai mok\u0117damas daugiau u\u017esienio kalb\u0173... Kokius marazmus \u010dia tie lenkai \u0161nyp\u0161\u010dia? Man net gaila j\u0173 , nes per savo super patriotizm\u0105 jau perauga \u012f idiotizm\u0105", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43617599", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4584, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 16:34:00", 
+            "author": "Zet", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Labai abejotinas tyrimas. Taip i\u0161eit\u0173, kad vos ne kiekvienas vyras tur\u0117t\u0173 b\u016bti genijus, nes juk gimdoje jie testosterono gauna \u017eymiai daugiau u\u017e moteris. Deja, visas genialumas da\u017enai apsiriboja \"talentu\" i\u0161g\u0117rin\u0117ti ir drybsojimu prie televizoriaus. \nPapras\u010diausiai testosteronas prie\u0161 gimstant suformuoja vyri\u0161kas smegenis. Ka\u017ekur teko skaityti apie kit\u0173 mokslinink\u0173 (Baron-Cohen) tyrim\u0105, pagal kur\u012f berniukai, kuri\u0173 testosterono lygiai prie\u0161 gimstant buvo ypa\u010d auk\u0161ti, tur\u0117jo \u012fvairi\u0173 mokymosi/bendravimo problem\u0173 ir autistini\u0173 po\u017eymi\u0173. Gal kartais tai ir prisideda prie genialumo, bet kokia nauda i\u0161 geb\u0117jimo akimirksniu atlikti sud\u0117tingus matematinius veiksmus, jei tam yra kalkuliatorius? :-)", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43608555", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4583, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 16:50:00", 
+            "author": "tostas", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "taip i\u0161eina,kad visi talent\u0173 \u0161ou - testosteron\u0173 \u0161ou ?!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43609335", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4582, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 18:41:00", 
+            "author": "to ZET", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "nauda tokia,kad mokantis naudotis kalkuliatorium drybso lovoje prie TV,o sugebantis tai atlikti mintyse,dargi budamas vaikas,televizoriaus neziuri;)", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43614095", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4581, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:11:00", 
+            "author": "jau", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "juk venskiene pasake kas per teiseju klanai ir dabar viskas pradejo pildytis ,tik gaila jie jai kelia drausmines bylas ,skaitai ir juokas ima ,dar teisinasi oi nieko nezinom,taip jus garbus ponai viska zinot ir kas pas jus vyksta puikiai zinot kaip gyvenate ir ka darote savo klano viduryje ,gaila kad tik juokingai kalbat geriau tylekite ,nes kas su jusu klanu susidure tai jau zino ,o tos jusu kalbos tik juoka ima cia jus visus atleisti ,nes nei vienas tiek metu dirbe esate svarus ,taip gaila bet reali teisybe ,juk svento nieko nerapas jus", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43631073", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4580, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:24:00", 
+            "author": "Prajuokino", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Ne sistema ponas, o klana, o ju reforma kol kas niekine,kurioje pagrindini valytojos vaidmeni atlieka Prezidente, kartas nuo karto pasalindama i viesuma iskilusius klano viekejus ir vel ramybe.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43631499", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4579, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:40:00", 
+            "author": "Vyga", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Jau nieks daugiau nepaniekins Lietuvoj teiseju SISTEMOS vardo, kaip jie patys irode per 20- meti. O kadangi Z.Birstonas nera geriantis, tai jam net 0,59 promiles jau buvo per daug. Juk net vairuoti automobili galima esant 0,4... Tad virsyta tik 0,19 promiles. Gaila zmogaus. Bet teiseju sutve atleide toki zmogu nenusiplaus savo purvinu ir kruvinu munduru!!!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43632113", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4578, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 18:54:00", 
+            "author": "Algimantas", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "idiotiskas straipsnis apie nieka.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43614505", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4577, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 18:55:00", 
+            "author": "sp", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "tai kad jau ir valo, siandien centre maciau valymo masinas!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43614523", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4576, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 20:38:00", 
+            "author": "to Vyd\u016bnas", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Tod\u0117l kad vilnie\u010diai lietuviai apkiaut\u0119. Jie sudaro \u0161e\u0161tadal\u012f Lietuvos gyventoj\u0173, o k\u0105 nuveik\u0117? \nPrie televizijos bok\u0161to tikrai nebuvo kas \u0161e\u0161tas vilnietis, \u012f profs\u0105jung\u0173 mitingus taip pat suva\u017eiuoja \u017emon\u0117s i\u0161 provincijos, kurios vilnie\u010diai taip nem\u0117gsta. Net mokytojams atlyginim\u0173 \u0161iok\u012f tok\u012f pak\u0117lim\u0105 prie\u0161 kelis metus i\u0161kovojo \u017eemai\u010diai.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43617733", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4575, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:21:00", 
+            "author": "Kvi", 
+            "subject_id": "43512151", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Oho, o as galvojau, kad genijum tampama parukius zolytes arba patapus gejum. Na, reikes prie tu punktu dar prideti ir testosterona bei radioaktyviaja apsvita :).", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615289", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/genialuma-lemia-testosteronas.d?com=1&id=43512151"
+        }
+    }, 
+    {
+        "pk": 4574, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:43:00", 
+            "author": "maushelis", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Bir\u0161tonas nepaniekino, o apnuogino vis\u0105 teism\u0173 sistem\u0105.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43632231", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4572, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:18:00", 
+            "author": "bydlius", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "valyti,bet ka,reik pradeti nuo virsaus i apacia,nuo seimo iki gatviu", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615203", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4573, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 11:08:00", 
+            "author": "jjj", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "O kodel niekur nerasoma kad sis teisejas turejo problemu su kojomis ,t.y. sunkiai vaiksciojo, ir aiskinama kad jis buvo ,,v drebezgi\" girtas, juk kai tave puola ziniasklaida tai tu tampi pasiticijimo, suspardimo, sutripimo auka, aisku jis buvo isgeres ,bet jo girtumas tebuvo lengvas, as to neteisinu ,bet kiek tas zmogus patyre paniekinimo ir neteisybes, netgi is savo kolegu, kurie gal but yra didesni brudai", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43633067", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4571, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:20:00", 
+            "author": "cin", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "A\u0161 tai nematau jokios problemos: pakelti tar\u0161os normas bent dvigubai, ir tar\u0161a nebus vir\u0161ijama", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615257", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4570, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:23:00", 
+            "author": "!!!!", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Kad ir taip ji tenai buvo didesne , nei siuo metu Japonijoje...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615365", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4569, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:49:00", 
+            "author": "as", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "neverkit rytas, jus ir taip gauidziai esat", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655443", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4568, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:49:00", 
+            "author": "Egidijus", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "+ \ntikra vilniete, \n2011 03 26 22:45", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655449", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4567, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 12:33:00", 
+            "author": "klausimas", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "...kad ta sistema tapt\u0173 \u0161varia, veiksminga, galin\u010dia ir geban\u010dia tinkamai u\u017etikrinti asmen\u0173 teisi\u0173 apsaug\u0105.... \nKazin sitas zmogelis-autorius ir panasus i ji tikrai tiki tuo ka raso? Ar tik belia prisideda prie bendro komteksto :D ??", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43635999", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4566, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 15:14:00", 
+            "author": "OLGA", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "Manau ir teis\u0117jams pasidar\u0117 ai\u0161ku, kad j\u0173 sistema yra bevilti\u0161ka. Net smalsu, kaip jie baus Venckien\u0119, kuri pirmoji tiesiai, atvirai prabilo apie visas negeroves (\u012fvardindama jas konkre\u010diai)\u0161ioje sistemoje???? juk ne u\u017e a\u010di\u016b buvo klastojami koleg\u0173 para\u0161ai, nutraukiamos bylos, negirdima vaiko ai\u0161kinim\u0173, netikima psihologin\u0117mis ekspertiz\u0117mis....", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43641457", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4565, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:29:00", 
+            "author": "jo", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "tai jei niekas gatvi\u0173 nevalo tai nieko nuostabaus, kad u\u017eter\u0161tumas padid\u0117j\u0119s. Tai labai gerai parodo kaip savivaldyb\u0117s dirba.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615557", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4564, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:32:00", 
+            "author": "jo", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "ir dar... pritariu Purvo li\u016bnui :) i\u0161 ties Kanas \u0161iandien baisiai atrodo - visas transportas purvinas, gatv\u0117s bei \u0161aligatviai nevalyti... \u017eiauru... manau teks pagalvoti apie kok\u012f respiratori\u0173...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615635", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4563, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:50:00", 
+            "author": "as", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "neverkit rytas, ir taip gaiziai esat", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655485", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4561, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:51:00", 
+            "author": "as", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "zalgiris valdo gaidzius", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655513", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4562, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:51:00", 
+            "author": "to wawa", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:11", 
+            "content": "aisku apsimetu. jei kalbeciau normaliai kauno vargdieniai nelabai suvoktu, kad cia jiems akivaizdzius dalykus aiskinu", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655507", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4560, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 16:16:00", 
+            "author": "Bom\u017eas", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "Nuvykit \u012f provincij\u0105, ten pamatysit dar baisiesni\u0173 kurioz\u0173. Pasirod\u0117 tikrasis korumpuotos s\u0105\u017ein\u0117s veidas. Kiek \u017emoni\u0173 likim\u0173 yra sutrypta, sunaikinta. A\u0161 gyvenime neatleisiu u\u017e tai, k\u0105 mano at\u017evilgiu teismai yra padar\u0119. Bir\u0161tono kolion\u0117s yra tipi\u0161kas teis\u0117jo po\u017ei\u016bris \u012f paprast\u0105 \u017emog\u0173, jo problemas, kuris buvo i\u0161sakytas \u012f kamer\u0105 ir parodytas vie\u0161ai. Ar tokie \"dievai\" gali lemti \u017emoni\u0173 likimus? Kod\u0117l toki\u0173 nesodina \u012f kal\u0117jim\u0105? Varg\u0161\u0117 Kedien\u0117, u\u017e bevilti\u0161koje pad\u0117tyje esan\u010dios moters kliedesius, bus teisiama, o \u0161is teis\u0117jas, kiaule virt\u0119s - ne. G\u0117da Lietuvos valstybei ir teism\u0173 sistemai. G\u0117da.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43643415", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4559, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 17:22:00", 
+            "author": "egis", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "tipo patriotas,turbut nori kazkur ilisti...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43645471", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4558, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 17:24:00", 
+            "author": "lkljlkj", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "nesuprantu apie koki standarta kalbama cia?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43645553", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4557, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:34:00", 
+            "author": "mumuk\u0117", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "O kada bus viskas plaunama? \u017dinau j\u0173 tuos valymus, \u0161aligatvius su \u0161luotko\u010diais dulkina ir tiek...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615709", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4556, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 19:35:00", 
+            "author": "kolp", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "tai kokie patareimai?? O jei staig\u0105 padyd\u0117s dar daugiau ar mes pasiruo\u0161\u0117 daryti ir veikti , Kodel nesimato specialistu patarim\u0173 ir ai\u0161kinim\u0173..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43615723", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4554, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:55:00", 
+            "author": "vilnietis", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "vakar tikri lietuviai nuo tikru lenku susiriesdami bego i krumus.. o dabar rekia kad lenkai vilniuje gavo i kaulus..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655603", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4555, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:51:00", 
+            "author": "to tikra vilniete", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "kad is veterinarijos akademijos,tai tikiu.Tavo intelektas tai parodo.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655517", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4553, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:00:00", 
+            "author": "vilnietis", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "tai ko jus dvasios ubagai panevezieciai ir visi kiti kaimieciai vaziuojat i ta vilniu, ir poto varot ant jo? todel kad darbo norit, visi pinigai vln.. taip kad dirbkit, gyvenkit tuose barakuose, tylekit ir ant vilniaus nevarytkit..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655713", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4552, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 19:06:00", 
+            "author": "che", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "Z.Birstonas paniekino visa teismu sistema... Ar dar ten buvo ka niekint ?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43648639", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4551, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 19:53:00", 
+            "author": "nieko", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "baisaus, kai Teisejai gaus mininmuma, tai bus kasdienybe! Algu mazinimas iki mininmumo prie to prives!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43650313", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4550, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 20:04:00", 
+            "author": "to Bomzas", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "esi Idiotas, tik Advokata reikejo gera pasisamdyti! Jei pasiemei IDIOTA, kaip pats, taun ir rezultatass toks pats! Yra Panevezy iki 10 tokiu, kur gudresni klientai galetu prisiteisti zala, kuria patyre, del advokatu! Atsiminkit visi runkeliokai, kad teismai negali pagal LR Istatymus priteisti daugiau nei prasoma ieskinyje, jie tik ieskinio ribose tenkina reikalavimus! Jei byla pralosta yra kaltas TIK ADVOKATAS, o ju protingu Lietuvoj tik 10 %, taigi, kad pataiket pas gera advokata tikimybe tokia pat kaip laimeti Aukso puoda Teleloto! Kada laimejot Auksa puoda?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43650729", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4549, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 20:02:00", 
+            "author": "Karo\u010de", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "Reikia gero lietaus.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43616545", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4547, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:07:00", 
+            "author": "vilnietis", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "ir tikrai gaila kad zalgiris nesugeba taip eurolygoj suzaist kai sivakara.. sveikinimai zalfaniam..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655859", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4548, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:07:00", 
+            "author": "as", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "tu vilnieti.teisybe pats sakai statyba ira vilniuje tik.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655857", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4545, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:43:00", 
+            "author": "taipi\u0161ejo", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "tai ar jis vargsas nor\u0117jo paniekint.. vot pasiger\u0117 ir tiek ,taip ir atsitiko", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655337", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4546, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 20:46:00", 
+            "author": "ponas", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "G. Kryzevic, jei pats ddirbtum savo darba, tai to nebutu! O dabar stebiesi, reiski savo nuomone, kaip koks statybininkas! Kai taip pasakytu Prezidente, nieko nuostabaus, bet LAT Pirmininkas, tai tiesiog GEDA! Is visos tamstos povyzos matosi, kad taikai i KT Pirmininko vieta, kitai kadencijai! Lietuvos Teismai ir ju Garbe tamstai kaip suniui penkta koja! O tam reikia daryti Taip: 1) visu advokatu ATESTACIJA, 2) isteigti bylu analizes Centra, kur nepatnkinti bylininkai galetu atlikti savo advokatu darbo patikra, 3) tiseju skundimas turi buti mokamas, mokestis grazinamas, jei skundas pasitvirtino( mokestis lygus Advokato honoraro dydziui toje byloje, bet ne maziau 3000 Lt!)Trecia punkta siulau del to, kad nekvalifikuoti advokatai daznai bloga bylos baigtimi kaltina teismus, nusiimdami savo kalte, del Teises neismanymo ir raso skundus, kaltindami teisma!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43652035", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4544, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:54:00", 
+            "author": "xxl", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "Melagiai ir demagogai, sistema ne valosi i\u0161 vidaus, o PERPUVUSI IKI VIR\u0160AUS. Apie t\u0105 B. ne pirmi ir ne antri metai \u0161neka kaip apie pijok\u0105, nuva\u017eiuokit \u012f \u0160ilo gatv\u0119 ir paklausin\u0117kit kaimyn\u0173, papletkins kaip jis po Daktaro bylos nusipirko mers\u0105 ir varin\u0117davo girtas. Ir dabar papasakokit savo bobut\u0117ms, kaip jo vir\u0161ininkai teisme nieko nemat\u0117 ir ne\u017einojo, jei jis jau darbe nei\u0161k\u0119sdavo neprisig\u0117r\u0119s??? Ir \u0161iuo atveju j\u012f vald\u017eia matomai band\u0117 pridengti, o demaskavo tik varg\u0161as ligonis, nes \u017emon\u0117s savam prote nebedr\u012fsta eiti prie\u0161 sistem\u0105, puikiai suvokia kad suvalgys su visais \u0161\u016bdais, jei ne d\u0117l mai\u0161elio u\u017e 30ct, tai suras dar d\u0117l ko.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655595", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4543, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 23:16:00", 
+            "author": "chi", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "reikia pa\u0161luoti gatves ir palaistyti tame rajone, kur yra matavimo stotel\u0117 ir jokios tar\u0161os nebebus.  \nnegi savivaldyb\u0117j ir aplinkosaugoj tokie kvaileliai s\u0117di, kad nuo tar\u0161os vir\u0161ijim\u0173 nemoka i\u0161sisukti? :)))", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43623503", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4542, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 23:48:00", 
+            "author": "qfe", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "get out of here stalker", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43624327", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4541, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 05:48:00", 
+            "author": "hh", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "is vilniaus reikia visus kaimiecius varyt augint bulviu namo ir pasibaigtu ta tarsa. ka ten po galais veikia kaimieciai ?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43627169", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4540, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:16:00", 
+            "author": "Jurgis", 
+            "subject_id": "43602605", 
+            "crawl_timestamp": "2011-03-26 23:26:10", 
+            "content": "o dar pirstais rodo i Venckiene! \nKad ta teisingai pasake ant Panevezio teiseju? \nGeria darbe. \nPadirbineja parasus. \nIma kysius. \nCia kaip jus galvojat apie ka???? \nApie TEISEJUS !", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43656051", 
+            "item_link": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605#item_id", 
+            "crawl_url": "http://verslas.delfi.lt/law/gkryzevicius-zbirstonas-paniekino-visa-teismu-sistema.d?com=1&id=43602605"
+        }
+    }, 
+    {
+        "pk": 4539, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:27:00", 
+            "author": "Niekam ner\u016bpi", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Savivaldyb\u0117 Vilniuje niekuo kiti neu\u017esiima, tik savo asmeninuo turto dauginimu.Po rinkim\u0173 dar ne\u017einia kiek pe\u0161is d\u0117l mero k\u0117d\u0117s, o tuo metu gyventojai \u010diaudo ir kosti nuo sunki\u0173j\u0173 daleli\u0173 ir oro tar\u0161os.Jau antra savait\u0117 pati \u010diaudau ir \u010diaudau, temperat\u016bros n\u0117ra, vadinasi l\u0117tas organizmo nuodijimas.Ar kam r\u016bpi m\u016bs\u0173 sveikata?Vis dar tirs, tada imsis priemoni\u0173, o j\u0173 reikia jau dabar.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43631613", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4538, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:31:00", 
+            "author": "Naujam merui", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Gal nors kart\u0105 apvalysite sostin\u0119 nuo \u0161un\u0173 i\u0161mat\u0173, pasir\u016bpinsite gatvi\u0173 \u0161vara.O jei Jus gyvenate u\u017emiestyje, tai mieso reikalai ma\u017eiausiai r\u016bpi.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43631811", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4537, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:46:00", 
+            "author": "Patarimas", 
+            "subject_id": "43612553", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Naujam merui si\u016blau sutvarkyti vie\u0161\u0105j\u012f miesto transport\u0105, kad miesto centr\u0105 ir kitus mikrorajonus b\u016bt\u0173 galima nesunkiai pasiekti.Tada apriboti individual\u0173 transport\u0105 j\u012f paliekant miesto prieigose, por\u0105 dien\u0173 per savait\u0119 paskelbti visai be automobilio mieste.Kai vie\u0161uoju transporu nestov\u0117sime kam\u0161\u010diuose ir grei\u010diau ir pigiau nuvyksime kur reikia patys pamatysime, kad automobilis per brangu.Neverksime d\u0117l pabrangusi\u0173 degal\u0173,kam\u0161\u010di\u0173 gatv\u0117se ir u\u017eter\u0161to oro.I\u0161 karto sprend\u017eiasi daug problem\u0173.Vietoj statom\u0173 estakad\u0173,aplinkeli\u0173 ir viaduk\u0173 l\u0117\u0161as pirmiausia skirkime vie\u0161ajam transportui sutvarkyti ir jam pl\u0117sti.Tai ne nauja , bet pa\u017eangi\u0173 pasaulio miest\u0173 patirtis.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43632337", 
+            "item_link": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/Health/vilniuje-tarsa-kietosiomis-dalelemis-padidejo-20-proc.d?com=1&id=43612553"
+        }
+    }, 
+    {
+        "pk": 4535, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:08:00", 
+            "author": "ok", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "vargsai makulaturos gerbejai...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655887", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4536, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 23:08:00", 
+            "author": "Nesveiki vaikuciai.", 
+            "subject_id": "43643081", 
+            "crawl_timestamp": "2011-03-26 23:26:09", 
+            "content": "Baikite niekine vieni kitus As pats esu \"Zalgirio gerbejas,taciau,kai nezaidzia \"Zalgiris\" , mielai ziuriu ir sergu uz \"LRyta\",kaip ir uz bet kokia kita Lietuvos komanda. \nPagalvokite patys-GREITAI EUROPOS CEMPIONATAS! \nUz ka sirgsite,kai PETYS I PETI kausis uz Lietuva zalgirieciai ir lietrytieciai,siaulieciai ar klapedieciai,jeigu Kemzura juos parinks \nNebukite panasus i lenku sirgalius-dar didesne geda apturesite.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43655881", 
+            "item_link": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/./basketball/zalgiris-trecia-karta-si-sezona-nugalejo-lietuvos-ryta.d?com=1&id=43643081"
+        }
+    }, 
+    {
+        "pk": 4684, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-13 21:58:00", 
+            "author": "Stilist\u0117", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "lyg ir tikra, bet \u0161ypsena - tai tikrai dirbtin\u0117! - FUI !!!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43100213", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4683, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-10 08:59:00", 
+            "author": "pwl", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Kazkodel susidare ispudis, kad tevai siandien atsibudo, kad su ju vaiku kazkas negerai ir visiem sako \".. palaukit kol jusu vaikas daaugs iki ....\". Vadinasi, kazkur praeityje buvo padaryta klaidu. \nVisiem gyvenimo atvejams atzalos neparuosim. Taciau atitinkamame amziaus periode diegti tam laikui budingas vertybes ir ruosti kitai amziaus pakopai butina. \nKeletas momentu, kuriais stengiames vadovautis su 4 metuku sunum: \n* Vaika baram vienas, ne abu. Nes kitaip vaikas tiesiog uzsipuolamas. \n* Stengiames akcentuoti teigiamus poelgius. Daugiau gyrimo , maziau peikimo. \n* Laikytis dienos rezimo. Su nedidelemis isimtimis (isvykos i svecius ar svente) \n* Rasti laiko su visa seima. (pvz savaitgali pusryciai - sventas ritualas) \n* Ijungti vaika i procesa. Pvz atlikti koki nors darba kartu. Vaikas mokosi, yra uzimtas. \n* Abu esam sutare del keleto tabu. Pvz Jokio valgymo prie TV. Jokiu zaidimu su dokumentais, raktais, mobiliu ir pinigine. \nMazas vaikas labai viskuo domejosi. Uzuot viska slepe ir neleide, kartu nueidavom ar paimdavom dominusi daikta ir apziuredavom, o po to padedavom i vieta. Tas reikalauja ir laiko ir kantrybes, bet atsipirko - dabar su vaiku lengvai sutariam, kad jis gales ka nors paziureti, bet privales padeti i vieta. \nPlanuodavom isvykas. T.y. suskrauti daiktus, apsirengti ir aprengti vaika uztrunka laiko. Iskart numatydavom, kad galvotrukciais neleksim - kad ko nors nepamirstume ir kad pavyktu graziuoju susitarti su vaiku. \nNa o bendrai - vaikai (ir paaugliai turbut vis dar taip pat) yra labai geri bezdzioniukai - daro tai, ka mato darant savo tevus (o ne tai, ka tevai sneka). \nTaip, musu vaikas dar tik 4 metuku, tad kai jam bus 14 mielai pasidalinsim patirtim, kokia situacija.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c41849993", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4682, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-15 12:26:00", 
+            "author": "seimininke", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "pwl, \n2011 02 10 08:59 \npritariu siai nuomonei. Patys augiman maziuka, nors tik metai, bet nera pas mus raisiojamos spinteles ir keliami daiktai auksciau. Viskas apziurima ir sudedama atgal. Buvau nustebinta, kai vaikas atsidares stalciu apziurejo daiktus, juos sudejo i vieta ir uzdare stalciu. siaip viskas pas mus turi savo vieta ir tai zino nor ir mazas musu sunus.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42028959", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4681, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 13:45:00", 
+            "author": "liudininkas", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Buvau atsitiktinis liudininkas kaip po perlo rungtyniu apsauginiai skyksciai elgesi su moteriske ir vaiku. Baisus vaizdas!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43638411", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
+        }
+    }, 
+    {
+        "pk": 4680, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 14:33:00", 
+            "author": "yeeeeeeee", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "piorlas - DAWAJ!!!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43640091", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
+        }
+    }, 
+    {
+        "pk": 4679, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-15 15:07:00", 
+            "author": "Ona", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Kas liks is specialistes, jei nuimsime visus dazus-ar vakare nereikes sleptis?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43171901", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4677, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-18 15:14:00", 
+            "author": "gerai", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42159589", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4678, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-17 13:18:00", 
+            "author": "mama", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "O a\u0161 pritariu straipsnio autoriui. Auginam 2 vaikus - 13m. s\u016bn\u0173 ir 8m. dukr\u0105. Abu - labai skirtingi, ir tikrai juokinga skaityti komentarus \u017emoni\u0173 , kuri\u0173 vaikams 2 ar 3 metukai. Patik\u0117kit - viskas prie\u0161 akis, ir protestai ir t.t. Mums viskas dar tik prasdideda, ir tik dabar pradedam suprasti posak\u012f : dideli vaikai - dideli vargai. Taigi, a\u0161 palink\u0117\u010diau tik stipryb\u0117s visiems, o taip pat ir savo \u0161eimai, ir nereikia moralizuoti vieni kit\u0173, visi vaikai skirtingi, vienam u\u017etenka gra\u017eiai pabendrauti, o kit\u0105 reikia ant trumpo pavad\u017eio laikyti. Taigi , s\u0117km\u0117s visiems ir myl\u0117kime savo vaikus , kokie jie beb\u016bt\u0173.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42113481", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4674, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-16 10:21:00", 
+            "author": "boo", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Plasmasiniai dantys ir negyvi plaukai-grozio specialiste kibieni fieni..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43201153", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4675, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-16 03:58:00", 
+            "author": "Dirbtinis grozis", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "yra KAKA, kaip tame filme \"Gyvybes Eleksyras\" - dvi CIUCELOS buvo panasios i cia isreklamuotaja... lietus uzejo ir Ciucelu tinkas - istirpo!!! - BLA-BLA-BLA... :D :D :D", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43192979", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4676, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 16:19:00", 
+            "author": "jo", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "palanga visai nusigrybavo.... laikas keisti treneri, nes jis visiskas nulis.....", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43643513", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
+        }
+    }, 
+    {
+        "pk": 4673, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-17 11:26:00", 
+            "author": "klausimas", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "ar smauglys, nor\u0117damas i\u0161likti gyvas, ras nors vien\u0105 viet\u0105, kur gal\u0117t\u0173 \u012fk\u0105sti..?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43253731", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4672, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-18 20:55:00", 
+            "author": "Mama", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Turim 23, 20, 15, 2x13, 10 ir 1 metu amziaus vaikus :))))) Gal kam reikia paguodos???? :DDDD", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42170967", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4671, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-22 09:15:00", 
+            "author": "sorry to pwl", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "ir dar. Mes taip pat auklejame savo vaikus, kaip ir jus. Tos pacios taisykles ir ju dar daugiau.Brangioji (usis) mano...tai tik teorija. Dziaugemes gerais rezultatais ir diziavomes kokie mes puikus tevai. Issilavine, daug ismanantys, teigiamai kreipiantys savo atzalas, turintys puikius santykius, esantys gerais psichologaisir t.t. ir t.t. nepersokes tvora - nesakyk op. Siai dienai matom - kad tenka nusileisti ant zemes. Esam beviltiski. Pasimete.Bejegiai. Isverkiau visas asaras. Nei as nei vyras nebeturim jegu. Bet bandom zygiuoti i prieki. Taip...tas auklejimo budas kuri aprasote tinkamas. jei butu kitoks - paauglyste butu dar bjauresne. Bet patikekit manim - tai tik teorija...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42289849", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4670, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-17 15:31:00", 
+            "author": "va tokia", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "esu glamzes-bet nedave-tai nuejau iskart pas savo etatine laukiancia", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43266857", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4669, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-20 17:38:00", 
+            "author": "Kelen", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "Ar ilgai dar ziuresime i sitos a lia specialistes roza?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43384367", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4668, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-22 20:27:00", 
+            "author": "m", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "NU \u0160ITA SPECIALIST\u0116 - PEROKSIDIN\u0116 BLONDIN\u0116 IR DAR JUODAIS ANTAKIAIS? TAI KOKIE JOS PLAUKAI, KOKIA J\u0172 SPALVA I\u0160 TIES\u0172 (REIKIA VIENOJE VIETOJE PATIKRINTI). NIEKO NAT\u016aRALAUS, TEGU GREI\u010cIAU DINGSTA I\u0160 PUSLAPIO... ARGI GALI JI KO NORS GUDRAuS KITUS PAMOKYTI?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43478967", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4667, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 03:24:00", 
+            "author": "Diagnoz\u0117", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "I\u0161sipus\u010diusi prietranka.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43486569", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4666, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 18:11:00", 
+            "author": "vygis", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "Labai grazi moteris :*", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43518901", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4665, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-23 23:05:00", 
+            "author": "Vika", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "Labas visiems. Jau\u010diu pavyd\u0105 visiems t\u0117veliams, kuri\u0173 vaikai paauglyst\u0119 i\u0161gyvena anks\u010diau, nei mani\u0161kis... Turiu dvyliktok\u0105 s\u016bn\u0173. Jau metai laiko namuose - katastrofa... \"Kod\u0117l kitiems galima iki vidunak\u010dio vaik\u0161tin\u0117ti, o man ne\", \"kod\u0117l man negalima \u0161iandien neiti \u012f mokykl\u0105\", \"kod\u0117l kit\u0173 t\u0117vai nieko nesako, kai jie gr\u012f\u017eta i\u0161g\u0117r\u0119\" ir t.t. Nebesvarbus mokslas, nors mok\u0117si labai gerai,bet pavasar\u012f juk egzaminai... O iki \"v\u0117lyvos\" paauglyst\u0117s buvo viskas gerai - i\u0161eidamas pasakydavo kur ir su kuo eina, kada gr\u012f\u0161. Dabar - einu kur noriu, su kuo noriu, gr\u012f\u0161iu kada noriu. Anks\u010diau visuomet atrasdavome laiko pokalbiams, o dabar durys u\u017etrenkiamos prie\u0161 nos\u012f t\u0117vams. Atrodo, kad visk\u0105 dar\u0117me i\u0161 \u0161irdies, kalb\u0117jom\u0117s, ie\u0161kojome sprendim\u0173, pykom\u0117s ir taik\u0117m\u0117s, bet su kiekviena diena praraja tarp m\u016bs\u0173 ir s\u016bnumi gil\u0117ja... Ir mes bijome j\u012f prarasti. Tod\u0117l galiu dr\u0105siai teigti, kad vienos taisykl\u0117s, kad vaikai ir t\u0117vai neskausmingai i\u0161gyvent\u0173 paauglyst\u0119, n\u0117ra. Gali kalb\u0117tis su vaiku visomis temomis, b\u016bti jo draugu, ta\u010diau vien\u0105 dien\u0105 jis \"suvokia\", kad jis ir tik jis teisus, o d\u0117l nes\u0117kmi\u0173 kalti tik t\u0117vai. Tik vieni vaikai tai padaro tiesiai \u0161viesiai t\u0117vams i\u0161r\u0117\u017edami \u012f akis, o kiti juokiasi i\u0161 savo t\u0117v\u0173 draug\u0173 akivaizdoje, meluoja ir t.t. Tod\u0117l kiekviena \u0161eima turi savo istorij\u0105, kaip jie i\u0161gyveno paauglyst\u0119. Linkiu visiems t\u0117veliams kuo \"neskausmingesn\u0117s\" savo vaik\u0173 paauglyst\u0117s. Juk visi linkime savo vaikams tik gero, o i\u0161eina kaip visada :)", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42380573", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4663, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 17:49:00", 
+            "author": ")))", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "koks baisus grozis nuotraukoj...brrr", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43646303", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4664, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-03 22:03:00", 
+            "author": "moteris to rokoko", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "Nedrauskit...tegul nudega...prisispaudzia,,,tegul truputi skauda... Rodykit traumuotu zmoniu nuotraukas. As buvau susidurus su atvirkscia problema-perdeta savosauga:) Dabar mano sunus laipioja uolomis, neria po vandeniu ir dirba sachtoje. Nieko neforsuokit...tegul viska isbando ir ivertina patys...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42716053", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4662, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-04 14:25:00", 
+            "author": "pwl2", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "As (brangusis :)) nesakau, kad gyvenimas rozemis klotas. Vaikai kartais maistauja. Taciau tam buna pagrindas arba priezastis. Sutinku, kad viskas paprasciau kai vaikui 2-6 metukai. Dideli vaikai - didels problemos, ypac, kai pasiekimas 12-16 metu amzius.  \nPsichologai mini, ir ne viena karta, kad imanoma rasti nauju salycio tasku net ir su paaugliu kuriam jau 16 ant nosies. Tik idirbio reikes daugiau.  \nJum pamastymui tokia situacija. \nTevai turi 15 metu paaugle dukra. Ji per daug iniko i vakarelius. Ji ne karta grizo per velai, buvo galima uzuosti cigareciu dumus. Buvo ir apsvaigusi nuo alkoholio. Tevai pyksta, kad ji negrizta laiku vakarienes. Tevai priekaistauja jai kokia ji netikusi. Jei taip tesisi toliai, taps , anot ju, pasileidele. \nKlausimas: Jei dukra nustos vaikscioti i vakarelius, kiekviena diena gris namo vakarenei ir niekad neveluos grizti namo vakare sutartu laiku - ar visos problems issispres? \nAtsakymas - Ne. Pamastykit kodel.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42741723", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4661, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-04 17:29:00", 
+            "author": "augio", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "Pamenu, kai buvau ma\u017eas, (dabar man 41) t\u0117vas pa\u017ead\u0117jo, kad \u0161e\u0161tadien\u012f va\u017eiuosime \u017evejoti. Pamenu penktadien\u012f \u012f m\u016bs\u0173 namus at\u0117jo geras t\u0117vo draugas ir papra\u0161\u0117 \u0161e\u0161tadien\u012f pad\u0117ti gara\u017ee paremontuoti jo \u017eigul\u012f. T\u0117vas pasak\u0117, kad negali, nes s\u016bnui pa\u017ead\u0117jo su juo \u017evejoti. T\u0117vas liko nesuprastas draugo, bet tuometinis 8 met\u0173 s\u016bnus d\u0117l \u0161io poelgio gerbi\u0105 j\u012f iki \u0161iol.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42752157", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4660, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-04 23:59:00", 
+            "author": "Nu", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:15", 
+            "content": "Mum sekasi gerai.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42766247", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4659, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-05 16:29:00", 
+            "author": "mama", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "http://www.youtube.com/watch?v= 5xlaAkD15Gk  \nI\u0161 ko vaikai i\u0161moksta elgesio. Gaila, kad nematome sav\u0119s i\u0161 \u0161alies", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42784059", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4657, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 10:29:00", 
+            "author": "as", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "vel pavasaris atejo netiketai..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43631725", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4658, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-10 07:09:00", 
+            "author": "rautela", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "Brangieji!dabar esu jauna mociute,bet buvo laikas,kai augo 2 dukros pametinukes.Buvo visko,ypac su vyresnaja.patikekit,kad ir kiek buvau gera mama (dabar jos abi ta patvirtina),kad ir ka bedariau-nepadejo joks auklejimo metodas,joks mano pavyzdys.Aisku,tuo metu ,kai tik pasitaikydavo momentai,as su jom stengiausi kiek galima daugiau kalbet.Viena dukte norejo mane isgirst,klausydavo ka sakau,o kitai buvo visiskai vienodai.Buvau labai laiminga,kai suejus po 17 metu jos rado savo antrasias puses ir dabar laimingai gyvena.Tikriausia tiems vaikams turi savaime ateiti laikas,kai jie pradeda pilnai suvokti savo elgesi ir tada viskas stoja i savo vietas. Pati dar auginu dar 2 vaikus ir su sunum (10 metuku) vel darosi sunkoko susikalbet.Taciau ka jam dabar bedaryciau,kad ir kiek save pateikciau kaip pavyzdi-jam viskas vienodai.Matau tik tiek,kad jis labai myli mane,todel stengiuosi i jo sirdele prisibelsti per gerumo prizme.Galu gale,jug esame tevai,vaikus uzauginti duotas egzaminas,o jie lengvi niekada nebuna.Manau,kad svarbiausia ne kaip pasieki tiksla,o koks yra galutinis rezultatas.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42958587", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4656, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 00:21:00", 
+            "author": "i.", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "\u012fdomu, kas parinkin\u0117ja nuotraukas j\u016bs\u0173 \u0161itam skyreliui? \u010dia net ne spalvoje esm\u0117.. ka\u017ekokia klaikuma ir nei vieno jaukaus ir tikrai gyvenamo interjero.. bald\u0173 salon\u0173 ekspozicijos ir tiek...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43530445", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4655, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-14 08:21:00", 
+            "author": "taip", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "Gerai aukleti vaikus skaitikite BIBLIJAAiskiai parasYYYYta Reikia aukleti su dirzu ir nuo mazens", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43106291", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4654, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-19 17:52:00", 
+            "author": "stovi", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "Isliapusiems paaugliams puikus dalykas yra sukarintos stovyklos. sutinku, kad kainuoja, bet puiki proga atitrukti nuo mamos sijono ir pasedet ant savo uzpakalio.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43351335", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4652, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 16:13:00", 
+            "author": "x", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "Pavasaris.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43643351", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4653, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 15:57:00", 
+            "author": "ledi", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "taip jau saulute pradejo sildyti ir vanduo kilti koks butu pavasaris be potvynio", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43642935", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4651, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 02:07:00", 
+            "author": "man", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "tik vienas interjeras patiko...O siaip daugiau vistiek rozine lieka rozine...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43531541", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4650, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 11:32:00", 
+            "author": "Neve", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "o man kaip tik patiko, pati studijuoju, interjero dizaina, ir nuotraukose, bent jau dauguma, tikrai parodyta modernus namu interjeras, kuris vis labiau skverbiasi i musu kasdienine aplinka. paprasciausiai mes lietuviai dar nesame priprate prie minimalistines aplinkos, o nuo sovietu laiku ipirsta kaupti viska kas tik pakliuva.zinoma, kiek zmoniu tiek nuomoniu, bet man stilingai suhormanizuota ta rozine ir ne per ryski, visai dera namams..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43544785", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4649, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 11:59:00", 
+            "author": "noriu vaiko", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "nes gyvenimas bus idomus...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43546403", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4648, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 16:48:00", 
+            "author": "na ir", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "kas kiekviena pavasari tas pats jie ten priprate palikit juos ramybeje jiems daugiau rupesciu nuo viso to puciamo zurnaliugu burbulo kiekvienais metais", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43644505", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4646, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 09:38:00", 
+            "author": "jo", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "viena diena as ten nuleksiu.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43491641", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4647, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 19:18:00", 
+            "author": "uzteks", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "mums is tiesu nusisikti ant tos silutes", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43649007", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4645, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 10:13:00", 
+            "author": "nuotabu", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "nuostabu", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43493493", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4644, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 14:09:00", 
+            "author": "ssss", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "Nerealus, tieisog ziurejau foto is sypsojaus  \nas ten nuvaziusoiu tikrai :)", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43506711", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4643, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 11:47:00", 
+            "author": "man patiko", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "vonia", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43545709", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4642, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 11:59:00", 
+            "author": "auga", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "grazi vonia, siaip nieko idomu, vis ne ruda ir gelsva,kaip visur jau net vemti vercia, bet grindys roznes? Kazkas ne taip", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43546423", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4641, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 13:42:00", 
+            "author": "rozine", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:14", 
+            "content": "rozine -slyksti spalva, bet ten kur tinka - kodel ne.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43552567", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4640, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 10:42:00", 
+            "author": "a\u0161ara", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "ne lenkai, o mes turim verkslenti, kad musu prad. liet. mok. dirba mokytojai ir desto liet k. ie t.t. kalbedami su akcentu :(", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43589499", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4639, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 19:38:00", 
+            "author": "kaimietis", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Kur yra musu ponai -vagys sulinde prie lovio, Komskiai turite suplesia visa Silutes raj. tar. ukiu visu gyventoju turta esate milijonieriu gentis ko apleidote pamari nesirupinate visu gaugumo priemoniu kad butu laiku vskas irengta, pasiruostu gelbejimo darbams, per jusu toki groboniska plesikavima kencia gyventojai nuo vandena, zustu paseliai niekas neatlygina padaryta zala zmonems gamtai. Stenkites istaisyti savo kalte zmoniskumui.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43649705", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4638, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 20:17:00", 
+            "author": "Zirmunai", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "O cia jokio potvynio nera as ramus.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43651183", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4637, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 16:40:00", 
+            "author": "Sata", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Akmeninis miestas - ne\u017einojau apie tok\u012f. Labai \u012fdomu. A\u010di\u016b  ui.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43514591", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4636, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 19:02:00", 
+            "author": "hm", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "paieskokime bilietuku... taaaip... su mokesciais - nuo $1600. Tai butu 3880 lituku. plius viesbutukas, smulkios islaidos... porai zmoniu reikes kokiu 10000. Puiku, kaip tik stalciuje metosi siek tiek grynu. vaziuoju.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43520815", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4635, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 00:38:00", 
+            "author": "untans", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "siemet vietnamas, kitais metais zanzibaras. nuspresta.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43530691", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4634, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 15:28:00", 
+            "author": "Ivo", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "naudojant rozine spalva galima labai silta interjera padaryti, betcia visi parodyti interjerai atgrasus.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43558643", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4633, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 15:29:00", 
+            "author": "asta", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Man niekada rozine nesiasociavo su beskonybe, nu bet i foto paziurejus pagalvojau, kad tikrai..", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43558725", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4632, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 10:43:00", 
+            "author": "???", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "\"Lenkams reikia daugiau suteikti informacijos, kuri b\u016bt\u0173, kiek galimai, objektyvi. Gal tada lenki\u0161koji pus\u0117 tai supras...\" \nKaip ir kokios informacijos galima suteikti( Lietuvoje gimusiems ) \u017emon\u0117ms, kuriems net gatvi\u0173 pavadinimai, para\u0161yti lietuvi\u0173 kalba nesuprantami.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43589573", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4631, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 10:51:00", 
+            "author": "Raimond Gaidel z Nemianczyne", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "A\u0161, kap i vysi tutanchamonai, ar ka\u017ekaip pana\u0161iai, es\u016b niapatenkintas, ka mus, tutanchamonus, ar ka\u017ekaip pana\u0161iai, nori perdaryc ant litwin\u016b. To buvo raimond \u017eodzis, mialskymes.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43590087", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4630, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 22:24:00", 
+            "author": "vitas", 
+            "subject_id": "43631019", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Marti\u0161auskas dar\u0117 tai yra stat\u0117 estakad\u0105,bet kaip visi parlamentarai taip ir jis tik pa\u017eadai.Tai dabar imkit gr\u0117blius ir eikit studyti ledus kad toks seimas.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43654891", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/sparciai-kyla-vanduo-kelyje-silute-rusne.d?com=1&id=43631019"
+        }
+    }, 
+    {
+        "pk": 4626, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 20:18:00", 
+            "author": "tep", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "ner baisesnio derinio kaip salotine su ruzava", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43571425", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4627, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 17:04:00", 
+            "author": "ui", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "kad tos ro\u017ein\u0117s \u010dia labai ma\u017eai matau-daugiausia alyvin\u0117 ir ciklameno spalva.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43563729", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4628, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 11:58:00", 
+            "author": "Zwierius", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Del Fedios atspejai. Namo neradom, o baras pavadintas jo vardu uzsikeles kainas.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43546315", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4629, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 00:42:00", 
+            "author": "frozzenn", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "fredis merkuris zanzibare gimes berods.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43530733", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4625, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 15:24:00", 
+            "author": "?", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Cia Eurotopo prekes kiek suprantu? Namus isirenginejome pas juos, dizainas superinis!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43510821", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4624, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 16:19:00", 
+            "author": "BOBA", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Man tai nuobodu, noris gyvensni\u0173 spalv\u0173, kad tvisk\u0117tu \u0161vara, o daba taip murzina", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43513629", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4623, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:10:00", 
+            "author": "Jau\u010diasi i\u0161davyst\u0117", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "K\u0105 daro \u0161i\u0105 linkme \u0160vietimo ir mokslo ministerijos vadovyb\u0117 ypa\u010d ministerijos pagrindinio ir vidurinio ugdymo skyrius.Teisingai pasteb\u0117jo p.Lauci\u016bt\u0117,kad jau\u010diasi juos \u012f vadovaujan\u010dius postus i\u0161k\u0117lusios tautos i\u0161davyst\u0117.Flirtas ir palaikymas LLRA reikalavim\u0173 niekam gero neduos tik eskaluos nacionalistin\u0119 avanti\u016br\u0105.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43591227", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4622, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:17:00", 
+            "author": "lietuvis", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Pagaliau ka\u017ekoks oficialus atsakymas i\u0161 vald\u017eios... \nDar geriau b\u016bt\u0173 pateikti visapusi\u0161k\u0105 informacij\u0105, kad paai\u0161k\u0117t\u0173 reali situacija teik Lietuvoje, tiek Lenkijoje su ma\u017eumom. \nGal tada neliktu populistini\u0173 spekuliacij\u0173 \u0161ia tema.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43591641", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4621, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 12:10:00", 
+            "author": "v", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "jo fredzio merkurio gimtine ten! \nnereali vieta siaip jau ;) \no kainas tai uzsikeles baras siek tiek.. bet kai tiek turistu ir aplinkui vien musulmoniska bendruomene su itin mazai vietu kur parduoda alkoholi.. tai visai verta viena kita alaus su graziu vaizdu isgert!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43547157", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4620, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 13:43:00", 
+            "author": "Z", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Is to fredzio baro vaizdas tai nekoks. O vat prie Michamwi yra toks KAE baras, ten tai gera laika praleist.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43552649", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4619, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 09:15:00", 
+            "author": "saul\u0117", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "pora neblog\u0173 :)", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43585253", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4618, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:25:00", 
+            "author": "anne", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "o man grazu rozine spalva, ypac, kai jos ne per daug. jaukiai ir siltai man atrodo baltos, rozines ir sviesios kakavos spalvos suderintos.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43592087", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4617, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 16:47:00", 
+            "author": "sapnas", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Nei\u0161pasakytas gro\u017eis ir patogumas. Nakt\u012f sapnuosiu kaip prausiuosi tokiame nuostabiame praustuve...", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43514899", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4616, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 17:28:00", 
+            "author": "to BOBA", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Teisinga nica pasirinkai.  \nTiems lietuviams tai vis negana spalvu - kad plyteles butu rozines, o vonia, kriaukle ir tualetas salotiniai. Kaip kokie cigonai.  \nDabar madingas purizmas ir svelniu pasteliniu spalvu arba vientoniai dizainai.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43516879", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4615, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:30:00", 
+            "author": "Manau", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Lietuvai atsitiesiant nuo Lenkijos spaudimo ,Lenkijos valdantieji \u0161ovinistiniai politikai siekia konfrontacijos. O Lietuva principingai eina teisingu keliu- tik reikia nepamir\u0161ti Lietuvos istorijos vadov\u0117li\u0173. Nes jei patys elgsim\u0117s kaip ver\u0161iukai, o taip ir elg\u0117m\u0117s 20 met\u0173, Lietuvos i\u0161galvot\u0105 istorij\u0105 mums, Vilnie\u010diams, ir ne tik, ra\u0161o ir ra\u0161ys Lenkija.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43592321", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4614, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:38:00", 
+            "author": "op", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "uzsienio reikalu ministerija turi nepaliaujamai destyti tai, kas parasyta siame atsakyme. Vos lenkai pradeda kelti si klausima, iskarto dedi kaip sverta blogejancia lietuviu padeti Lenkijoje. Ir viska pateikti faktais - tiek mokyklu uzdaryta, tiek valandu privaloma lenku kalba ir panasiai, kad lenkai nebenoretu lipti ant greblio. Jokiu budu negalima tyleti, kas buvo daroma iki siol!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43592657", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4613, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 11:38:00", 
+            "author": "seimas", 
+            "subject_id": "43569845", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Nema\u017ea dalis , ypa\u010d socialdemokratai, elgiasi neprincipingai . Jie nenori , kad Lietuvos lenkai gerai i\u0161mokt\u0173 lietuvi\u0173 kalb\u0105, jos istorij\u0105 . Apgail\u0117tini ver\u0161iukai.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43592695", 
+            "item_link": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845#item_id", 
+            "crawl_url": "http://www.delfi.lt/news/daily/lithuania/urm-lenku-situacija-lietuvoje-vertinama-neadekvaciai-o-lietuviu-svietimo-padetis-lenkijoje-blogeja.d?com=1&id=43569845"
+        }
+    }, 
+    {
+        "pk": 4612, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 21:38:00", 
+            "author": "Vaidas", 
+            "subject_id": "43273951", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Zanzibare teko lankytis prie\u0161 tris metus. Kelet\u0105 dien\u0173 praleidome saloje, neatsimenu vietov\u0117s pavadinimo, ka\u017ekur apie 100 km nuo Akmeninio miesto, taip pat ap\u017ei\u016br\u0117jome ir pat\u012f Akmenin\u012f miest\u0105. Didelio \u012fsp\u016bd\u017eio Zanzibaras nepaliko, gal d\u0117l to, kad k\u0105 tik buvome po kopimo \u012f Kilimand\u017ear\u0105 ir safario po Tanzanij\u0105. Prisimenu, kad sala pakankamai netvarkinga, susidar\u0117 \u012fsp\u016bdis, kad vietiniai gyventojai dideli tinginiai, net j\u016bros g\u0117ryb\u0117s ne\u0161vie\u017eios (patiekalai buvo pagaminti i\u0161 at\u0161aldyt\u0173 produkt\u0173). Saloje labai populiari \"\u017eol\u0117\" - vakarais papl\u016bdimiai \"prakvip\u0119\" \u017eole. Gamta skurdi. \u017dinoma atperka vaizdai \u012f j\u016br\u0105. Sal\u0105 varta aplankyti tuo atveju, jei lankot\u0117s Tanzanijoje ar kitoje \u0161alia esan\u010dioje \u0161alyje - specialiai nuskridus vien tik \u012f Zanzibar\u0105 lauks didelis nusivylimas", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43574091", 
+            "item_link": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/leisure/akmeninis-miestas.d?com=1&id=43273951"
+        }
+    }, 
+    {
+        "pk": 4611, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 14:54:00", 
+            "author": "l", 
+            "subject_id": "43513825", 
+            "crawl_timestamp": "2011-03-26 23:26:13", 
+            "content": "Tuoj ta rozine visi persisotins. Mano manymu interjerui rozine nelabai, nesubtilti, nebent trumpam laikui arba tik detales.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43640849", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/rozinis-interjeras-ne-tik-neturintiems-skonio.d?com=1&id=43513825"
+        }
+    }, 
+    {
+        "pk": 4610, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-23 17:33:00", 
+            "author": "na", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "man visai nesvarbu kas madinga \nSvarbiausia,kad musu seimai patiktu,juk vonia mums,o ne mados aukai", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43517091", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4609, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-24 15:34:00", 
+            "author": "Kaulas", 
+            "subject_id": "43465127", 
+            "crawl_timestamp": "2011-03-26 23:26:12", 
+            "content": "perziurejus fotkes toks deja vu jausmas apima, viskas jau kazkur matyta. Santechnikoje jokiu naujoviu ir inovacijos.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43558985", 
+            "item_link": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/naujos_formos/vonios-kambario-perlai.d?com=1&id=43465127"
+        }
+    }, 
+    {
+        "pk": 4685, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-13 21:46:00", 
+            "author": "Analitikas vyras", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Ne \"Stilist\u0117\", o vartotoj\u0173 visuomen\u0117s Auka... (A\u010di\u016b dievui, mano \u017emona, kad ir ne stilist\u0117, bet per vis\u0105 eil\u0119 protingesn\u0117). Nuo\u0161irdi vyri\u0161ka u\u017euojauta Povilai\u010diui, sakau tai \u017eod\u017ei\u0173 nevyniodamas \u012f vat\u0105..., kadangi nem\u0117gstu pataikauti - geriau sakau tai, k\u0105 i\u0161 tikro galvoju.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43099899", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4686, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-13 21:38:00", 
+            "author": "DIOGENAZ - Rasai Povilaitienei", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "- Ar jums neatrodo, STILISTE, kad pati neturite JOKIO SKONIO? - \u0161itaip baisiai i\u0161sida\u017eyti neskoningai savo L\u016aPAS, kad b\u016bt\u0173 pary\u0161kinti (tarsi pas Julij\u0105 Roberts) - ir taip jau plat\u016bs 'NASRAI'?? - ne kaip STILIST\u0116 atrodote, bet kaip PRIDA\u017dYTA, NENET\u016aRALI BARB\u0116!... :(( :D", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43099655", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4687, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-26 08:53:00", 
+            "author": "tevas", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Panevezieciai saunuoliai!!!", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43628753", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
+        }
+    }, 
+    {
+        "pk": 4688, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 23:51:00", 
+            "author": "cccc", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Malaciai PERLAS - greit rurins kwianskus :D", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43624393", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
+        }
+    }, 
+    {
+        "pk": 4689, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-09 15:15:00", 
+            "author": "Dainius", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "labai patenkintas savo vaikais,svetimi taip pat negali atsistebeti.Kaip bus toliau, matysim.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c41828025", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4690, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-02-08 17:05:00", 
+            "author": ".", 
+            "subject_id": "38369741", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "blogai sekasi...:(", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c41792179", 
+            "item_link": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/namai_ir_seima/article.php?com=1&id=38369741"
+        }
+    }, 
+    {
+        "pk": 4691, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-04 21:05:00", 
+            "author": "VILIJA", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "Pra\u0161om patarti, kaip rengtis vyresnio am\u017eiaus (50 m) moteriai, kad neatrodyti paaugli\u0161kai, o ir kad drabu\u017eiai neprid\u0117t\u0173 10 met\u0173. Fig\u016bra ne maneken\u0117s.A\u010di\u016b, jei patarsit", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42760285", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4692, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-04 16:45:00", 
+            "author": "as klausiu", 
+            "subject_id": "41600117", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "as klausiu:koks tavo tel.nr. ?", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c42750319", 
+            "item_link": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117#item_id", 
+            "crawl_url": "http://gyvenimas.delfi.lt/style/article.php?com=1&id=41600117"
+        }
+    }, 
+    {
+        "pk": 4693, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 22:50:00", 
+            "author": ":)", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "saunuoliai Perlo jaunimas :)))", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43622723", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
+        }
+    }, 
+    {
+        "pk": 4694, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "1", 
+            "date": "2011-03-25 22:43:00", 
+            "author": "fanas", 
+            "subject_id": "43614317", 
+            "crawl_timestamp": "2011-03-26 23:26:16", 
+            "content": "tehasas saunuoliai.sekmes.", 
+            "source_id": "delfi.lt", 
+            "crawl_id": "1", 
+            "item_id": "c43622459", 
+            "item_link": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317#item_id", 
+            "crawl_url": "http://sportas.delfi.lt/basketball/article.php?com=1&id=43614317"
         }
     }
 ]
