@@ -1,0 +1,7 @@
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Enabled extensions: TelnetConsole, SpiderContext, WebService, CoreStats, MemoryUsage, CloseSpider
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Enabled scheduler middlewares: DuplicatesFilterMiddleware
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, DownloaderStats
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Enabled item pipelines: 
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2011-03-26 22:21:13+0200 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
