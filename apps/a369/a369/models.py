@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
+from djangosphinx import SphinxSearch
 SUBJECT_TYPE_ARTICLE = 'article'
+
 
 SUBJECT_CHOICES = (
     (SUBJECT_TYPE_ARTICLE, 'Article'),
@@ -39,3 +41,5 @@ class CommentItem(BaseItem):
 
     class Admin:
         pass
+
+    search = SphinxSearch(index='main')
