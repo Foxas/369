@@ -2,7 +2,7 @@
 
 body  {
 	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-	background-image: url(../img/body-bg.png);
+	background-image: url(../img/main-background.png);
 	background-repeat: repeat;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,7 +22,8 @@ p {
 }
 
 .twoColFixLtHdr #header #main { 
-	height: 282px;
+	/*height: 282px;*/
+	height: 320px;
 	background-image: url(../img/header-bg.png);
 	background-repeat: no-repeat;
 } 
@@ -61,7 +62,7 @@ p {
 
 .twoColFixLtHdr #header #trends-block .list-finish { display: inline-block; width: 100%; }
 
-.twoColFixLtHdr #header #trends-block ul { text-align: justify; padding-bottom: 15px;}
+.twoColFixLtHdr #header #trends-block ul { text-align: justify; }
 .twoColFixLtHdr #header #trends-block ul li{ display: inline;}
 .twoColFixLtHdr #header #trends-block ul li a { text-decoration: none; font-weight: bold; display:inline-block;}
 .twoColFixLtHdr #header #trends-block ul li a:hover { text-decoration: underline; }
@@ -98,8 +99,7 @@ p {
 }
 
 .twoColFixLtHdr #mainContent { 
-	margin: 0 0 0 220px; /* the left margin on this div element creates the column down the left side of the page - no matter how much content the sidebar1 div contains, the column space will remain. You can remove this margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends. */
-	padding: 20px 20px 20px 0; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	padding: 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 } 
 .twoColFixLtHdr #footer { 
 	padding: 0 0 0 230px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
@@ -155,16 +155,13 @@ p {
 }
 
 #search-form {
-	/*margin: 40px 0 0 120px;*/
-	position: relative;
-	top: 40px;
-	left: 120px;
-	width: 640px;
+    margin: 40px 0 30px 120px;
+    position: relative;
+    width: 640px;
 }
 
-#main-bg {
-	background-image: url(../img/main-bg.png);
-	background-repeat: repeat-y;
+#main-bg #mainContent{
+	background-color: #FFFFFF;
 }
 
 .twoColFixLtHdr #header #topic h2#results-h2{
