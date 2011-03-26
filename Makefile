@@ -19,8 +19,8 @@ develop: bootstrap.py \
          bin/buildout \
          bin/django \
          var/development.db \
-         docs/build/html \
-         var/htdocs/static
+	 var/data/main.spa \
+ 	 var/data/delta.spa
 
 run:
 	bin/django runserver
@@ -78,9 +78,6 @@ var/development.db:
 	bin/django migrate --fake
 	bin/django loaddata initial_data.json
 
-docs/build/html: $(find docs -type f -not -wholename 'docs/build/*')
-	cd docs ; make html
-
 clean:
 
 realclean: clean
@@ -98,7 +95,9 @@ deploy: bootstrap.py \
 	bin/django.wsgi \
 	project/production.py \
 	var/production.db \
-	var/htdocs/static
+	var/htdocs/static \
+ 	var/data/main.spa \
+ 	var/data/delta.spa
 
 bin/django.wsgi: bin/buildout buildout.cfg etc/*.in
 	test ! -f var/development.db
@@ -155,3 +154,9 @@ bin/buildout:
 
 var/htdocs/static:
 	bin/django collectstatic --noinput
+
+var/data/main.spa:
+	parts/sphinx/bin/indexer main
+
+var/data/delta.spa:
+	parts/sphinx/bin/indexer delta
