@@ -5,12 +5,12 @@
 {% block content%}
 
     
-    <div id="topic"><h2 id="results-h2">Rasta {{ paginator.count }}  rezultatų, kuriuose pavartotas žodis {{ query }} </h2></div>
+    <div id="topic"><h2 id="results-h2">Rasta {{ results.count }}  rezultatų, kuriuose pavartotas žodis {{ query }} </h2></div>
 	
 <!-- end #header --></div>
 
 <div id="main-bg">
-  <div id="sidebar1">
+  <!--<div id="sidebar1">
     <h3>Paieškos nustatymai</h3>
     <ul>
     	<li><a href="{% url a369-search-results %}?q={{query}}">Visi rezultatai </a></li>
@@ -20,7 +20,7 @@
         <li><a href="{% url a369-search-results %}?q={{query}}&amp;t=year	">Per paskutinius metus </a></li>
     </ul>
     
-  <!-- end #sidebar1 --></div>
+   end #sidebar1 </div>-->
   <div id="mainContent">
 
 
@@ -49,7 +49,7 @@
                   
 <span class="current">
 
-            Puslapis {{ page.number }} iš {{ paginator.num_pages }}.
+            Puslapis {{ page.number }} iš {{ results.count }}.
             
 </span>            
 

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
+from djangosphinx import SphinxSearch
+
 SUBJECT_TYPE_ARTICLE = 1
 
 SUBJECT_CHOICES = (
@@ -35,6 +37,8 @@ class CommentItem(BaseItem):
     content = models.TextField()
     subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
     subject_id = models.CharField(max_length=255)
+
+    search = SphinxSearch(index='main')
 
     def __unicode__(self):
         return u'%s (#%s), %s by %s' % (self.id, self.crawl_id, self.date, 

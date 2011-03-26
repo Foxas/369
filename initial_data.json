@@ -24,5 +24,33 @@
             "email": "admin@localhost.local", 
             "date_joined": "2010-11-06 16:07:59"
         }
+    },
+    {
+        "pk": 1, 
+        "model": "a369.articleitem", 
+        "fields": {
+            "author": "Simona Krupeckait\u0117", 
+            "crawl_timestamp": "2011-03-26 18:39:29", 
+            "content": "Olandijos mieste Apeldorne vykstan\u010diame pasaulio treko dvira\u010di\u0173 \u010dempionate \u0161e\u0161tadien\u012f 28-eri\u0173 met\u0173 Simona Krupeckait\u0117 kovojo asmenin\u0117se sprinto var\u017eyb\u0173 finale. \u0160ios rungties pasaulio rekordinink\u0117 S. Krupeckait\u0117 susitiko su Anna Meares i\u0161 Australijos ir pralaim\u0117jo var\u017eovei rezultatu 0:2. Lietuvos dviratinink\u0117 i\u0161kovojo planetos pirmenybi\u0173 sidabro medal\u012f.", 
+            "date": "2011-03-26 19:15:06", 
+            "crawl_id": "1", 
+            "source_id": "delfi.lt", 
+            "item_link": "http://sportas.delfi.lt/national/skrupeckaite-pasaulio-dviraciu-treko-cempionate-iskovojo-sidabro-medali.d?id=43641191"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "a369.commentitem", 
+        "fields": {
+            "subject_type": "article", 
+            "author": "saunuole", 
+            "subject_id": "1", 
+            "crawl_timestamp": "2011-03-26 19:21:30", 
+            "content": "tikra saunuole, sekanti karta bus pirma !", 
+            "date": "2011-03-26 19:24:36", 
+            "crawl_id": "2", 
+            "source_id": "delfi.lt", 
+            "item_link": "http://sportas.delfi.lt/national/skrupeckaite-pasaulio-dviraciu-treko-cempionate-iskovojo-sidabro-medali.d?id=43641191&com=1"
+        }
     }
 ]

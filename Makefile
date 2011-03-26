@@ -19,8 +19,7 @@ develop: bootstrap.py \
          bin/buildout \
          bin/django \
          var/development.db \
-	 var/data/main.spa \
- 	 var/data/delta.spa
+	 var/data/main.spa
 
 run:
 	bin/django runserver
@@ -96,8 +95,7 @@ deploy: bootstrap.py \
 	project/production.py \
 	var/production.db \
 	var/htdocs/static \
- 	var/data/main.spa \
- 	var/data/delta.spa
+ 	var/data/main.spa
 
 bin/django.wsgi: bin/buildout buildout.cfg etc/*.in
 	test ! -f var/development.db
@@ -157,6 +155,3 @@ var/htdocs/static:
 
 var/data/main.spa:
 	parts/sphinx/bin/indexer main
-
-var/data/delta.spa:
-	parts/sphinx/bin/indexer delta
