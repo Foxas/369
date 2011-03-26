@@ -22,6 +22,10 @@ DATABASES = {
         'NAME': '369lt',
         'USER': 'root',
         'PASSWORD': '',
+        'OPTIONS': { 'init_command': 'SET storage_engine=MyISAM;'
+                                     'SET NAMES utf8;'
+                                     'SET CHARACTER SET utf8;'
+                                      }
     }
 }
 

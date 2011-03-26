@@ -1,3 +1,4 @@
+import re
 import datetime
 
 from scrapy.selector import HtmlXPathSelector
@@ -13,7 +14,6 @@ class DelfiLt(CrawlSpider):
     allowed_domains = ["delfi.lt"]
     start_urls = [
         "http://www.delfi.lt",
-        "http://www.delfi.lt/news/ringas/lit/rcekutis-atsakymas-dkuoliui-apie-zudoma-valstybe.d?id=43602903&com=1",
     ]
 
     rules = (
@@ -21,16 +21,26 @@ class DelfiLt(CrawlSpider):
             'parse_article',
             follow=True,
         ),
-        Rule(SgmlLinkExtractor(allow='\?id=[0-9]+&com=1'),
+        Rule(SgmlLinkExtractor(allow='\?id=[0-9]+&com=1(&s=[0-9]+&no=[0-9]+){0,1}$'),
             'parse_comments',
             follow=True,
         ),
     )
 
+    def _add_crawl_info(self, loader, response):
+        loader.add_value('crawl_id', 1) # TODO: add crawl id.
+        loader.add_value('crawl_timestamp', datetime.datetime.now())
+        loader.add_value('crawl_url', response.url)
+        loader.add_value('source_id', 'delfi.lt')
+
     def parse_comment(self, response, selector):
         loader = CommentLoader(item=CommentItem(), selector=selector)
+        self._add_crawl_info(loader, response)
 
-        loader.add_xpath('crawl_id', '@id')
+        loader.add_xpath('item_id', '@id')
+        loader.add_value('item_link', "%s#%s" % (response.url,
+                                                 loader.get_value('item_id')))
+
         loader.add_xpath('date', 'div[@class="comm-name"]/'
                                  'div[@class="font-small-gray"]/'
                                  'text()')
@@ -38,12 +48,10 @@ class DelfiLt(CrawlSpider):
                                    'strong/text()')
         loader.add_xpath('content', 'div[@class="comm-text"]/div[1]/text()')
 
-        loader.add_value('crawl_timestamp', datetime.datetime.now())
         loader.add_value('subject_type', models.SUBJECT_TYPE_ARTICLE)
-        loader.add_value('subject_id', 'todo')
-        loader.add_value('item_link', "%s#%s" % (response.url,
-                                                  loader.get_value('crawl_id')))
-        loader.add_value('source_id', 'delfi.lt')
+
+        article_id = re.search('id=([0-9]+)', response.url).group(1)
+        loader.add_value('subject_id', article_id)
 
         item = loader.load_item()
 

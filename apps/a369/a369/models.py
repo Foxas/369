@@ -1,18 +1,20 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 
-SUBJECT_TYPE_ARTICLE = 'article'
+SUBJECT_TYPE_ARTICLE = 1
 
 SUBJECT_CHOICES = (
-    ('article', 'Article'),
+    (SUBJECT_TYPE_ARTICLE, 'Article'),
 )
 
 
 class BaseItem(models.Model):
     crawl_timestamp = models.DateTimeField()
     crawl_id = models.CharField(max_length=255, blank=True)
+    crawl_url = models.CharField(max_length=255, blank=True)
+    item_id = models.CharField(max_length=255, blank=True)
     item_link = models.CharField(max_length=500, blank=True)
-    source_id = models.CharField(max_length=500, blank=True)
+    source_id = models.CharField(max_length=255, blank=True)
 
     class Meta:
         abstract = True

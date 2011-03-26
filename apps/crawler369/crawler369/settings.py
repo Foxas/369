@@ -13,4 +13,6 @@ SPIDER_MODULES = ['crawler369.spiders.delfi_lt']
 NEWSPIDER_MODULE = 'crawler369.spiders.new_spiders'
 DEFAULT_ITEM_CLASS = 'crawler369.items.CrawlerItem'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
-
+ITEM_PIPELINES = [
+    'crawler369.pipelines.CommentsPipeline',
+]
