@@ -19,7 +19,6 @@ develop: bootstrap.py \
          bin/buildout \
          bin/django \
          var/development.db \
-         docs/build/html \
 	 var/data/main.spa \
  	 var/data/delta.spa
 
@@ -78,9 +77,6 @@ var/development.db:
 	bin/django syncdb --all --noinput
 	bin/django migrate --fake
 	bin/django loaddata initial_data.json
-
-docs/build/html: $(find docs -type f -not -wholename 'docs/build/*')
-	cd docs ; make html
 
 clean:
 
