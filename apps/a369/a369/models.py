@@ -17,9 +17,9 @@ class BaseItem(models.Model):
     crawl_timestamp = models.DateTimeField()
     crawl_id = models.CharField(max_length=255, blank=True)
     crawl_url = models.CharField(max_length=255, blank=True)
+    source_id = models.CharField(max_length=255, blank=True) # example delfi.lt
     item_id = models.CharField(max_length=255, blank=True)
     item_link = models.CharField(max_length=500, blank=True)
-    source_id = models.CharField(max_length=255, blank=True)
 
     class Meta:
         abstract = True
@@ -63,5 +63,23 @@ class CommentItem(BaseItem):
         content = re.sub(' +', ' ', self.content)
         self.content_word_count = wordcount(content)
 
-#class MicroBloggingItem(BaseItem):
-    
+
+class TweetItem(BaseItem):
+    """
+    Main class
+    """
+    date = models.DateTimeField()
+    author = models.CharField(max_length=255, blank=True)
+    content = models.TextField()
+    content_length = models.IntegerField(default=0, null=True)
+    content_word_count = models.IntegerField(default=0, null=True)
+    subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
+    subject_id = models.CharField(max_length=255)
+
+    search = SphinxSearch(index='main')
+
+    def save(self, *args, **kwargs):
+        self.content_length = len(self.content)
+        content = re.sub('[!-@[-`]', ' ', self.content)
+        content = re.sub(' +', ' ', self.content)
+        self.content_word_count = wordcount(content)
