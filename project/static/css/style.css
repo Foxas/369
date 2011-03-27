@@ -45,6 +45,19 @@ a img {
 	border: none;
 }
 
+
+/* =Header
+-------------------------------------------------------------- */
+a#logo {
+    display: block;
+    height: 150px;
+    margin-left: 25px;
+    width: 256px;
+	float: left;
+
+}
+
+
 /* =Main styles
 -------------------------------------------------------------- */
 
@@ -189,7 +202,7 @@ p {
 	background: url(../img/search-bg.png) no-repeat scroll 0 0 transparent;
 	width: 404px;
 	border: 0 none;
-	height: 50px;
+	height: 45px;
 	font-size: 28px;
 	color: #4c4c4c;
 	padding-left: 10px;
@@ -213,7 +226,6 @@ p {
 
 #search-form {
     margin: 40px 0 35px 120px;
-    position: relative;
     width: 640px;
 }
 
@@ -281,3 +293,20 @@ p {
 	text-decoration: none;	
 }
 
+/* =Twitter widget
+-------------------------------------------------------------- */
+#twitter-widget {
+    background: url("../img/twitter-background.png") no-repeat scroll 54px 69px transparent;
+    float: left;
+    margin-bottom: 24px;
+    padding: 90px 0 20px 90px;
+    width: 388px;
+}
+
+#twitter-widget #jtw_widget {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+#twitter-widget #jtw_widget a:hover  {
+	text-decoration: underline!important;
+}
