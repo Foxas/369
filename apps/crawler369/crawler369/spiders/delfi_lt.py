@@ -131,7 +131,6 @@ class DelfiLt(CrawlSpider):
         subject_title_xpath = '//div[@class="title-medium"]/a/text()'
 
         comments_selector = main_selector.select(comments_xpath)
-        subject_title_selector = main_selector.select(subject_title_xpath)
 
         extra_values = {
             'subject_type': models.SUBJECT_TYPE_ARTICLE ,
@@ -139,7 +138,7 @@ class DelfiLt(CrawlSpider):
         }
 
         extra_xpath = {
-            'subject_title': subject_title_selector,
+            'subject_title': subject_title_xpath,
         }
 
         for selector in comments_selector:
