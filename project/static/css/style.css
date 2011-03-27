@@ -174,10 +174,11 @@ p {
 	padding: 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
 } 
 .twoColFixLtHdr #footer { 
-	padding: 0 0 0 230px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
-	background-image: url(../img/footer-bg.png);
-	height: 35px;
-	margin-bottom: 20px;
+    background-image: url("../img/footer-bg.png");
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    text-align: center;
 } 
 .twoColFixLtHdr #footer p {
 	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
@@ -234,8 +235,7 @@ p {
 }
 
 .twoColFixLtHdr #header #topic h2#results-h2{
-	text-align: left;
-	padding-left: 230px;
+	text-align: center;
 }
 
 #container #mainContent .comment {
@@ -277,16 +277,18 @@ p {
 }
 
 .twoColFixLtHdr #container #footer .pagination2 {
-	position: relative;
-	top: 8px;
+    position: relative;
+    top: 5px;
 }
 
 .twoColFixLtHdr #container #footer .pagination2 .current {
-	padding: 0 10px;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 0 10px;
 }
 
 .twoColFixLtHdr #container #footer .pagination2  a {
-	color: #e5e5e5;
+	color: #525252;
 }
 
 .twoColFixLtHdr #container #footer .pagination2  a:hover {
@@ -310,3 +312,24 @@ p {
 #twitter-widget #jtw_widget a:hover  {
 	text-decoration: underline!important;
 }
+
+/* =Page pagination
+-------------------------------------------------------------- */
+
+.step-links a {
+	padding: 5px;
+	background: -webkit-gradient(linear,left top,left bottom,from(#e6e8df),to(#b4bfae));
+	background: -moz-linear-gradient(top,#e6e8df,#b4bfae);
+	background-color: #b4bfae;
+    color: #333333;
+    text-shadow: 0 1px 0 #FFFFFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+	color: #525252;
+}
+
+.step-links a#previous-btn {float: left}
+.step-links a#next-btn {float: right}

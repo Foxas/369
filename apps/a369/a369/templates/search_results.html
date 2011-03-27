@@ -51,7 +51,7 @@
 
 {% if pages.num_pages > 1 %}
     {% if page.has_previous %}
-        <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.previous_page_number }}">
+        <a id="previous-btn"  href="{% url a369-search-results %}?q={{ query }}&page={{ page.previous_page_number }}">
             {% trans "previous" %}
         </a>
     {% endif %}
@@ -61,7 +61,7 @@
     </span>            
 
     {% if page.has_next %}
-        <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.next_page_number }}">
+        <a id="next-btn" href="{% url a369-search-results %}?q={{ query }}&page={{ page.next_page_number }}">
             {% trans "next" %}
         </a>
     {% endif %}
