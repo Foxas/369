@@ -10,5 +10,5 @@ def design_url(regex, template, context, name):
 urlpatterns = patterns('django.views.generic.simple',
     design_url(r'^$', 'index.html', {}, 'a369-index'),
     design_url(r'^search/$', 'search_results.html', {}, name="a369-search-results"),
-    design_url(r'^search/json/$', 'search_results_json', name="a369-json-search-results"),
+    design_url(r'^search/json/$', 'search_results_json', {}, name="a369-json-search-results"),
 )
