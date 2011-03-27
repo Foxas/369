@@ -27,9 +27,5 @@ class CommentsPipeline(object):
         except KeyError:
             import ipdb; ipdb.set_trace()
         self.duplicates.add(item['item_id'])
-        try:
-            item.save()
-        except Exception, e:
-            print e
-            import ipdb; ipdb.set_trace()
+        item.save()
         return item

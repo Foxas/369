@@ -78,6 +78,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'south',
     'a369',
+    'crawler369',
 )
 
 
