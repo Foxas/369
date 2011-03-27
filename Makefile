@@ -21,6 +21,12 @@ develop: bootstrap.py \
          var/development.db \
 	 var/data/main.spa
 
+shell:
+	bin/django shell_plus
+
+crawl:
+	bin/scrapy crawl delfi_lt
+
 run:
 	bin/django runserver
 

@@ -21,8 +21,11 @@ class CommentsPipeline(object):
     def process_item(self, item, spider):
         if not isinstance(item, CommentItem):
             return item
-        if item['item_id'] in self.duplicates:
-            raise DropItem("Duplicate item found: %s" % item)
+        try:
+            if item['item_id'] in self.duplicates:
+                raise DropItem("Duplicate item found: %s" % item)
+        except KeyError:
+            import ipdb; ipdb.set_trace()
         self.duplicates.add(item['item_id'])
         try:
             item.save()
