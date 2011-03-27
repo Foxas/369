@@ -34,6 +34,16 @@ class ArticleItem(BaseItem):
     content = models.TextField()
 
 
+class CommentItemsManager(models.Manager):
+    def exists(self, item):
+        if self.filter(source_id=item['source_id'],
+                       subject_id=item['subject_id'],
+                       item_id=item['item_id']).count():
+            return True
+        else:
+            return False
+
+
 class CommentItem(BaseItem):
     """
     Main class
@@ -50,6 +60,8 @@ class CommentItem(BaseItem):
     unique_together = (("source_id", "subject_id", "item_id"),)
 
     search = SphinxSearch(index='main')
+
+    objects = CommentItemsManager()
 
     def __unicode__(self):
         return u'%s (#%s), %s by %s' % (self.id, self.crawl_id, self.date, 

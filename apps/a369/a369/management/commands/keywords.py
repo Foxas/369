@@ -24,7 +24,11 @@ stopwords = ['ana', 'antai', 'apie', 'ar', 'arba', 'argi', 'aure', 'be', 'bei',
              'tartum', 'tarytum', 'tačiau', 'te', 'tegu', 'tegul', 'tiek',
              'tik', 'tiktai', 'todėl', 'turi', 'už', 'užtai', 'va', 'val',
              'veik', 'vien', 'vis', 'vos', 'vėl', 'ypač', 'yra', 'čia', 'į'
-             'še', 'šio', 'šit', 'šitai', 'šiuo', 'štai', 'šį']
+             'še', 'šio', 'šit', 'šitai', 'šiuo', 'štai', 'šį',
+             'labai', 'reikia', 'dabar', 'visi', 'tikrai', 'daug',
+             'nieko', 'kiek', 'kurie', 'kart', 'nereikia', 'atrodo',
+             'reik' 'pries', 'tokiu', 'kodel', 'visai', 'koks', 'pati',
+             ]
 
 class Command(BaseCommand):
     args = '<poll_id poll_id ...>'
@@ -34,7 +38,7 @@ class Command(BaseCommand):
         make_option('--limit',
             action='store',
             dest='limit',
-            default=10,
+            default=50,
             help='Limit to'),
         )
 

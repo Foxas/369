@@ -30,6 +30,9 @@ shell:
 crawl:
 	bin/scrapy crawl delfi_lt
 
+quickcrawl:
+	bin/scrapy crawl delfi_lt_quick
+
 run:
 	bin/django runserver
 

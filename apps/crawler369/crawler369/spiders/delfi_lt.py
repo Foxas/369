@@ -10,10 +10,34 @@ from a369 import models
 
 
 def _id_from_url(url):
+    if isinstance(url, Link):
+        url = url.url
     return int(re.search('id=([0-9]+)', url).group(1))
 
 
 _crawled = []
+
+
+class HtmlCommentsCount(object):
+    def __init__(self, selector, xpath=None):
+        if xpath:
+            selector = selector.select(xpath)
+        self.selector = selector
+
+    def get_count(self):
+        try:
+            return int(self.select('text()').extract()[0].strip('()'))
+        except:
+            return 0
+
+    def get_url(self):
+        return Link(self.select('@href').extract()[0])
+
+    def get_subject_id(self):
+        return _id_from_url(self.get_url())
+
+    def __getattr__(self, attr):
+        return getattr(self.selector, attr)
 
 
 class CommentsLinkExtractor():
@@ -27,34 +51,29 @@ class CommentsLinkExtractor():
         }
         objects = models.CommentItem.objects.filter(**query)
         count = objects.distinct('item_id').count()
-        print count, query
         return count
 
     def extract_links(self, response):
+        if not 'http://www.delfi.lt' == str(response.url).strip('/'):
+            return []
         selector = HtmlXPathSelector(response)
-        links_selector = selector.select('//a[@class="commentCount"]')
+        links_selector = selector.select('//div[@class="delfi-content"][1]//a[@class="commentCount"]')
         links = []
         for a in links_selector:
-            url = a.select('@href').extract()[0]
-            subject_id = _id_from_url(url)
-            count = a.select('text()').extract()[0]
-            try:
-                count = int(count.strip('()'))
-            except:
-                continue
+            comments_count = HtmlCommentsCount(a)
+            subject_id = comments_count.get_subject_id()
             if subject_id in _crawled:
-                print "Skip _crawled: %s" % url
                 continue
             _crawled.append(subject_id)
-            our_count = self._get_our_count(subject_id)
-            if count > our_count:
-                links.append(url)
+            if comments_count.get_count() > self._get_our_count(subject_id):
+                links.append(comments_count.get_url())
+                print "Added: %s" % subject_id
             else:
-                print "Skip count: %s" % url
-        return [Link(url=url) for url in links]
+                print "Skiped: %s" % subject_id
+        return links
 
 
-class CommentsPagesLinkExtractor():
+class CommentPaginationLinkExtractor():
     def __init__(self, source_id):
         self.source_id = source_id
 
@@ -83,7 +102,7 @@ class DelfiLt(CrawlSpider):
             'parse_comments',
             follow=True,
         ),
-        Rule(CommentsPagesLinkExtractor(models.SOURCE_ID.DELFI_LT),
+        Rule(CommentPaginationLinkExtractor(models.SOURCE_ID.DELFI_LT),
             'parse_comments',
             follow=True,
         ),
@@ -101,8 +120,9 @@ class DelfiLt(CrawlSpider):
 
         loader.add_xpath('item_id', '@id')
 
-        loader.add_value('item_link', "%s#%s" % (response.url,
-                                                 loader.get_value('item_id')))
+        loader.add_value('item_link',
+                         "%s#%s" % (response.url,
+                                    selector.select('@id').extract()[0]))
 
         loader.add_xpath('date', 'div[@class="comm-name"]/'
                                  'div[@class="font-small-gray"]/'
@@ -111,21 +131,13 @@ class DelfiLt(CrawlSpider):
                                    'strong/text()')
         loader.add_xpath('content', 'div[@class="comm-text"]/div[1]/text()')
 
-
         for key, value in extra_xpath.items():
             loader.add_xpath(key, value)
 
         for key, value in extra_values.items():
             loader.add_value(key, value)
 
-        item = loader.load_item()
-
-        #try:
-        #    item.save(commit=False)
-        #except:
-        #    import ipdb; ipdb.set_trace()
-
-        return item
+        return loader.load_item()
 
     def parse_comments(self, response):
         main_selector = HtmlXPathSelector(response)
@@ -149,3 +161,21 @@ class DelfiLt(CrawlSpider):
                 continue
             yield self.parse_comment(response, selector, extra_values,
                                      extra_xpath)
+
+
+class DelfiLtQuick(DelfiLt):
+    name = "delfi_lt_quick"
+    start_urls = [
+        'http://www.delfi.lt/news/daily/world/radiacija-fukusimos-ae-antrajame-reaktoriuje-10-mln-kartu-virsija-norma.d?id=43629471',
+        'http://www.delfi.lt/news/daily/lithuania/mkvedaravicius-cecenijoje-dauguma-vyru-miega-apsirenge.d?id=43669815',
+        'http://verslas.delfi.lt/law/komentara-apie-gejus-parases-ukininkas-gavo-bauda-ir-neteko-kompiuterio.d?id=43673113',
+        'http://gyvenimas.delfi.lt/vestuves/santuoka-rugpjuti-reikia-uzsisakyti-pries-metus-pusantru.d?id=43669581',
+        'http://www.delfi.lt/news/daily/world/zemes-valandai-keliaujant-aplink-planeta-sviesos-uzgesdavo-ir-ispudinguose-pastatuose-ir-paprastuose-namuose.d?id=43671123',
+    ]
+
+    rules = (
+        Rule(CommentPaginationLinkExtractor(models.SOURCE_ID.DELFI_LT),
+            'parse_comments',
+            follow=True,
+        ),
+    )
