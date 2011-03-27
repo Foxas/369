@@ -17,7 +17,7 @@ class BaseItem(models.Model):
     crawl_timestamp = models.DateTimeField()
     crawl_id = models.CharField(max_length=255, blank=True)
     crawl_url = models.CharField(max_length=255, blank=True)
-    source_id = models.CharField(max_length=255, blank=True) # example delfi.lt
+    source_id = models.CharField(max_length=255, blank=True)
     item_id = models.CharField(max_length=255, blank=True)
     item_link = models.CharField(max_length=500, blank=True)
 
@@ -45,12 +45,11 @@ class CommentItem(BaseItem):
     content = models.TextField()
     content_length = models.IntegerField(default=0, null=True)
     content_word_count = models.IntegerField(default=0, null=True)
+    subject_title = models.CharField(max_length=255, null=True)
     subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
     subject_id = models.CharField(max_length=255)
 
     search = SphinxSearch(index='main')
-
-    subject_title = 'Subject title'
 
     def __unicode__(self):
         return u'%s (#%s), %s by %s' % (self.id, self.crawl_id, self.date, 

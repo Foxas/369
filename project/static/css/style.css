@@ -225,7 +225,7 @@ p {
 #search-btn-submit::-moz-focus-inner { border: 0; }
 
 #search-form {
-    margin: 40px 0 35px 120px;
+    margin: 40px 0 40px 120px;
     width: 640px;
 }
 
