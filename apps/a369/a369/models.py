@@ -45,7 +45,7 @@ class CommentItem(BaseItem):
     content = models.TextField()
     content_length = models.IntegerField(default=0, null=True)
     content_word_count = models.IntegerField(default=0, null=True)
-    subject_title = models.CharField(max_length=255, null=True)
+    subject_title = models.CharField(max_length=555, null=True)
     subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
     subject_id = models.CharField(max_length=255)
 
