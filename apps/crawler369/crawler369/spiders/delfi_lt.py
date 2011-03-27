@@ -36,18 +36,21 @@ class CommentsLinkExtractor():
         links = []
         for a in links_selector:
             url = a.select('@href').extract()[0]
-            subject_id = _id_from_url(url),
+            subject_id = _id_from_url(url)
             count = a.select('text()').extract()[0]
             try:
                 count = int(count.strip('()'))
             except:
                 continue
             if subject_id in _crawled:
+                print "Skip _crawled: %s" % url
                 continue
             _crawled.append(subject_id)
             our_count = self._get_our_count(subject_id)
             if count > our_count:
                 links.append(url)
+            else:
+                print "Skip count: %s" % url
         return [Link(url=url) for url in links]
 
 
@@ -110,7 +113,7 @@ class DelfiLt(CrawlSpider):
 
 
         for key, value in extra_xpath.items():
-            loader.add_xpath(key, 'div[@class="comm-text"]/div[1]/text()')
+            loader.add_xpath(key, value)
 
         for key, value in extra_values.items():
             loader.add_value(key, value)
@@ -131,7 +134,6 @@ class DelfiLt(CrawlSpider):
         subject_title_xpath = '//div[@class="title-medium"]/a/text()'
 
         comments_selector = main_selector.select(comments_xpath)
-        subject_title_selector = main_selector.select(subject_title_xpath)
 
         extra_values = {
             'subject_type': models.SUBJECT_TYPE_ARTICLE ,
@@ -139,7 +141,7 @@ class DelfiLt(CrawlSpider):
         }
 
         extra_xpath = {
-            'subject_title': subject_title_selector,
+            'subject_title': subject_title_xpath,
         }
 
         for selector in comments_selector:
