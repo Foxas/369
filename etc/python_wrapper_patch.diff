@@ -1,0 +1,13 @@
+*** bin/python	2011-03-27 07:35:55.848582000 +0300
+--- etc/pythonwanted	2011-03-27 07:37:20.552582001 +0300
+***************
+*** 2,3 ****
+--- 2,9 ----
+  
++ try:
++     if sys.argv[1] == '-u':
++         sys.argv.remove('-u')
++ except:
++     pass
++ 
+  import sys
