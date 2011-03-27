@@ -1,0 +1,7 @@
+{% load i18n %}
+<div class="comment-line">
+    <a href="#" class="comment-author">{{ result.author }}</a> {% trans "about" %}
+    <a href="{{ result.item_link }}" class="comment-article"> </a>
+    <div class="comment-date"> {{ result.content }} </div>
+    <p></p>
+</div>
