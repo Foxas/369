@@ -38,6 +38,7 @@ class DelfiLt(CrawlSpider):
         self._add_crawl_info(loader, response)
 
         loader.add_xpath('item_id', '@id')
+
         loader.add_value('item_link', "%s#%s" % (response.url,
                                                  loader.get_value('item_id')))
 
@@ -55,6 +56,11 @@ class DelfiLt(CrawlSpider):
 
         item = loader.load_item()
 
+        try:
+            item.save(commit=False)
+        except:
+            import ipdb; ipdb.set_trace()
+
         return item
 
     def parse_comments(self, response):
@@ -64,8 +70,9 @@ class DelfiLt(CrawlSpider):
         comments_selector = main_selector.select(comments_xpath)
 
         for selector in comments_selector:
+            if not selector.select('@id'):
+                continue
             yield self.parse_comment(response, selector)
-
 
     def parse_article(self, response):
         pass
