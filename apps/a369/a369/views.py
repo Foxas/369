@@ -26,22 +26,3 @@ def search_results(request):
         'page': pages.page(request.GET.get('page', 1)),
         'query': query,
     }
-
-@ajax_request
-def search_results_json(request):
-    query = request.GET.get('q')
-    results = CommentItem.search.query(query)
-    pages = Paginator(results, 10)
-    page = pages.page(request.GET.get('page', 1))
-    t = get_template('search_r_item.html')
-    for result in results:
-        out += t.render(Context({'result': result}))
-
-    return {
-        'hasNext': page.has_next(),
-        'itemsHtml': 'foo',
-        'results': results,
-        'pages': pages,
-        'page': page,
-        'query': query,
-    }

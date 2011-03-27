@@ -67,6 +67,10 @@ class CommentItem(BaseItem):
         return u'%s (#%s), %s by %s' % (self.id, self.crawl_id, self.date, 
                                         self.author)
 
+    def get_iq_score(self):
+        ratio = self.content_length / self.content_word_count
+        return (ratio+5)**2
+
     class Admin:
         pass
 

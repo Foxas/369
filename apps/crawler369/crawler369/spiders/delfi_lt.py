@@ -166,11 +166,7 @@ class DelfiLt(CrawlSpider):
 class DelfiLtQuick(DelfiLt):
     name = "delfi_lt_quick"
     start_urls = [
-        'http://www.delfi.lt/news/daily/world/radiacija-fukusimos-ae-antrajame-reaktoriuje-10-mln-kartu-virsija-norma.d?id=43629471',
-        'http://www.delfi.lt/news/daily/lithuania/mkvedaravicius-cecenijoje-dauguma-vyru-miega-apsirenge.d?id=43669815',
-        'http://verslas.delfi.lt/law/komentara-apie-gejus-parases-ukininkas-gavo-bauda-ir-neteko-kompiuterio.d?id=43673113',
-        'http://gyvenimas.delfi.lt/vestuves/santuoka-rugpjuti-reikia-uzsisakyti-pries-metus-pusantru.d?id=43669581',
-        'http://www.delfi.lt/news/daily/world/zemes-valandai-keliaujant-aplink-planeta-sviesos-uzgesdavo-ir-ispudinguose-pastatuose-ir-paprastuose-namuose.d?id=43671123',
+        'http://www.delfi.lt/news/daily/world/japonijos-fukusimos-branduolines-jegaines-operatorius-atsipraso-uz-klaidingus-duomenis-apie-padidejusia-radiacija.d?id=43629471&com=1',
     ]
 
     rules = (
@@ -179,3 +175,6 @@ class DelfiLtQuick(DelfiLt):
             follow=True,
         ),
     )
+
+    def parse(self, response):
+        return self.parse_comments(response)
