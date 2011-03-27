@@ -7,7 +7,6 @@ from scrapy.link import Link
 
 from crawler369.items import CommentItem, CommentLoader
 from a369 import models
-from crawler369.models import CommentsCrawlLog
 
 
 def _id_from_url(url):
@@ -20,18 +19,6 @@ _crawled = []
 class CommentsLinkExtractor():
     def __init__(self, source_id):
         self.source_id = source_id
-
-    def _get_log_entry(self, subject_id):
-        log_entry, c = CommentsCrawlLog.objects.get_or_create(
-            subject_id=subject_id,
-            source_id=self.source_id
-        )
-        return log_entry
-
-    def _update_count(self, subject_id, count):
-        log_entry = self._get_log_entry(subject_id)
-        log_entry.count = count
-        log_entry.save()
 
     def _get_our_count(self, subject_id):
         query = {
