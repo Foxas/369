@@ -110,7 +110,7 @@ class DelfiLt(CrawlSpider):
 
 
         for key, value in extra_xpath.items():
-            loader.add_xpath(key, 'div[@class="comm-text"]/div[1]/text()')
+            loader.add_xpath(key, value)
 
         for key, value in extra_values.items():
             loader.add_value(key, value)
