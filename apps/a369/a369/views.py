@@ -16,6 +16,8 @@ def index(request):
 @render_to('search_results.html')
 def search_results(request):
     query = request.GET.get('q')
+    if not query:
+        return {'TEMPLATE': 'search_no_results.html'}
     results = CommentItem.search.query(query)
     pages = Paginator(results, 10)
     return {
