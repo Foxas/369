@@ -64,8 +64,8 @@ $(document).ready(function(){
 	
 <!-- end #header --></div>
 
-<div id="main-bg">
-  <!--<div id="sidebar1">
+  <!-- Hide sidebar laikinai, filtravima darysim veliau, galbut kiek kitoki
+  <div id="sidebar1">
     <h3>Paieškos nustatymai</h3>
     <ul>
         <li><a href="{% url a369-search-results %}?q={{query}}">
@@ -80,9 +80,9 @@ $(document).ready(function(){
             {% trans "Last year" %}</a></li>
     </ul>
     
-   end #sidebar1 </div>-->
+   end #sidebar1 </div>
+   -->
   <div id="mainContent">
-
 
     {% for result in results %}
         <div class="comment-line">
@@ -93,14 +93,40 @@ $(document).ready(function(){
         </div>
     {% endfor %}
 
-    
-  	
-    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
-  </div>
-  <div id="footer">
-   <div class="pagination2">
-    <span class="step-links">
+    </div>
+	<div class="comment second">
+    	<a href="#" class="comment-author">Daivaras</a> apie <a href="#" class="comment-article">kates pradejo pulti pensininkus</a>
+    	<div class="comment-date">2011.01.02</div>
+        <p>Lorizzle ipsum crazy sizzle sizzle, consectetuer adipiscing daahng
+        dawg. Nullizzle sapien velizzle, aliquet <span
+            class="comment-term">volutpizzle</span> volutpizzle, brizzle da
+        bomb, fizzle vizzle, daahng dawg. Pellentesque crackalackin tortizzle.
+        <span class="comment-term">Sizzle erizzle</span>. Shizzlin dizzle izzle
+        dolor dapibus turpis tempus fizzle. Dope pellentesque ma nizzle that's
+        the shizzle nizzle. </p>
 
+    </div>
+	<div class="comment">
+        <a href="#" class="comment-author">Juozas</a> apie <a href="#"
+            class="comment-article">Atejo laikas pradeti viska nuo pradziu</a>
+    	<div class="comment-date">2011.01.02</div>
+        <p>Lorizzle ipsum crazy sizzle sizzle, consectetuer adipiscing daahng
+        dawg. Nullizzle sapien velizzle, aliquet volutpizzle volutpizzle,
+        brizzle da bomb, fizzle vizzle, daahng dawg. Pellentesque crackalackin
+        tortizzle. Sizzle erizzle. Shizzlin dizzle izzle dolor dapibus turpis
+        tempus fizzle. <span class="comment-term">Dope pellentesque</span> ma
+        nizzle that's the shizzle nizzle. </p>
+
+    </div>
+	<!-- END Test duomenys  -->
+    
+        <!-- This clearing element should immediately follow the #mainContent
+        div in order to force the #container div to contain all child floats
+        --><br class="clearfloat" />
+  </div>
+<div id="footer">
+   <div class="pagination2">
+		<span class="step-links">
 
 {% if page.has_previous %}
     <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.previous_page_number }}">
