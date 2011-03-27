@@ -38,7 +38,7 @@
             <a href="{{ result.item_link }}" class="comment-author">{{ result.author }}</a> apie
             <a href="{{ result.item_link }}" class="comment-article">{{ result.subject_title}}</a>
             <div class="comment-date">{{ result.date }}</div>
-            <p>{{ result.content|highlight:query }}</p>
+            <p>{{ result.content }}</p>
         </div>
         {% endfor %}
         <!-- This clearing element should immediately follow the #mainContent
