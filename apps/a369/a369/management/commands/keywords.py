@@ -24,7 +24,24 @@ stopwords = ['ana', 'antai', 'apie', 'ar', 'arba', 'argi', 'aure', 'be', 'bei',
              'tartum', 'tarytum', 'tačiau', 'te', 'tegu', 'tegul', 'tiek',
              'tik', 'tiktai', 'todėl', 'turi', 'už', 'užtai', 'va', 'val',
              'veik', 'vien', 'vis', 'vos', 'vėl', 'ypač', 'yra', 'čia', 'į'
-             'še', 'šio', 'šit', 'šitai', 'šiuo', 'štai', 'šį']
+             'še', 'šio', 'šit', 'šitai', 'šiuo', 'štai', 'šį',
+
+             'labai', 'reikia', 'tikrai', 'dabar', 'visi', 'daug', 'mano',
+             'nieko', 'kiek', 'daugiau', 'kirie', 'galima', 'gerai', 'pats',
+             'viskas', 'tada', 'butu', 'metu', 'manau', 'tokia', 'nera',
+             'geriau', 'viena', 'vienas', 'toks', 'irgi', 'koks', 'kurie',
+             'teis', 'darbo', 'juos', 'viso', 'kokia', 'niekas', 'pati',
+             'tiesiog', 'jiems', 'atrodo', 'buti', 'visa', 'tokie', 'nori',
+             'visai', 'patys', 'musu', 'kuris', 'tokiu', 'moni', 'toki',
+             'kodel', 'pries', 'reik', 'nereikia', 'kart', 'neturi', 'lietuvi',
+             'kalba', 'jums', 'save', 'metus', 'toliau', 'laiko', 'visiems',
+             'visus', 'negali', 'tavo', 'visada', 'matyt', 'prad', 'tuos',
+             'kuriuos', 'todel', 'kita', 'kurios', 'vaiko', 'straipsnis',
+             'labiau', 'kiti', 'lietuvos', 'lietuvoje', 'lietuva', 'valstyb',
+             'zmones', 'darbas', 'vaik', 'vald', 'lietuviai', 'zmoniu',
+             'vaikai', 'vaikas', 'gyventi', '2011', 'pinigus', 'visos',
+             'geras', 'tiesa', 'gaila', 'tokios',
+             ]
 
 class Command(BaseCommand):
     args = '<poll_id poll_id ...>'
@@ -41,15 +58,16 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         all_words = {}
-        for content in CommentItem.objects.values_list('content', flat=True):
-            words = RE_WORDS.findall(content)
-            for word in words:
-                word = word.lower()
-                if not word in stopwords and len(word) > 3:
-                    if word in all_words:
-                        all_words[word] += 1
-                    else:
-                        all_words[word] = 1
+        for content in CommentItem.objects.values_list('subject_title', flat=True):
+            if content:
+                words = RE_WORDS.findall(content)
+                for word in words:
+                    word = word.lower()
+                    if not word in stopwords and len(word) > 3:
+                        if word in all_words:
+                            all_words[word] += 1
+                        else:
+                            all_words[word] = 1
         limit = int(options['limit'])
         if limit == 0:
             limit = -1
