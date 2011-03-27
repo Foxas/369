@@ -36,18 +36,21 @@ class CommentsLinkExtractor():
         links = []
         for a in links_selector:
             url = a.select('@href').extract()[0]
-            subject_id = _id_from_url(url),
+            subject_id = _id_from_url(url)
             count = a.select('text()').extract()[0]
             try:
                 count = int(count.strip('()'))
             except:
                 continue
             if subject_id in _crawled:
+                print "Skip _crawled: %s" % url
                 continue
             _crawled.append(subject_id)
             our_count = self._get_our_count(subject_id)
             if count > our_count:
                 links.append(url)
+            else:
+                print "Skip count: %s" % url
         return [Link(url=url) for url in links]
 
 
