@@ -266,7 +266,7 @@ p {
 #container #mainContent .comment div.comment-date {
 	color: #999999;
 	font-size: 11px;
-	padding: 5px 0;
+	padding: 5px 0 10px 0;
 }
 
 #container #mainContent .comment a.comment-article {color: #333333; text-decoration: underline;}
@@ -333,3 +333,11 @@ p {
 
 .step-links a#previous-btn {float: left}
 .step-links a#next-btn {float: right}
+
+.iq {
+    background: url("../img/iq.png") no-repeat scroll 0 2px transparent;
+    float: right;
+    font-size: 14px;
+    height: 18px;
+    padding-left: 23px;
+}

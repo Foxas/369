@@ -37,10 +37,21 @@
 	<div class="comment{% cycle ' second' ' ' %}">
             <a href="{{ result.get_absolute_url }}" class="comment-author">{{ result.author }}</a> apie
             <a href="{{ result.get_absolute_url }}" class="comment-article">{{ result.subject_title}}</a>
-            <div class="comment-date">{{ result.date }}</div>
+            <div id="iq">23</div>
+			<div class="comment-date">{{ result.date }}</div>
             <p>{{ result.content }}</p>
         </div>
         {% endfor %}
+		
+		<div class="comment ">
+            <a class="comment-author" href="http://www.delfi.lt/news/daily/kedys/ar-pagristai-buvo-nutraukta-auso-byla-spres-klaipedos-teismas.d?id=40158551&amp;com=1#c40499643">mmm</a> apie
+            <a class="comment-article" href="http://www.delfi.lt/news/daily/kedys/ar-pagristai-buvo-nutraukta-auso-byla-spres-klaipedos-teismas.d?id=40158551&amp;com=1#c40499643">
+Ar pagrįstai buvo nutraukta A.Ūso byla, spręs Klaipėdos teismas</a>
+<div class="iq">23</div>
+            <div class="comment-date">Jan. 6, 2011, 10:08 p.m.</div>
+            <p>"Šiaulių apygardos teismas patenkino Neringos Venckienės skundą, Kauno prokurorai privalės iš naujo tirti galimai Laimutės Stankūnaitės darytą poveikį dukrai." 
+Pagaliau teismas padare protinga zingsni, pakasys Stankei subine uz tai, kad liepe mergaitei tyleti. O dar jei Klaipedos teisejai nuspres atnaujinti pedofilijos bylos tyrima, tuomet gali buti, kad ir Stankei itarimus del dukros pardavinejimo pareiks. Tada galesit verkti komentaruose visi pedu klakeriai</p>
+        </div>
         <!-- This clearing element should immediately follow the #mainContent
         div in order to force the #container div to contain all child floats
         --><br class="clearfloat" />
