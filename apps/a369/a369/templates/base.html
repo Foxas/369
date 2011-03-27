@@ -73,7 +73,7 @@
 	<div class="clearfloat"></div>
     </div>
         <form action="{% url a369-search-results %}" method="get" id="search-form">
-            <input type="text" id="search-input" name='q'>
+            <input type="text" value="{{ request.GET.q }}" id="search-input" name='q'>
             <input id="search-btn-submit" type="submit" value="">
         </form>
         {% block content %}
