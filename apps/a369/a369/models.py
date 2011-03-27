@@ -50,6 +50,8 @@ class CommentItem(BaseItem):
 
     search = SphinxSearch(index='main')
 
+    subject_title = 'Subject title'
+
     def __unicode__(self):
         return u'%s (#%s), %s by %s' % (self.id, self.crawl_id, self.date, 
                                         self.author)
