@@ -25,7 +25,7 @@ class CommentsPipeline(object):
             if item['item_id'] in self.duplicates:
                 raise DropItem("Duplicate item found: %s" % item)
         except KeyError:
-            import ipdb; ipdb.set_trace()
+            pass
         self.duplicates.add(item['item_id'])
         item.save()
         return item

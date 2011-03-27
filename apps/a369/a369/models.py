@@ -63,7 +63,7 @@ class CommentItem(BaseItem):
         content = re.sub('[!-@[-`]', ' ', self.content)
         content = re.sub(' +', ' ', self.content)
         self.content_word_count = wordcount(content)
-
+        super(CommentItem, self).save(*args, **kwargs)
 
 class TweetItem(BaseItem):
     """
