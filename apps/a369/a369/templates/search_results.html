@@ -1,61 +1,10 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load searchhighlight %}
 
 {% block title %} {% trans "369.lt - search results" %} {% endblock %}
 
-{% block javascript %}
-<script type="text/javascript">
-// Scroll globals
-var pageNum = {{ page.number }}; // The latest page loaded
-var hasNextPage = {{ page.has_next|lower }}; // Indicates whether to expect another page after this one
-var baseUrl = '{% url a369-json-search-results %}?q={{ query|escapejs }}'; // The root for the JSON calls
-
-// loadOnScroll handler
-var loadOnScroll = function() {
-   // If the current scroll position is past out cutoff point...
-    if ($(window).scrollTop() > $(document).height() - $(window).height() -
-            ($(window).height()/4)) {
-        // temporarily unhook the scroll event watcher so we don't call a bunch of times in a row
-        $(window).unbind();
-        // execute the load function below that will visit the JSON feed and stuff data into the HTML
-        loadItems();
-    }
-};
-
-var loadItems = function() {
-    console.log($(window).scrollTop(),
-                $(document).height(),
-                ($(window).height()*3));
-    // If the next page doesn't exist, just quit now 
-    if (hasNextPage === false) {
-        return false
-    }
-    // Update the page number
-    pageNum = pageNum + 1;
-    // Configure the url we're about to hit
-    var url = baseUrl + '&page=' + pageNum;
-    $.ajax({
-        url: url, 
-        dataType: 'json',
-        success: function(data) {
-            hasNextPage = data.hasNext;
-            $("#mainContent").append(data.itemsHtml);
-        },
-        complete: function(data, textStatus){
-            $(window).bind('scroll', loadOnScroll);
-        }
-    });
-};
-
-$(document).ready(function(){     
-   $(window).bind('scroll', loadOnScroll);
-});
-</script>
-{% endblock %}
-
 {% block content%}
-
-    
 <div id="topic"><h2 id="results-h2">
     {% blocktrans with result_count=results.count %}
     Found {{ result_count }} results with keyword {{ query }}.
@@ -84,40 +33,14 @@ $(document).ready(function(){
    -->
   <div id="mainContent">
 
-    {% for result in results %}
-        <div class="comment-line">
-            <a href="#" class="comment-author">{{ result.author }}</a> {% trans "about" %}
-            <a href="{{ result.item_link }}" class="comment-article"> </a>
-            <div class="comment-date"> {{ result.content }} </div>
-            <p></p>
+        {% for result in results %}
+	<div class="comment{% cycle ' second' ' ' %}">
+            <a href="{{ result.item_link }}" class="comment-author">{{ result.author }}</a> apie
+            <a href="{{ result.item_link }}" class="comment-article">{{ result.subject_title}}</a>
+            <div class="comment-date">{{ result.date }}</div>
+            <p>{{ result.content|highlight:query }}</p>
         </div>
-    {% endfor %}
-
-	<div class="comment second">
-    	<a href="#" class="comment-author">Daivaras</a> apie <a href="#" class="comment-article">kates pradejo pulti pensininkus</a>
-    	<div class="comment-date">2011.01.02</div>
-        <p>Lorizzle ipsum crazy sizzle sizzle, consectetuer adipiscing daahng
-        dawg. Nullizzle sapien velizzle, aliquet <span
-            class="comment-term">volutpizzle</span> volutpizzle, brizzle da
-        bomb, fizzle vizzle, daahng dawg. Pellentesque crackalackin tortizzle.
-        <span class="comment-term">Sizzle erizzle</span>. Shizzlin dizzle izzle
-        dolor dapibus turpis tempus fizzle. Dope pellentesque ma nizzle that's
-        the shizzle nizzle. </p>
-
-    </div>
-	<div class="comment">
-        <a href="#" class="comment-author">Juozas</a> apie <a href="#"
-            class="comment-article">Atejo laikas pradeti viska nuo pradziu</a>
-    	<div class="comment-date">2011.01.02</div>
-        <p>Lorizzle ipsum crazy sizzle sizzle, consectetuer adipiscing daahng
-        dawg. Nullizzle sapien velizzle, aliquet volutpizzle volutpizzle,
-        brizzle da bomb, fizzle vizzle, daahng dawg. Pellentesque crackalackin
-        tortizzle. Sizzle erizzle. Shizzlin dizzle izzle dolor dapibus turpis
-        tempus fizzle. <span class="comment-term">Dope pellentesque</span> ma
-        nizzle that's the shizzle nizzle. </p>
-
-    </div>
-    
+        {% endfor %}
         <!-- This clearing element should immediately follow the #mainContent
         div in order to force the #container div to contain all child floats
         --><br class="clearfloat" />
@@ -126,22 +49,22 @@ $(document).ready(function(){
    <div class="pagination2">
 		<span class="step-links">
 
-{% if page.has_previous %}
-    <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.previous_page_number }}">
-        {% trans "previous" %}
-    </a>
-{% endif %}
-                  
-                  
-<span class="current">
-    {{ page }}
-</span>            
+{% if pages.num_pages > 1 %}
+    {% if page.has_previous %}
+        <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.previous_page_number }}">
+            {% trans "previous" %}
+        </a>
+    {% endif %}
+                      
+    <span class="current">
+        {{ page }}
+    </span>            
 
-
-{% if page.has_next %}
-    <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.next_page_number }}">
-        {% trans "next" %}
-    </a>
+    {% if page.has_next %}
+        <a href="{% url a369-search-results %}?q={{ query }}&page={{ page.next_page_number }}">
+            {% trans "next" %}
+        </a>
+    {% endif %}
 {% endif %}
 </span>
 </div>
