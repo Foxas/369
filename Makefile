@@ -58,7 +58,7 @@ syncdb:
 	bin/django loaddata initial_data.json
 
 createdb:
-	mysql -uroot -e 'CREATE DATABASE 369lt CHARACTER SET utf8;'
+	mysql -uroot -e 'CREATE DATABASE 369lt CHARACTER SET utf8 COLLATE utf8_unicode_ci;'
 
 # circo dot fdp neato nop nop1 nop2 twopi
 graph:
