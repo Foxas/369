@@ -10,7 +10,7 @@ from a369 import models
 
 
 def _id_from_url(url):
-    return re.search('id=([0-9]+)', url).group(1)
+    return int(re.search('id=([0-9]+)', url).group(1))
 
 
 _crawled = []
@@ -71,7 +71,7 @@ class CommentsPagesLinkExtractor():
 
 
 class DelfiLt(CrawlSpider):
-    source_id = 'delfi.lt'
+    source_id = models.SOURCE_ID.DELFI_LT
     name = "delfi_lt"
     allowed_domains = ["delfi.lt"]
     start_urls = [
@@ -79,11 +79,11 @@ class DelfiLt(CrawlSpider):
     ]
 
     rules = (
-        Rule(CommentsLinkExtractor('delfi.lt'),
+        Rule(CommentsLinkExtractor(models.SOURCE_ID.DELFI_LT),
             'parse_comments',
             follow=True,
         ),
-        Rule(CommentsPagesLinkExtractor('delfi.lt'),
+        Rule(CommentsPagesLinkExtractor(models.SOURCE_ID.DELFI_LT),
             'parse_comments',
             follow=True,
         ),

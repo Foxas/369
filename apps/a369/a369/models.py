@@ -5,6 +5,9 @@ from django.db import models
 from djangosphinx import SphinxSearch
 from django.template.defaultfilters import wordcount
 
+class SOURCE_ID:
+    DELFI_LT = 1
+
 SUBJECT_TYPE_ARTICLE = 1
 
 SUBJECT_CHOICES = (
@@ -17,8 +20,8 @@ class BaseItem(models.Model):
     crawl_timestamp = models.DateTimeField()
     crawl_id = models.CharField(max_length=255, blank=True)
     crawl_url = models.CharField(max_length=255, blank=True)
-    source_id = models.CharField(max_length=255, blank=True)
-    item_id = models.CharField(max_length=255, blank=True)
+    source_id = models.IntegerField()
+    item_id = models.IntegerField()
     item_link = models.CharField(max_length=500, blank=True)
 
     class Meta:
@@ -29,11 +32,6 @@ class ArticleItem(BaseItem):
     date = models.DateTimeField()
     author = models.CharField(max_length=255, blank=True)
     content = models.TextField()
-
-
-class CommentBase(models.Model):
-    subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
-    subject_id = models.CharField(max_length=255)
 
 
 class CommentItem(BaseItem):
@@ -47,7 +45,9 @@ class CommentItem(BaseItem):
     content_word_count = models.IntegerField(default=0, null=True)
     subject_title = models.CharField(max_length=555, null=True)
     subject_type = models.CharField(max_length=255, choices=SUBJECT_CHOICES)
-    subject_id = models.CharField(max_length=255)
+    subject_id = models.IntegerField(unique=True)
+
+    unique_together = (("source_id", "subject_id", "item_id"),)
 
     search = SphinxSearch(index='main')
 
@@ -57,6 +57,9 @@ class CommentItem(BaseItem):
 
     class Admin:
         pass
+
+    def get_absolute_url(self):
+        return str(self.item_link).replace('item_id', 'c%s' % self.item_id)
 
     def save(self, *args, **kwargs):
         self.content_length = len(self.content)

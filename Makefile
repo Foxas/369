@@ -15,6 +15,9 @@ all: develop
 
 .PHONY: develop run tags todo test flake8 syncdb clean
 
+index:
+	parts/sphinx/bin/indexer --all --rotate
+
 develop: bootstrap.py \
          bin/buildout \
          bin/django \

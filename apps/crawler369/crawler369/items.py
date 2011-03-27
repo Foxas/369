@@ -20,6 +20,13 @@ class CommentLoader(XPathItemLoader):
     def date_in(value):
         return datetime.datetime.strptime(value, '%Y %m %d %H:%M')
 
+    @MapCompose
+    def item_id_in(value):
+        return int(value.strip('c'))
+
+    subject_id_in = MapCompose(int)
+    source_id = MapCompose(int)
+
     content_out = Join()
 
-    author = Join()
+    author_out = Join()
