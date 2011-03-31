@@ -1,162 +1,75 @@
-``django-starter`` is prepared buildout environment for django project with
-reusable and installable django applications in mind.
-
-Using for development
+Install for designers
 =====================
 
-To prepare development environment of your project use this command::
+Sorry for these a bit difficult instructions. We will automate these steps 
+in near future.
 
-    make
+Install these system packages:
 
-Using for production
-====================
+  - python
 
-To prepare production environment of your project use this command::
+Create these directories:
 
-    make deploy
+  - eggs
+  - downloads
 
-Features
-========
+Create configuration files as fallows:
 
-``django-starter`` provides to different environment, one for development,
-other for production use.
+  - Create ``buildout.cfg`` with fallowing content::
 
-Environment independent features:
+      [buildout]
+      extends = buildout/designer.cfg
 
-* Well prepared buildout configuration files.
+  - Create ``src/web369/settings.py`` with fallowing content::
 
-* Well prepared Makefile, that lets you do most things just by running ``make``
-  command.
+      from web369.conf.designer import *
 
-* ``South`` for database migrations.
 
-* ``mr.developer`` lets you add packages to buildout environment directly from
-  source repositories. All major VCS's are supported.
+Perform these commands::
 
-Features in development environment:
+    python bootstrap.py
+    bin\buildout.exe -N
 
-* ``ctags`` - you can build tags file from all eggs added to buildout
-  environment.
+Now you ready to work.
 
-* ``sphinx`` - ``django-starter`` has prepared ``docs`` folders for writing
-  documentations using ``sphinx``, ``sphinx`` is also included, so you can
-  build documentations just running ``make html`` command in ``docs`` folder.
+  - Run django server: ``bin\django.exe runserver``
 
-* ``ipython`` and ``ipdb`` are also included and you will get ``ipython`` shell
-  using ``bin/django shell`` command. Use ``import ipdb ; ipdb.set_trace()``
-  for excellent ``ipdb`` debugger.
+  - Open this url in browser: ``http://127.0.0.1:8000/``
 
-* ``django-toolbar`` for inspecting page requests.
+File locations:
 
-* ``django-extensions`` and ``django-test-utils`` are also included, these
-  packages provides lots of useful django management commands.
+  - Templates: ``src/web369/templates/``
 
-Features in production environment:
+  - Static files: ``src/web369/static/``
 
-* wsgi script out of the box
 
-* prepared apache configuration file, that can be simply included from apache
-  main configuration with ``Include /path/to/your/project/etc/apache.conf``.
+Install for developers
+======================
 
-* MySQL configuration hits.
+  - Configure your mysql database so that it can be accessed 
+    with `root` user and empty password.
 
-Project layout
-==============
+  - Run::
 
-``project/``
-    Folder for django project. Here goes only settings and project related
-    templates, urls routing.
+      make
 
-``apps/``
-    Reusable django apps, even if your app directly related to your project and
-    can be reused should be added here.
+You can rebuild database any time with::
 
-``docs/``
-    Fully prepared ``Sphinx`` documentation template.
+    make rebuilddb
 
-``Makefile``
-    Provides simple and useful command.
 
-``buildout.cfg``
-    Main buildout configuration file. Here comes all environment independent
-    settings.
+Basic usage for developers
+==========================
 
-``development.cfg``
-    Buildout configuration file for development environment.
+``bin/scapy carwl delf_lt`` : Run delfi.lt scrapper.
 
-``initial_data.json``
-    Initial data.
+``bin/supervisord`` : Run supervisor server. It can be accessed from:
+http://127.0.0.1:8010/ . Django website can be accessed at port 8000.
 
-``startapp.sh``
-    Creates new django app template.
+``make run`` : Run django server, without supervisor.
 
-Commands from ``Makefile``:
+``make shell`` : Open django shell-plus
 
-``make``
-    Prepares development environment and does everything that is needed.
+``make test`` : Run tests
 
-``make run``
-    Runs django development web sever.
-
-``make tags``
-    Builds ``tags`` file from all eggs included in buildout environment.
-
-``make test``
-    Runs all unit tests.
-
-``make coverage``
-    Generates unit tests code coverage reports.
-
-``make syncdb``
-    Removes development database and creates it from scratch.
-
-``make graph``
-    Generates graphical representation of your models.
-
-``make clean``
-    Cleans some generated files.
-
-How to add new app
-==================
-
-.. note::
-    Words in python package names are separated with hyphen, but words in
-    python module names are separated with spacing underscores.
-
-    Here is example of python package name::
-
-        my-app-name
-
-    Example of python module name::
-
-        my_app_name
-
-1. Run ``startapp.sh`` comand and provide python package name::
-
-   ./startapp.sh my-app-name
-
-2. Open ``buildout.cfg`` file.
-   
-3. Add ``apps/my-app-name`` line in ``[buildout]`` section, ``develop``
-   setting::
-
-    develop =
-        apps/my-app-name
-
-4. Add ``my-app-name`` line in ``[buildout]`` section, ``eggs`` setting::
-
-    eggs =
-        my-app-name
-
-5. Open ``project/settings.py`` file.
-
-6. Add ``'my_app_name',`` line in ``INSTALLED_APPS`` tuple.
-
-7. Run command::
-
-    make
-
-8. Check if your added app works::
-
-    bin/django shell
-    >>> import my_app_name
+``make dump`` : Dump nice data to dump.json.

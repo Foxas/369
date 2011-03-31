@@ -1,4 +1,4 @@
-Welcome to $(name)'s documentation!
+Welcome to Project's documentation!
 ===================================
 
 Contents:

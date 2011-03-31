@@ -1,37 +1,49 @@
 # Default target
 
-TESTS = 
-COVERAGE_INCLUDES = --include=apps/*,project/*
+TESTS = web369
+COVERAGE_INCLUDES = --include=parts/*,src/web369/*
+SHELL = /bin/bash
 
 
-.PHONY: all
+.PHONY: all develop deploy run tags todo test flake8 syncdb createdb dropdb reloaddb
 
 all: develop
 
-
-###############
-# Development #
-###############
-
-.PHONY: develop run tags todo test flake8 syncdb clean
-
-index:
-	parts/sphinx/bin/indexer --all --rotate
-
-develop: bootstrap.py \
-         bin/buildout \
-         bin/django \
-         var/development.db \
-	 var/data/main.spa
+dump:
+	bin/django dumpdata --indent=4 --natural \
+			sites \
+			web369 \
+		> dump.json
 
 shell:
 	bin/django shell_plus
 
-crawl:
-	bin/scrapy crawl delfi_lt
+develop: var/develop.lock \
+         buildout.cfg \
+         bin/buildout \
+         src/web369/settings.py \
+         bin/django \
+         var/htdocs/static \
+         docs/build/html
 
-quickcrawl:
-	bin/scrapy crawl delfi_lt_quick
+deploy: var/deploy.lock \
+        buildout.cfg \
+        bin/buildout \
+        src/web369/settings.py \
+        bin/django \
+        var/htdocs/static \
+        docs/build/html
+
+dropdb:
+	mysql -uroot -e 'DROP DATABASE web369;'
+
+createdb:
+	mysql -uroot -e 'CREATE DATABASE web369 CHARACTER SET utf8 COLLATE utf8_unicode_ci;'
+
+reloaddb: bin/django
+	mysql -uroot -e 'DROP DATABASE web369;'
+	mysql -uroot -e 'CREATE DATABASE web369 CHARACTER SET utf8 COLLATE utf8_unicode_ci;'
+	bin/django syncdb
 
 run:
 	bin/django runserver
@@ -40,8 +52,8 @@ tags:
 	bin/ctags -v
 
 todo:
-	@egrep -n 'FIXME|TODO' $$(find apps -iname '*.py' ; \
-	                          find project -iname '*.py')
+	@egrep -n 'FIXME|TODO' $$(find parts -iname '*.py' ; \
+	                          find src -iname '*.py')
 
 test:
 	bin/django test $(TESTS)
@@ -54,17 +66,12 @@ coverage:
 
 flake8:
 	@bin/flake8 \
-	    project/
+	    src/
 
-syncdb:
-	test ! -f bin/django.wsgi
-	if [ -f var/development.db ] ; then rm var/development.db ; fi
-	bin/django syncdb --all --noinput
-	bin/django migrate --fake
-	bin/django loaddata initial_data.json
-
-createdb:
-	mysql -uroot -e 'CREATE DATABASE 369lt CHARACTER SET utf8 COLLATE utf8_unicode_ci;'
+upgrade: 
+	hg pull -u
+	bin/buildout -N
+	bin/django syncdb --migrate
 
 # circo dot fdp neato nop nop1 nop2 twopi
 graph:
@@ -78,92 +85,48 @@ graph:
 	    xdg-open var/graph.png; \
 	fi
 
-bin/django: bin/buildout buildout.cfg development.cfg
-	test ! -f bin/django.wsgi
-	bin/buildout -c development.cfg -N
-	touch -c $@
+var:
+	mkdir var
 
-var/development.db:
-	test ! -f bin/django.wsgi
-	bin/django syncdb --all --noinput
-	bin/django migrate --fake
-	bin/django loaddata initial_data.json
+# lock which indecates development environment:
+var/deploy.lock: var
+	if [ -f var/develop.lock ]; then rm var/develop.lock; fi
+	touch var/deploy.lock
 
-clean:
+# lock which indecates deployment environment:
+var/develop.lock: var
+	if [ -f var/deploy.lock ]; then rm var/deploy.lock; fi
+	touch var/develop.lock
 
-realclean: clean
-	hg purge --all
+buildout.cfg: buildout/base.cfg buildout/develop.cfg buildout/deploy.cfg
+	echo "[buildout]" > buildout.cfg
+	if [ -f var/deploy.lock ]; then \
+	    echo "extends = buildout/deploy.cfg" >> buildout.cfg; \
+	else \
+	    echo "extends = buildout/develop.cfg" >> buildout.cfg; \
+	fi
 
-
-##############
-# Deployment #
-##############
-
-.PHONY: deploy
-
-deploy: bootstrap.py \
-	bin/buildout \
-	bin/django.wsgi \
-	project/production.py \
-	var/production.db \
-	var/htdocs/static \
- 	var/data/main.spa
-
-bin/django.wsgi: bin/buildout buildout.cfg etc/*.in
-	test ! -f var/development.db
-	bin/buildout -N
-	touch -c $@
-
-project/production.py:
-	@echo
-	@echo "project/production.py settings file is missing."
-	@echo "Create this file and run make deploy again."
-	@echo
-	@echo "Here is example, how to prepare MySQL database:"
-	@echo
-	@echo "    CREATE USER '<user>'@'localhost' IDENTIFIED BY '<password>';"
-	@echo "    GRANT ALL ON *.* TO '<user>'@'localhost';"
-	@echo "    CREATE DATABASE <dbname> CHARACTER SET utf8;"
-	@echo
-	@echo "Use generated sample file: etc/my.cnf and specify "
-	@echo "database connection credentials. You can use this file,"
-	@echo "to connect to database:"
-	@echo
-	@echo "    mysql --defaults-extra-file=etc/my.cnf"
-	@echo
-	@echo "Use generated sample file: etc/production.py and "
-	@echo "adjust your production server settings:"
-	@echo
-	@echo "    cp etc/production.py project/production.py"
-	@echo "    vi project/production.py"
-	@echo
-	@exit 1
-
-var/production.db:
-	test ! -f var/development.db
-	bin/django syncdb --all --noinput
-	bin/django migrate --fake
-	bin/django loaddata initial_data.json
-	touch -c $@
-
-
-###########
-# General #
-###########
-
-bootstrap.py:
+bin/buildout: buildout.cfg
 	mkdir -p eggs downloads
-	wget http://svn.zope.org/*checkout*/zc.buildout/trunk/bootstrap/bootstrap.py
-
-bin/buildout:
 	if which buildout > /dev/null ; then \
 	    $$(which buildout) init ; \
 	else \
 	    python bootstrap.py --distribute ; \
 	fi
 
-var/htdocs/static:
+bin/django: bin/buildout
+	bin/buildout -N
+
+src/web369/settings.py:
+	if [ -f var/deploy.lock ]; then \
+	    echo "from web369.conf.deploy import * " > src/web369/settings.py; \
+	else \
+	    echo "from web369.conf.develop import * " > src/web369/settings.py; \
+	fi
+
+var/htdocs/static: bin/django src/web369/settings.py
 	bin/django collectstatic --noinput
 
-var/data/main.spa:
-	parts/sphinx/bin/indexer main
+docs/build/html: $(find docs -type f -not -wholename 'docs/build/*')
+	cd docs ; make html ; cd ..
+
