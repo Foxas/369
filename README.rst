@@ -27,7 +27,7 @@ Create configuration files as fallows:
 
 Perform these commands::
 
-    python bootstrap.py
+    python bootstrap.py --distribute
     bin\buildout.exe -N
 
 Now you ready to work.

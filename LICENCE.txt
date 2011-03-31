@@ -1,4 +1,4 @@
-Copyright (c) 2010, "Informacijos Valdymo Centras" Ltd.
+Copyright (c) 2010, Threesixnine,
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
