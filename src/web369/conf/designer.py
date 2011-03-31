@@ -24,4 +24,11 @@ INSTALLED_APPS = (
     'web369',
 )
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': resource_filename('web369', '../../var/web369.sqlite'),
+    }
+}
+
 ROOT_URLCONF = 'web369.urls.designer'

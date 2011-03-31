@@ -21,7 +21,7 @@ etc/my.cnf
 parts
 tags
 var
-threesixnine/settings.py
+src/web369/settings.py
 buildout.cfg
 dump.json
 .scrapy
