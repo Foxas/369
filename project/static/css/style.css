@@ -83,8 +83,6 @@ p {
 }
 
 .twoColFixLtHdr #header #main { 
-	/*height: 282px;*/
-	height: 320px;
 	background-image: url(../img/header-background.png);
 	background-repeat: no-repeat;
 } 
@@ -110,14 +108,13 @@ p {
 	font-size: 15px;
 	color: #FFF;
 	font-weight: normal;
-	padding-top: 13px;
+	padding-top: 10px;
 }
 
 .twoColFixLtHdr #header #trends-block {
-	height: 130px;
 	background-image: url(../img/header-bg-btm.png);
 	background-repeat: no-repeat;
-	padding: 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 .twoColFixLtHdr #header #trends-block .list-finish { display: inline-block; width: 100%; }
@@ -203,12 +200,10 @@ p {
 	background: url(../img/search-bg.png) no-repeat scroll 0 0 transparent;
 	width: 404px;
 	border: 0 none;
-	height: 45px;
+	height: 50px;
 	font-size: 28px;
 	color: #4c4c4c;
-	padding-left: 10px;
-	padding-top: 4px;
-	padding-right: 20px;
+	padding: 0 20px 0 10px;
 }
 
 #search-btn-submit {
@@ -226,8 +221,9 @@ p {
 #search-btn-submit::-moz-focus-inner { border: 0; }
 
 #search-form {
-    margin: 40px 0 40px 120px;
+	padding: 24px 0 40px 120px;
     width: 640px;
+	height: 55px;
 }
 
 #mainContent{
@@ -300,7 +296,6 @@ p {
 #twitter-widget {
     background: url("../img/twitter-background.png") no-repeat scroll 54px 69px transparent;
     float: left;
-    margin-bottom: 24px;
     padding: 90px 0 20px 90px;
     width: 388px;
 }
