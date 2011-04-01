@@ -88,12 +88,13 @@ p {
 } 
 
 .twoColFixLtHdr #header h1 {
-	font-size: 23px;
+	font-size: 16px;
 	color: #4c4c4c;
-	padding-top: 100px;
-	padding-left: 360px;
-	line-height: 1.2;
+	height: 60px;
 	font-weight: normal;
+	line-height: 1.3;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .twoColFixLtHdr #header #topic {
@@ -221,7 +222,7 @@ p {
 #search-btn-submit::-moz-focus-inner { border: 0; }
 
 #search-form {
-	padding: 24px 0 40px 120px;
+	padding: 45px 0 20px 120px;
     width: 640px;
 	height: 55px;
 }
@@ -294,10 +295,10 @@ p {
 /* =Twitter widget
 -------------------------------------------------------------- */
 #twitter-widget {
-    background: url("../img/twitter-background.png") no-repeat scroll 54px 69px transparent;
+    background: url("../img/twitter-background.png") no-repeat scroll 54px 38px transparent;
     float: left;
-    padding: 90px 0 20px 90px;
-    width: 388px;
+    padding: 57px 0 20px 90px;
+    width: 370px;
 }
 
 #twitter-widget #jtw_widget {
@@ -335,4 +336,12 @@ p {
     font-size: 14px;
     height: 18px;
     padding-left: 23px;
+}
+#shout {
+	background: url("../img/under-logo.png") no-repeat scroll 0 0 transparent;
+    height: 34px;
+    left: 135px;
+    position: relative;
+    top: 136px;
+    width: 132px;
 }
