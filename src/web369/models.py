@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 import re
 from django.db import models
-
 from django.template.defaultfilters import wordcount
+
+from web369.utils.strings import unicode_to_ascii
 
 
 class DOCUMENT_TYPE:
@@ -38,7 +39,8 @@ class ScrappedDocumentManager(models.Manager):
             return False
 
     def search(self, query):
-        where = 'MATCH(content, subject_title) AGAINST ("%s")'
+        query = unicode_to_ascii(query)
+        where = 'MATCH(content_ascii, subject_title_ascii) AGAINST ("%s")'
         return self.all().extra(where=[where], params=[query])
 
 
@@ -56,9 +58,11 @@ class ScrappedDocument(models.Model):
     date = models.DateTimeField()
     author = models.CharField(max_length=255, blank=True)
     content = models.TextField()
+    content_ascii = models.TextField() # for full text searches
     content_length = models.IntegerField(default=0, null=True)
     content_word_count = models.IntegerField(default=0, null=True)
     subject_title = models.CharField(max_length=555, null=True)
+    subject_title_ascii = models.CharField(max_length=555, null=True)
     subject_type = models.CharField(max_length=255, 
                                     choices=_choices(SUBJECT_TYPE))
     subject_id = models.IntegerField()
@@ -83,4 +87,6 @@ class ScrappedDocument(models.Model):
         content = re.sub('[!-@[-`]', ' ', self.content)
         content = re.sub(' +', ' ', self.content)
         self.content_word_count = wordcount(content)
+        self.content_ascii = unicode_to_ascii(self.content)
+        self.subject_title_ascii = unicode_to_ascii(self.subject_title_ascii)
         super(ScrappedDocument, self).save(*args, **kwargs)
