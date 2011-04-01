@@ -34,8 +34,6 @@
    {% endcomment %}
   <div id="mainContent">
 
-        {% with request.GET.q as query %}
-
         {% for result in results %}
     <div class="comment{% cycle ' second' ' ' %}">
             <a href="{{ result.item_link }}" class="comment-author"
@@ -46,8 +44,6 @@
             <p>{{ result.content|highlight:query }}</p>
         </div>
         {% endfor %}
-
-        {% endwith %}
 
         <!-- This clearing element should immediately follow the #mainContent
         div in order to force the #container div to contain all child floats

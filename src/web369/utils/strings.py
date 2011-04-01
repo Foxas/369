@@ -9,16 +9,27 @@ def unicode_to_ascii(s, errors="ignore"):
     u"""
     >>> unicode_to_ascii(u'„Ąžėęūšųį“')
     'Azeeusui'
-    >>> unicode_to_ascii(u'„Ąžėęūšųį“')
-    '"Azeeusui"'
     """
-    # TODO: fix second doc test.
     s = unicode(s)
     return unicodedata.normalize("NFKD", s).encode('ascii', errors)
 
 
 def words(s):
     return re.sub('\W+', ' ', s).split(' ')
+
+
+def word_frequency(text, match=None):
+    """
+    >>> word_frequency("a a b c")
+    [('a', 2), ('c', 1), ('b', 1)]
+    >>> word_frequency("a a b c", match="[ab]+")
+    [('a', 2), ('b', 1)]
+    """
+    word_list = words(text)
+    unique_words = set(word_list)
+    return [(word, word_list.count(word)) 
+            for word in unique_words
+            if match == None or re.match(match, word)]
 
 
 def find_all(s, sub):

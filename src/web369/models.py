@@ -2,8 +2,9 @@
 import re
 from django.db import models
 from django.template.defaultfilters import wordcount
+from django.dispatch import receiver
 
-from web369.utils.strings import unicode_to_ascii
+from web369.utils.strings import unicode_to_ascii, word_frequency, words
 
 
 class DOCUMENT_TYPE:
@@ -29,6 +30,79 @@ def _choices(obj):
     return choices
 
 
+class BaseWordsManager(models.Manager):
+    def merge(self, queryset):
+        merge_to = queryset[0]
+        for word in queryset[1:]:
+            word.derivatives.update(base=merge_to)
+            merge_to.count += word.count
+            word.delete()
+        merge_to.save()
+
+
+class BaseWord(models.Model):
+    word = models.CharField(max_length=255)
+    count = models.IntegerField(default=0)
+    stop_word = models.BooleanField(default=False)
+
+    objects = BaseWordsManager()
+
+    def __repr__(self):
+        return "Word: %s Count: %s" % (self.word, self.count)
+
+    def __str__(self):
+        return self.word.encode('ascii', 'replace')
+
+    def __unicode__(self):
+        return self.word
+
+    def derivatives_display(self):
+        return ", ".join([unicode(w) for w in self.derivatives.all()])
+    derivatives_display.short_description = "Derivatives"
+
+
+class WordsManager(models.Manager):
+    _cache = {}
+
+    def get(self, word):
+        return super(WordsManager, self).get(word=word)
+
+    def get_or_create(self, word_str):
+        word =  self._cache.get(word_str, None)
+        if word:
+            return word
+        try:
+            word = self.get_query_set().get(word=word_str)
+        except Word.DoesNotExist:
+            base = BaseWord(word=word_str)
+            base.save()
+            word = Word(word=word_str, base=base)
+            word.save()
+        return word
+
+
+class Word(models.Model):
+    word = models.CharField(max_length=255, primary_key=True, db_index=True)
+    base = models.ForeignKey(BaseWord, related_name="derivatives")
+
+    objects = WordsManager()
+
+    def __str__(self):
+        return self.word
+
+    def __unicode__(self):
+        return self.word
+
+    def increase_count(self, count):
+        assert self.base, \
+            "You cannot increase count on word (%s) which is not saved" % self
+        BaseWord.objects.filter(pk=self.base.pk) \
+                        .update(count=models.F('count')+count)
+
+    def cognate_words(self):
+        return Word.objects.filter(base=self.base)
+
+
 class ScrappedDocumentManager(models.Manager):
     def exists(self, item):
         if self.filter(source_id=item['source_id'],
@@ -38,10 +112,24 @@ class ScrappedDocumentManager(models.Manager):
         else:
             return False
 
-    def search(self, query):
-        query = unicode_to_ascii(query)
+    def build_search_query(self, querystring):
+        querystring = unicode_to_ascii(querystring).lower()
+        query = []
+        for word in words(querystring):
+            try:
+                word = Word.objects.get(word)
+                cognate_words = [w.word for w in word.cognate_words()]
+                query.append('(%s)' % ' '.join(cognate_words))
+            except Word.DoesNotExist:
+                query.append(word)
+        return ' +'.join(group for group in query)
+
+    def search(self, querystring):
+        querystring = self.build_search_query(querystring)
         where = 'MATCH(content_ascii, subject_title_ascii) AGAINST ("%s")'
-        return self.all().extra(where=[where], params=[query])
+        qs = self.all().extra(where=[where], params=[querystring])
+        qs.search_query = querystring
+        return qs
 
 
 class ScrappedDocument(models.Model):
@@ -90,3 +178,13 @@ class ScrappedDocument(models.Model):
         self.content_ascii = unicode_to_ascii(self.content)
         self.subject_title_ascii = unicode_to_ascii(self.subject_title_ascii)
         super(ScrappedDocument, self).save(*args, **kwargs)
+
+
+@receiver(models.signals.post_save, sender=ScrappedDocument)
+def update_word_stats(sender, instance, created, using, **kwargs):
+    if not created:
+        return
+    text = ''.join((instance.content_ascii, instance.subject_title_ascii))
+    text = unicode_to_ascii(text).lower()
+    for word, count in word_frequency(text, match="[a-z]{3,50}"):
+        Word.objects.get_or_create(word).increase_count(count)

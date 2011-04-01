@@ -57,7 +57,7 @@
     </div>
 	<div class="clearfloat"></div>
         <form action="{% url web369-search-results %}" method="get" id="search-form">
-            <input type="text" id="search-input" name='q' value="{{ query }}">
+            <input type="text" id="search-input" name='q' value="{{ request.GET.q }}">
             <input id="search-btn-submit" type="submit" value="">
         </form>
         {% block content %}

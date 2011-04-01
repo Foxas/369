@@ -22,5 +22,5 @@ def search_results(request):
         'results': results,
         'pages': pages,
         'page': pages.page(request.GET.get('page', 1)),
-        'query': query,
+        'query': results.search_query,
     }
