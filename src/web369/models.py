@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 import re
+import sys
 from django.db import models
 from django.template.defaultfilters import wordcount
 from django.dispatch import receiver
+from django.conf import settings
 
-from web369.utils.strings import unicode_to_ascii, word_frequency, words
+from web369.utils.strings import unicode_to_ascii, count_words, split_words
 
 
 class DOCUMENT_TYPE:
@@ -30,7 +32,15 @@ def _choices(obj):
     return choices
 
 
-class BaseWordsManager(models.Manager):
+class BaseWordQuerySet(models.query.QuerySet):
+    def with_count(self):
+        return self.annotate(count=models.Sum('derivatives__count'))
+
+
+class BaseWordManager(models.Manager):
+    def with_count(self):
+        return self.get_query_set().with_count()
+
     def merge(self, queryset):
         merge_to = queryset[0]
         for word in queryset[1:]:
@@ -39,16 +49,39 @@ class BaseWordsManager(models.Manager):
             word.delete()
         merge_to.save()
 
+    def recount(self, verbose=False):
+        word_stats = ScrappedDocument.objects.word_stats(verbose=verbose)
+        if verbose:
+            total = len(word_stats)
+            counter = 0
+            step_counter = 0
+            step = total / 100.0
+            print "Saving statistic of %d words to database..." % total
+            print "0%"
+        for word, count in word_stats.items():
+            Word.objects.set_count(word, count)
+            if verbose:
+                if counter > step_counter * step:
+                    step_counter = step_counter + 1
+                    print "%d%%" % step_counter
+                counter = counter + 1
+
+    def get_query_set(self):
+        return BaseWordQuerySet(model=self.model)
+
 
 class BaseWord(models.Model):
     word = models.CharField(max_length=255)
-    count = models.IntegerField(default=0)
     stop_word = models.BooleanField(default=False)
+    count = None
 
-    objects = BaseWordsManager()
+    objects = BaseWordManager()
 
     def __repr__(self):
-        return "Word: %s Count: %s" % (self.word, self.count)
+        if hasattr(self, 'count'):
+            return "BaseWord: %s (%d)"  % (self.word, self.count)
+        else:
+            return "BaseWord: %s" % self.word
 
     def __str__(self):
         return self.word.encode('ascii', 'replace')
@@ -60,32 +93,51 @@ class BaseWord(models.Model):
         return ", ".join([unicode(w) for w in self.derivatives.all()])
     derivatives_display.short_description = "Derivatives"
 
+    def count_display(self):
+        return self.count
+    count_display.short_description = "Word count"
+    count_display.admin_order_field = 'count'
 
-class WordsManager(models.Manager):
-    _cache = {}
 
+class WordManager(models.Manager):
     def get(self, word):
-        return super(WordsManager, self).get(word=word)
+        return super(WordManager, self).get(word=word)
 
-    def get_or_create(self, word_str):
-        word =  self._cache.get(word_str, None)
-        if word:
-            return word
+    def create(self, word, count=0, commit=True):
+        base = BaseWord(word=word)
+        base.save()
+        word_obj = Word(word=word, base=base, count=0)
+        if commit:
+            word_obj.save()
+        return word_obj
+
+    def get_or_create(self, word, commit=True):
+        """ Returns tuple: (word, created). ``created`` is true if word has been
+        created """
         try:
-            word = self.get_query_set().get(word=word_str)
+            return self.get(word), False
         except Word.DoesNotExist:
-            base = BaseWord(word=word_str)
-            base.save()
-            word = Word(word=word_str, base=base)
-            word.save()
-        return word
+            return self.create(word, 0, commit), True
+
+    def set_count(self, word, count):
+        count = Word.objects.filter(word=word) \
+                            .update(count=count)
+        if not count:
+            self.create(word, count)
+
+    def increase_count(self, word, count):
+        count = Word.objects.filter(word=word) \
+                            .update(count=models.F('count')+count)
+        if not count:
+            self.create(word, count)
 
 
 class Word(models.Model):
     word = models.CharField(max_length=255, primary_key=True, db_index=True)
     base = models.ForeignKey(BaseWord, related_name="derivatives")
+    count = models.IntegerField(default=0)
 
-    objects = WordsManager()
+    objects = WordManager()
 
     def __str__(self):
         return self.word
@@ -93,17 +145,35 @@ class Word(models.Model):
     def __unicode__(self):
         return self.word
 
-    def increase_count(self, count):
-        assert self.base, \
-            "You cannot increase count on word (%s) which is not saved" % self
-        BaseWord.objects.filter(pk=self.base.pk) \
-                        .update(count=models.F('count')+count)
-
     def cognate_words(self):
         return Word.objects.filter(base=self.base)
 
 
+class ScrappedDocumentQuerySet(models.query.QuerySet):
+    def word_stats(self, verbose=False):
+        word_stats = {}
+        if verbose:
+            counter = 0
+            total = self.count()
+            step = total / 100.0
+            step_counter = 0
+            print "Collecting word statistic of %d objects..." % total
+            print "0%"
+        for document in self:
+            for word, count in document.word_stats():
+                word_stats[word] = word_stats.get(word, 0) + count
+            if verbose:
+                if counter > step_counter * step:
+                    step_counter = step_counter + 1
+                    print "%d%%" % step_counter
+                counter = counter+1
+        return word_stats
+
+
 class ScrappedDocumentManager(models.Manager):
+    def word_stats(self, verbose=False):
+        return self.get_query_set().word_stats(verbose=verbose)
+
     def exists(self, item):
         if self.filter(source_id=item['source_id'],
                        subject_id=item['subject_id'],
@@ -115,7 +185,7 @@ class ScrappedDocumentManager(models.Manager):
     def build_search_query(self, querystring):
         querystring = unicode_to_ascii(querystring).lower()
         query = []
-        for word in words(querystring):
+        for word in split_words(querystring):
             try:
                 word = Word.objects.get(word)
                 cognate_words = [w.word for w in word.cognate_words()]
@@ -130,6 +200,9 @@ class ScrappedDocumentManager(models.Manager):
         qs = self.all().extra(where=[where], params=[querystring])
         qs.search_query = querystring
         return qs
+
+    def get_query_set(self):
+        return ScrappedDocumentQuerySet(model=self.model)
 
 
 class ScrappedDocument(models.Model):
@@ -167,6 +240,13 @@ class ScrappedDocument(models.Model):
         ratio = self.content_length / self.content_word_count
         return (ratio+5)**2
 
+    def word_stats(self):
+        text = ' '.join([self.subject_title_ascii or "",
+                         self.content_ascii or ""]).lower()
+        if "none" in split_words(text):
+            import ipdb; ipdb.set_trace()
+        return count_words(text)
+
     def get_absolute_url(self):
         return str(self.item_link).replace('item_id', 'c%s' % self.item_id)
 
@@ -176,15 +256,16 @@ class ScrappedDocument(models.Model):
         content = re.sub(' +', ' ', self.content)
         self.content_word_count = wordcount(content)
         self.content_ascii = unicode_to_ascii(self.content)
-        self.subject_title_ascii = unicode_to_ascii(self.subject_title_ascii)
+        self.subject_title_ascii = unicode_to_ascii(self.subject_title)
         super(ScrappedDocument, self).save(*args, **kwargs)
 
 
-@receiver(models.signals.post_save, sender=ScrappedDocument)
-def update_word_stats(sender, instance, created, using, **kwargs):
-    if not created:
-        return
-    text = ''.join((instance.content_ascii, instance.subject_title_ascii))
-    text = unicode_to_ascii(text).lower()
-    for word, count in word_frequency(text, match="[a-z]{3,50}"):
-        Word.objects.get_or_create(word).increase_count(count)
+if settings.LIVE_WORD_COUNT:
+    @receiver(models.signals.post_save, sender=ScrappedDocument)
+    def update_word_stats(sender, instance, created, using, **kwargs):
+        if not created:
+            return
+        text = ''.join((instance.content_ascii, instance.subject_title_ascii))
+        text = unicode_to_ascii(text).lower()
+        for word, count in count_words(text):
+            Word.objects.increase_count(word, count)

@@ -14,17 +14,29 @@ class Command(BaseCommand):
     help = 'Display highest ranked keywords'
 
     option_list = BaseCommand.option_list + (
+
         make_option('--limit',
             action='store',
             dest='limit',
             default=50,
             help='Limit to'),
-        )
 
+        make_option('--recount',
+            action='store_true',
+            dest='recount',
+            default=False,
+            help='Recount all keywords.'),
+    )
 
     def handle(self, *args, **options):
-        limit = int(options['limit'])
-        words = BaseWord.objects.filter(stop_word=False)\
+        if options['recount']:
+            self.recount()
+        limit = int(options['limit']) or 50
+        words = BaseWord.objects.filter(stop_word=False) \
+                                .with_count() \
                                 .order_by('-count')[:limit]
         for word in words:
-            print "%s: %d" % (word, word.count)
+            print u"%9d | %s" % (word.count, word)
+
+    def recount(self):
+        BaseWord.objects.recount(verbose=True)

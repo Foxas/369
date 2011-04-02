@@ -78,3 +78,6 @@ INSTALLED_APPS = (
     'south',
     'web369',
 )
+
+# Word count will be updated when new documents are scrapped:
+LIVE_WORD_COUNT = True
