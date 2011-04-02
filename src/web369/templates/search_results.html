@@ -15,7 +15,7 @@
 
   <div id="mainContent">
 
-        {% for result in results %}
+        {% for result in page.object_list %}
     <div class="comment{% cycle ' second' ' ' %}">
             <a href="{{ result.item_link }}" class="comment-author"
                 >{{ result.author }}</a> apie
