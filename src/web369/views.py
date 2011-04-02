@@ -1,14 +1,18 @@
 from django.core.paginator import Paginator
-from django.template.loader import get_template
+from django.views.decorators.cache import cache_page
 
-from annoying.decorators import render_to, ajax_request
+from annoying.decorators import render_to
 
-from web369.models import ScrappedDocument
+from web369.models import ScrappedDocument, BaseWord
 
 
+@cache_page(60 * 60)
 @render_to('index.html')
 def index(request):
-    return {}
+    top_words = BaseWord.objects.with_count().order_by('-count')
+    return {'recent_trends': top_words[:4],
+            'month_trends': top_words[4:10],
+            'alltime_trends': top_words[10:18]}
 
 
 @render_to('search_results.html')

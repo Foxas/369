@@ -6,33 +6,27 @@
 {% block content%}
 <div id="topic"><h2>{% trans "Šiandien Lietuvoje populiaru:" %}</h2></div>
 <div id="trends-block">
+
     <ul id="recent-trends">
-        <li><a href="/search/?q=venckiene">venckiene</a></li>
-        <li><a href="/search/?q=lenkijos">lenkijos</a></li>
-        <li><a href="/search/?q=teismas">teismas</a></li>
-        <li><a href="/search/?q=vilnius">vilnius</a></li>
-        <li><a href="/search/?q=garage48">garage48</a></li>
+    {% for word in recent_trends %}
+        <li><a href="/search/?q={{ word }}">{{ word }}</a></li>
+    {% endfor %}
         <span class="list-finish"></span>
     </ul>
+
     <ul id="month-trends">
-        <li><a href="/search/?q=tendencijos">tendencijos</a></li>
-        <li><a href="/search/?q=libijoje">libijoje</a></li>
-        <li><a href="/search/?q=rusija">rusija</a></li>
-        <li><a href="/search/?q=eurovizijoje">eurovizijoje</a></li>
-        <li><a href="/search/?q=statybos">statybos</a></li>
-        <li><a href="/search/?q=japonijos">japonijos</a></li>
+    {% for word in month_trends %}
+        <li><a href="/search/?q={{ word }}">{{ word }}</a></li>
+    {% endfor %}
         <span class="list-finish"></span>
     </ul>
-    <ul id="alltime-trends">
-        <li><a href="/search/?q=pedofilijos">pedofilijos</a></li>
-        <li><a href="/search/?q=masiulis">masiulis</a></li>
-        <li><a href="/search/?q=dieta">dieta</a></li>
-        <li><a href="/search/?q=sveikatai">sveikatai</a></li>
-        <li><a href="/search/?q=britanijoje">britanijoje</a></li>
-        <li><a href="/search/?q=elektrine">elektrine</a></li>
-        <li><a href="/search/?q=infekcija">infekcija</a></li>
-        <li><a href="/search/?q=horoskopas">horoskopas</a></li>
+
+    <ul id="alltime-trentds">
+    {% for word in alltime_trends %}
+        <li><a href="/search/?q={{ word }}">{{ word }}</a></li>
+    {% endfor %}
         <span class="list-finish"></span>
     </ul>
+
 </div>
 {% endblock content %}

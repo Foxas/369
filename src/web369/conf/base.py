@@ -79,5 +79,16 @@ INSTALLED_APPS = (
     'web369',
 )
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/tmp/django_cache',
+        'TIMEOUT': 60,
+        'OPTIONS': {
+            'MAX_ENTRIES': 1000
+        }
+    }
+}
+
 # Word count will be updated when new documents are scrapped:
 LIVE_WORD_COUNT = True
