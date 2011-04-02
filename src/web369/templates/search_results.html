@@ -11,27 +11,8 @@
     {% endblocktrans %}
 </h2></div>
 	
-<!-- end #header --></div>
+</div><!-- end of #header -->
 
-  {% comment %}
-  <!-- Hide sidebar laikinai, filtravima darysim veliau, galbut kiek kitoki -->
-  <div id="sidebar1">
-    <h3>Paieškos nustatymai</h3>
-    <ul>
-        <li><a href="{% url web369-search-results %}?q={{query}}">
-            {% trans "All results" %}</a></li>
-        <li><a href="{% url web369-search-results %}?q={{query}}&amp;t=day">
-            {% trans "Last 24 hours" %}</a></li>
-        <li><a href="{% url web369-search-results %}?q={{query}}&amp;t=week">
-            {% trans "Last week" %}</a></li>
-        <li><a href="{% url web369-search-results %}?q={{query}}&amp;t=month">
-            {% trans "Last month" %}</a></li>
-        <li><a href="{% url web369-search-results %}?q={{query}}&amp;t=year">
-            {% trans "Last year" %}</a></li>
-    </ul>
-    
-   end #sidebar1 </div>
-   {% endcomment %}
   <div id="mainContent">
 
         {% for result in results %}
@@ -54,10 +35,11 @@
 		<span class="step-links">
 
 {% if pages.num_pages > 1 %}
+
     {% if page.has_previous %}
-        <a id="previous-btn"  href="{% url web369-search-results %}?q={{ query }}&page={{ page.previous_page_number }}">
-            {% trans "previous" %}
-        </a>
+        <a id="previous-btn"  
+                href="{% url web369-search-results %}?q={{ request.GET.q }}&page={{ page.previous_page_number }}"
+            >{% trans "previous" %}</a>
     {% endif %}
 
     <span class="current">
@@ -65,10 +47,11 @@
     </span>            
 
     {% if page.has_next %}
-        <a id="next-btn" href="{% url web369-search-results %}?q={{ query }}&page={{ page.next_page_number }}">
-            {% trans "next" %}
-        </a>
+        <a id="next-btn" 
+                href="{% url web369-search-results %}?q={{ request.GET.q }}&page={{ page.next_page_number }}"
+            >{% trans "next" %}</a>
     {% endif %}
+
 {% endif %}
 </span>
 </div>
