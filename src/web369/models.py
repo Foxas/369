@@ -48,22 +48,26 @@ class BaseWordManager(models.Manager):
             word.delete()
         merge_to.save()
 
-    def recount(self, verbose=False):
-        word_stats = ScrappedDocument.objects.word_stats(verbose=verbose)
-        if verbose:
-            total = len(word_stats)
-            counter = 0
-            step_counter = 0
-            step = total / 100.0
-            print "Saving statistic of %d words to database..." % total
-            print "0%"
+    def recount_proc(self):
+        word_stats = {}
+        for msg in ScrappedDocument.objects.word_stats_proc(word_stats):
+            yield msg
+
+        total = len(word_stats)
+
+        yield "Saving statistic of %d words to database..." % total
+        yield "0%"
+
+        counter = 0
+        progress = 0 # in percents
+        step = total / 100.0
+
         for word, count in word_stats.items():
             Word.objects.set_count(word, count)
-            if verbose:
-                if counter > step_counter * step:
-                    step_counter = step_counter + 1
-                    print "%d%%" % step_counter
-                counter = counter + 1
+            if counter > progress * step:
+                progress = progress + 1
+                yield "%d%%" % progress
+            counter = counter + 1
 
     def get_query_set(self):
         return BaseWordQuerySet(model=self.model)
@@ -149,29 +153,24 @@ class Word(models.Model):
 
 
 class ScrappedDocumentQuerySet(models.query.QuerySet):
-    def word_stats(self, verbose=False):
-        word_stats = {}
-        if verbose:
-            counter = 0
-            total = self.count()
-            step = total / 100.0
-            step_counter = 0
-            print "Collecting word statistic of %d objects..." % total
-            print "0%"
+    def word_stats_proc(self, output_dict):
+        yield "Calculating word statistic in %d documents..." % self.count()
+        yield "0%"
+        counter = 0
+        total = self.count()
+        step = total / 100.0
+        progress = 0 # in percents
         for document in self:
             for word, count in document.word_stats():
-                word_stats[word] = word_stats.get(word, 0) + count
-            if verbose:
-                if counter > step_counter * step:
-                    step_counter = step_counter + 1
-                    print "%d%%" % step_counter
-                counter = counter+1
-        return word_stats
-
+                output_dict[word] = output_dict.get(word, 0) + count
+            if counter > progress * step:
+                progress = progress + 1
+                yield "%d%%" % progress
+            counter = counter+1
 
 class ScrappedDocumentManager(models.Manager):
-    def word_stats(self, verbose=False):
-        return self.get_query_set().word_stats(verbose=verbose)
+    def word_stats_proc(self, output_dict):
+        return self.get_query_set().word_stats_proc(output_dict)
 
     def exists(self, item):
         if self.filter(source_id=item['source_id'],
