@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import re
-import sys
 from django.db import models
 from django.template.defaultfilters import wordcount
 from django.dispatch import receiver
@@ -243,8 +242,6 @@ class ScrappedDocument(models.Model):
     def word_stats(self):
         text = ' '.join([self.subject_title_ascii or "",
                          self.content_ascii or ""]).lower()
-        if "none" in split_words(text):
-            import ipdb; ipdb.set_trace()
         return count_words(text)
 
     def get_absolute_url(self):
