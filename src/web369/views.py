@@ -9,7 +9,9 @@ from web369.models import ScrappedDocument, BaseWord
 @cache_page(60 * 60)
 @render_to('index.html')
 def index(request):
-    top_words = BaseWord.objects.with_count().order_by('-count')
+    top_words = BaseWord.objects.filter(stop_word=False) \
+                                .with_count() \
+                                .order_by('-count')
     return {'recent_trends': top_words[:4],
             'month_trends': top_words[4:10],
             'alltime_trends': top_words[10:18]}
