@@ -50,6 +50,12 @@ class BaseWordManager(models.Manager):
 
     def recount_proc(self):
         word_stats = {}
+
+        yield "Resetting word counts... "
+        yield "0%"
+        Word.objects.all().update(count=0)
+        yield "100%"
+
         for msg in ScrappedDocument.objects.word_stats_proc(word_stats):
             yield msg
 
@@ -241,7 +247,8 @@ class ScrappedDocument(models.Model):
     def word_stats(self):
         text = ' '.join([self.subject_title_ascii or "",
                          self.content_ascii or ""]).lower()
-        return count_words(text)
+        count = count_words(text, r"[a-z0-9]{2}[a-zA-Z0-9]*")
+        return count
 
     def get_absolute_url(self):
         return str(self.item_link).replace('item_id', 'c%s' % self.item_id)
