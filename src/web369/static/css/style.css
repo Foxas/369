@@ -88,7 +88,7 @@ p {
 } 
 
 .twoColFixLtHdr #header h1 {
-	font-size: 16px;
+	font-size: 14px;
 	color: #4c4c4c;
 	height: 60px;
 	font-weight: normal;
@@ -294,20 +294,13 @@ p {
 
 /* =Twitter widget
 -------------------------------------------------------------- */
-#twitter-widget {
-    background: url("../img/twitter-background.png") no-repeat scroll 54px 38px transparent;
+#quoted-text{
+    background: url("../img/quote-background.png") no-repeat scroll 87px 38px transparent;
     float: left;
-    padding: 57px 0 20px 90px;
-    width: 370px;
+    padding: 57px 0 20px 128px;
+    width: 334px;
 }
 
-#twitter-widget #jtw_widget {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-style: italic;
-}
-#twitter-widget #jtw_widget a:hover  {
-	text-decoration: underline!important;
-}
 
 /* =Page pagination
 -------------------------------------------------------------- */
