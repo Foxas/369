@@ -14,13 +14,24 @@ def unicode_to_ascii(s, errors="ignore"):
     return unicodedata.normalize("NFKD", s).encode('ascii', errors)
 
 
-def split_words(text):
-    """
+def word_list(text):
+    u"""
     Return list of words in string. To get unique list of words use::
 
-        unique_words = set( split_words(text) )
+    >>> print word_list(u" „vienas“ du, \\u0161ienas!")
+    [u'vienas', u'du', u'\\u0161ienas']
     """
-    return re.sub('\W+', ' ', text).split(' ')
+    return re.findall('\w+', text, flags=re.U)
+
+
+def text_split(text):
+    u"""
+    Slit text into list of words and non-word
+
+    >>> print text_split(u"„vienas“ du, \\u0161ienas!")
+    [u'\\u201e', u'vienas', u'\\u201c ', u'du', u', ', u'\\u0161ienas', u'!']
+    """
+    return re.findall(r'\w+|\W+', text, flags=re.U)
 
 
 def count_words(text, match=None):
@@ -32,34 +43,30 @@ def count_words(text, match=None):
     >>> count_words("a a b c", match="[ab]+")
     [('a', 2), ('b', 1)]
     """
-    word_list = split_words(text)
-    unique_split_words = set(word_list)
-    return [(word, word_list.count(word))
-            for word in unique_split_words
+    words = word_list(text)
+    unique_words = set(words)
+    return [(word, words.count(word))
+            for word in unique_words
             if match == None or re.match(match, word)]
 
 
-def highlight_query(text, query, formatting="<strong>%s</strong>"):
+def highlight_words(text, words, formatting="<strong>%s</strong>"):
     u"""
     >>> text = u"Geri vyrai geroi girioi Gerą girą gerai gėrė. "
-    >>> print highlight_query(text, "gera gere", "<%s>")
+    >>> print highlight_words(text, ['gera', 'gere'], "<%s>")
     Geri vyrai geroi girioi <Gerą> girą gerai <gėrė>. 
-    >>> print highlight_query(text, "", "<%s>")
+    >>> print highlight_words(text, [], "<%s>")
     Geri vyrai geroi girioi Gerą girą gerai gėrė. 
-    >>> print highlight_query(text, "nnn", "<%s>")
+    >>> print highlight_words(text, ['nnn'], "<%s>")
     Geri vyrai geroi girioi Gerą girą gerai gėrė. 
-    >>> text = u"Geri vyrai geroi girioi „Gerą“ girą gerai gėrė"
-    >>> print highlight_query(text, "gera gere", "<%s>")
-    Geri vyrai geroi girioi „<Gerą>“ girą gerai <gėrė>
+    >>> text = u"„Geri“ vyrai geroi girioi „Gerą“ girą gerai gėrė"
+    >>> print highlight_words(text, ['gera', 'gere'], "<%s>")
+    „Geri“ vyrai geroi girioi „<Gerą>“ girą gerai <gėrė>
+    >>> print highlight_words(text, "one two free".split(), "<%s>")
+    „Geri“ vyrai geroi girioi „Gerą“ girą gerai gėrė
     """
-    puntuation = r' -@[-`{-~'
-    unicode_punctuation = u"„“–"
-    non_word_reg = u'([%s%s]+)' % (puntuation,unicode_punctuation)
-    text = re.split(non_word_reg, text)
-    words_to_highlight = split_words(unicode_to_ascii(query).lower())
+    text = text_split(text)
     for index, word in enumerate(text):
-        if not word:
-            continue
-        if unicode_to_ascii(word).lower() in words_to_highlight:
+        if unicode_to_ascii(word).lower() in words:
             text[index] = formatting % word
     return ''.join(text)

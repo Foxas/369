@@ -5,7 +5,8 @@ from django.template.defaultfilters import wordcount
 from django.dispatch import receiver
 from django.conf import settings
 
-from web369.utils.strings import unicode_to_ascii, count_words, split_words
+from web369.utils.strings import unicode_to_ascii, count_words, word_list, \
+                                 highlight_words
 
 
 class DOCUMENT_TYPE:
@@ -140,6 +141,14 @@ class WordManager(models.Manager):
         if not count:
             self.create(word, count)
 
+    def cognate_words(self, words):
+        if isinstance(words, unicode):
+            words = str(unicode_to_ascii(words))
+        if isinstance(str):
+            words = re.split('\w+', words)
+        base_words = self.filter(word__in=words).values_list('base', flat=True)
+        return self.filter(base_in=base_words)
+
 
 class Word(models.Model):
     word = models.CharField(max_length=255, primary_key=True, db_index=True)
@@ -174,6 +183,50 @@ class ScrappedDocumentQuerySet(models.query.QuerySet):
                 yield "%d%%" % progress
             counter = counter+1
 
+
+class SearchQuery(object):
+    def __init__(self, query):
+        self.query = query
+        self.normalized_query = self._normalize(query)
+
+    def __repr__(self):
+        return "SearchQuery(%s)" % self.query
+
+    def __str__(self):
+        return self.normalized_query
+
+    def __unicode__(self):
+        return self.query
+
+    def __len__(self):
+        return len(self.normalized_query)
+
+    def _normalize(self, query):
+        query = unicode_to_ascii(query)
+        query = re.sub('\W+', ' ', query)
+        return query
+
+    def word_list(self):
+        return word_list(self.normalized_query)
+
+    def highlight(self, text):
+        return highlight_words(text, self.word_list())
+
+    def build_boolean_query(self):
+        """
+        Build query for boolean mysql fulltext search
+        """
+        query = []
+        for word in self.word_list():
+            try:
+                word = Word.objects.get(word)
+                cognate_words = [w.word for w in word.cognate_words()]
+                query.append('(%s)' % ' '.join(cognate_words))
+            except Word.DoesNotExist:
+                query.append(word)
+        return ' +'.join(query)
+
+
 class ScrappedDocumentManager(models.Manager):
     def word_stats_proc(self, output_dict):
         return self.get_query_set().word_stats_proc(output_dict)
@@ -186,23 +239,12 @@ class ScrappedDocumentManager(models.Manager):
         else:
             return False
 
-    def build_search_query(self, querystring):
-        querystring = unicode_to_ascii(querystring).lower()
-        query = []
-        for word in split_words(querystring):
-            try:
-                word = Word.objects.get(word)
-                cognate_words = [w.word for w in word.cognate_words()]
-                query.append('(%s)' % ' '.join(cognate_words))
-            except Word.DoesNotExist:
-                query.append(word)
-        return ' +'.join(group for group in query)
-
-    def search(self, querystring):
-        querystring = self.build_search_query(querystring)
-        where = 'MATCH(content_ascii, subject_title_ascii) AGAINST ("%s")'
-        qs = self.all().extra(where=[where], params=[querystring])
-        qs.search_query = querystring
+    def search(self, search_query):
+        query = search_query.build_boolean_query()
+        print query
+        where = ['MATCH(content_ascii, subject_title_ascii) AGAINST ("%s")']
+        qs = self.all().extra(where=where, params=[query])
+        qs.search_query = query
         return qs
 
     def get_query_set(self):

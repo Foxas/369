@@ -5,7 +5,7 @@ COVERAGE_INCLUDES = --include=parts/*,src/web369/*
 SHELL = /bin/bash
 MYSQL_CMD = mysql -uroot
 
-.PHONY: all develop deploy run tags todo test flake8 syncdb createdb dropdb reloaddb
+.PHONY: all develop deploy run tags todo test flake8 syncdb createdb dropdb resetdb
 
 all: develop
 
@@ -40,10 +40,9 @@ dropdb:
 createdb:
 	$(MYSQL_CMD) -e 'CREATE DATABASE web369 CHARACTER SET utf8 COLLATE utf8_unicode_ci;'
 
-reloaddb: bin/django
+resetdb: bin/django
 	$(MYSQL_CMD) -e 'DROP DATABASE web369;'
 	$(MYSQL_CMD) -e 'CREATE DATABASE web369 CHARACTER SET utf8 COLLATE utf8_unicode_ci;'
-	bin/django syncdb
 
 crawl:
 	bin/scrapy crawl delfi_lt

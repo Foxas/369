@@ -3,7 +3,7 @@ from django.views.decorators.cache import cache_page
 
 from annoying.decorators import render_to
 
-from web369.models import ScrappedDocument, BaseWord
+from web369.models import ScrappedDocument, BaseWord, SearchQuery
 
 
 @cache_page(60 * 60)
@@ -19,7 +19,7 @@ def index(request):
 
 @render_to('search_results.html')
 def search_results(request):
-    query = request.GET.get('q')
+    query = SearchQuery(request.GET.get('q'))
     if not query:
         return {'TEMPLATE': 'search_no_results.html'}
     results = ScrappedDocument.objects.search(query)
