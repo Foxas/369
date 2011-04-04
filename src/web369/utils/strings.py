@@ -25,7 +25,7 @@ def split_words(text):
 
 def count_words(text, match=None):
     """
-    Returns a list of (word, value) pairs.
+    Returns a list of (word, count) pairs.
 
     >>> count_words("a a b c")
     [('a', 2), ('c', 1), ('b', 1)]
@@ -41,13 +41,13 @@ def count_words(text, match=None):
 
 def highlight_query(text, query, formatting="<strong>%s</strong>"):
     u"""
-    >>> text = u"Geri vyrai geroi girioi Gerą girą gerai gėrė"
+    >>> text = u"Geri vyrai geroi girioi Gerą girą gerai gėrė. "
     >>> print highlight_query(text, "gera gere", "<%s>")
-    Geri vyrai geroi girioi <Gerą> girą gerai <gėrė>
-    >>> print highlight_query(text, "")
-    Geri vyrai geroi girioi Gerą girą gerai gėrė
-    >>> print highlight_query(text, "nnn")
-    Geri vyrai geroi girioi Gerą girą gerai gėrė
+    Geri vyrai geroi girioi <Gerą> girą gerai <gėrė>. 
+    >>> print highlight_query(text, "", "<%s>")
+    Geri vyrai geroi girioi Gerą girą gerai gėrė. 
+    >>> print highlight_query(text, "nnn", "<%s>")
+    Geri vyrai geroi girioi Gerą girą gerai gėrė. 
     >>> text = u"Geri vyrai geroi girioi „Gerą“ girą gerai gėrė"
     >>> print highlight_query(text, "gera gere", "<%s>")
     Geri vyrai geroi girioi „<Gerą>“ girą gerai <gėrė>
@@ -55,6 +55,8 @@ def highlight_query(text, query, formatting="<strong>%s</strong>"):
     text = re.split(u'([ -@[-`{-~“-„]+)', text)
     words_to_highlight = split_words(unicode_to_ascii(query).lower())
     for index, word in enumerate(text):
+        if not word:
+            continue
         if unicode_to_ascii(word).lower() in words_to_highlight:
             text[index] = formatting % word
     return ''.join(text)
