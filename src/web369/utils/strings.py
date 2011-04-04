@@ -52,7 +52,10 @@ def highlight_query(text, query, formatting="<strong>%s</strong>"):
     >>> print highlight_query(text, "gera gere", "<%s>")
     Geri vyrai geroi girioi „<Gerą>“ girą gerai <gėrė>
     """
-    text = re.split(u'([ -@[-`{-~“-„]+)', text)
+    puntuation = r' -@[-`{-~'
+    unicode_punctuation = u"„“–"
+    non_word_reg = u'([%s%s]+)' % (puntuation,unicode_punctuation)
+    text = re.split(non_word_reg, text)
     words_to_highlight = split_words(unicode_to_ascii(query).lower())
     for index, word in enumerate(text):
         if not word:
