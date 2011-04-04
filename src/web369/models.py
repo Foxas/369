@@ -241,7 +241,6 @@ class ScrappedDocumentManager(models.Manager):
 
     def search(self, search_query):
         query = search_query.build_boolean_query()
-        print query
         where = ['MATCH(content_ascii, subject_title_ascii) AGAINST ("%s")']
         qs = self.all().extra(where=where, params=[query])
         qs.search_query = query
