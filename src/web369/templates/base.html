@@ -11,7 +11,6 @@
     <title>{% block title %}369.lt{% endblock %}</title>
 
 	<link rel="icon" type="image/ico" href="{{ STATIC_URL }}img/favicon.ico">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" media="screen">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen">
 
     <script src="{{ STATIC_URL }}js/jquery-1.4.2.min.js" type="text/javascript"></script>
@@ -62,8 +61,8 @@
         <!--<h1>{% trans "Are you interested what buzz is going now? Fallow latest comments and opinions." %}</h1> -->
 		<a id="logo" href="{% url web369-index %}"></a>
 		<div id="shout"></div>
-		<div id="twitter-widget">
-			<h1>{% trans "Pagaliau paprastas naudoti socialinės medijos monitoringo įrankis -- Nico Rausch, verslo konsultantas" %}</h1>
+		<div id="quoted-text">
+			<h1>{% trans "Pagaliau paprastas naudoti socialinės medijos monitoringo įrankis<br />&nbsp;&nbsp;&nbsp;&nbsp;-- Nico Rausch, verslo konsultantas" %}</h1>
     </div>
 	<div class="clearfloat"></div>
         <form action="{% url web369-search-results %}" method="get" id="search-form">
