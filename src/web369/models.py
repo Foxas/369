@@ -171,17 +171,22 @@ class ScrappedDocumentQuerySet(models.query.QuerySet):
     def word_stats_proc(self, output_dict):
         yield "Calculating word statistic in %d documents..." % self.count()
         yield "0%"
+
         counter = 0
         total = self.count()
+        limit = 5000
         step = total / 100.0
         progress = 0 # in percents
-        for document in self:
-            for word, count in document.word_stats():
-                output_dict[word] = output_dict.get(word, 0) + count
-            if counter > progress * step:
-                progress = progress + 1
-                yield "%d%%" % progress
-            counter = counter+1
+
+        for start in xrange(0, total, limit):
+
+            for document in self[start:start+limit]:
+                for word, count in document.word_stats():
+                    output_dict[word] = output_dict.get(word, 0) + count
+                if counter > progress * step:
+                    progress = progress + 1
+                    yield "%d%%" % progress
+                counter = counter+1
 
 
 class SearchQuery(object):
