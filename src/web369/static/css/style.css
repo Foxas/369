@@ -83,7 +83,7 @@ p {
 }
 
 .twoColFixLtHdr #header #main { 
-	background-image: url(../img/header-background.png);
+	background-image: url(../img/head.png);
 	background-repeat: no-repeat;
 } 
 
@@ -295,9 +295,9 @@ p {
 /* =Twitter widget
 -------------------------------------------------------------- */
 #quoted-text{
-    background: url("../img/quote-background.png") no-repeat scroll 87px 38px transparent;
+    background: url("../img/quote-background.png") no-repeat scroll 87px 72px transparent;
     float: left;
-    padding: 57px 0 20px 128px;
+    padding: 91px 0 20px 128px;
     width: 334px;
 }
 
